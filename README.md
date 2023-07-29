@@ -1,5 +1,10 @@
 # CEX_polarizability
 
+This repository contains information pertaining to the manuscript
+
+C. E. Herman, A. V. Parambathu, D. N. Asthagiri, A. M. Lenhoff. Polarizability Plays a Decisive Role in Modulating Association Between Molecular Cations and Anions. *J. Phys. Chem. Lett.* 2023.
+
+
 ## Generated parameter files:
 
 - AMOEBA-BIO-2018_residues.xml contains AMOEBA simulation parameters
