@@ -1,0 +1,124 @@
+#!/bin/bash
+#
+####################
+
+####
+MasterRadius=0.0
+npt=30
+K=5.0
+Rate=0.001
+RadiusDelta=0.1
+Sigma=3.165492
+Epsilon=0.155425
+####
+# run_str="/home/chase/codes/namd/namd2 +p30"
+run_str="/home/soumi/NAMD/namd2 +p30"
+templateDir=./
+template=wbigbox_template.namd
+MasterDir=.
+file_master=wbigbox_$MasterRadius
+
+
+coordinates=$MasterDir/$file_master.coor
+coordinates_p=$MasterDir/$file_master.pdb
+coordinates_m=$MasterDir/$file_master.pdb
+
+extendedsystem=$MasterDir/$file_master.restart.xsc
+bin_coordinates=$MasterDir/$file_master.restart.coor
+bin_velocities=$MasterDir/$file_master.restart.vel
+
+#####
+# Quadrature rules
+#
+# z1="-0.90618 -0.53847  0.0  0.53847 0.90618"
+z1="-0.94911 -0.74153 -0.40585 0.0 0.40585 0.74153 0.94911"
+z2="-0.77460   0.0  0.77460"
+
+####
+file=wbigbox
+
+RadiusPrevious_p=$MasterRadius
+RadiusPrevious_m=$MasterRadius
+
+####
+
+###########################################
+
+# first point
+
+radius=$MasterRadius
+input=$file"_"$radius.namd
+output=$file"_"$radius.log
+echo $radius $input
+
+echo "set JobId" $radius                   >  $input
+echo "set xsc_file" $extendedsystem        >> $input
+echo "set bin_vel_file" $bin_velocities    >> $input
+echo "set bin_coord_file" $bin_coordinates >> $input
+echo "set coord_file" $coordinates         >> $input
+echo "set rs 0"                            >> $input
+cat $templateDir/$template                 >> $input
+echo "tclBCArgs {$radius $radius $Rate $Sigma $Epsilon}" >> $input
+
+echo "#!/bin/bash" > runme
+echo $run_str $input ">" $output >> runme
+
+bin_coordinates_p=$file"_"$radius.restart.coor
+bin_velocities_p=$file"_"$radius.restart.vel
+extendedsystem_p=$file"_"$radius.restart.xsc
+
+bin_coordinates_m=$file"_"$radius.restart.coor
+bin_velocities_m=$file"_"$radius.restart.vel
+extendedsystem_m=$file"_"$radius.restart.xsc
+
+##########################################
+
+OldRadius=$MasterRadius
+for i in {0..4}
+do
+    NextRadius=$(echo " ( 1.0 + $OldRadius )" | bc -l) 
+    dr=$(echo " ($NextRadius - $OldRadius)" | bc -l)
+
+    if [ $i -eq  1 ]; then
+        gausspoints=$z1
+    else 
+        gausspoints=$z1
+    fi 
+
+    for z in `echo $gausspoints`
+    do
+    radius_p=$(echo " ( 0.5 * $z * $dr + 0.5 * ($NextRadius+$OldRadius))" | bc -l)
+    radius_print=` printf "%6.4f\n" $(echo " ( 0.5 * $z * $dr + 0.5 * ($NextRadius+$OldRadius))" | bc -l) `
+
+    input_p=$file"_"$radius_print.namd
+    output_p=$file"_"$radius_print.log
+    echo $radius_p $input_p
+    
+    echo "set JobId" $radius_print               >  $input_p
+    echo "set xsc_file" $extendedsystem_p        >> $input_p
+    echo "set bin_vel_file" $bin_velocities_p    >> $input_p
+    echo "set bin_coord_file" $bin_coordinates_p >> $input_p
+    echo "set coord_file" $coordinates           >> $input_p
+    echo "set rs 1"                              >> $input_p
+    cat $templateDir/$template                   >> $input_p
+    echo "tclBCArgs {$MasterRadius $radius_p $Rate $Sigma $Epsilon}" >> $input_p
+
+##############
+
+    echo $run_str $input_p ">" $output_p >> runme
+
+    MasterRadius=$radius_p
+    bin_coordinates_p=$file"_"$radius_print.restart.coor
+    bin_velocities_p=$file"_"$radius_print.restart.vel
+    extendedsystem_p=$file"_"$radius_print.restart.xsc
+
+    done
+
+# reset starting frame etc
+
+    OldRadius=$NextRadius
+
+
+done
+
+

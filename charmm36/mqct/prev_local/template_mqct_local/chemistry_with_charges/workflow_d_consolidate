@@ -1,0 +1,11 @@
+#!/bin/bash
+
+pair=$1
+
+results=./results.dat
+# rm -f $results
+
+last_line=$(tail ./${pair}/integral.dat -n 1)
+echo $pair $last_line | awk '{printf "%-12s%15.10f%20.12f\n", $1, $3, $4}' >> $results
+
+

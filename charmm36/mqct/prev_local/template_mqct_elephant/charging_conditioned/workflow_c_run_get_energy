@@ -1,0 +1,22 @@
+#!/bin/bash
+
+pair=$1
+
+cd $pair
+for lambda in 0.0000 0.1127 0.5000 0.8873
+do
+    folder=q_${lambda}
+    cd $folder
+    bash runme_get_energy
+    cd ../
+done
+cd ../
+
+
+
+
+
+
+
+
+

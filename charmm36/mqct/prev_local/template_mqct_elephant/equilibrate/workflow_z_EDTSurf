@@ -1,0 +1,31 @@
+#!/bin/bash
+results=volumes.dat
+rm $results
+
+for pair in acet_guan acet_imim acet_mamm
+do
+    cd $pair
+    for orientation in pmf_min 
+    do
+        cd $orientation
+
+        EDTSurf -i cation.pdb -s 1 > cation_vdw.out
+        c_vdw=$(awk '{if(NR==9) print $6}' cation_vdw.out)
+        EDTSurf -i cation.pdb > cation_ms.out
+        c_ms=$(awk '{if(NR==10) print $6}' cation_ms.out)
+        EDTSurf -i anion.pdb -s 1 > anion_vdw.out
+        a_vdw=$(awk '{if(NR==9) print $6}' anion_vdw.out)
+        EDTSurf -i anion.pdb > anion_ms.out
+        a_ms=$(awk '{if(NR==10) print $6}' anion_ms.out)
+
+        cation=$(echo $pair | cut -c6-9)
+        echo $cation $c_vdw $c_ms | awk '{printf "%-10s%10.4f%10.4f\n", 
+                                        $1, $2, $3}' >> ../../${results}        
+        echo "acetate" $a_vdw $a_ms | awk '{printf "%-10s%10.4f%10.4f\n",
+                                        $1, $2, $3}' >> ../../${results}
+
+        cd ../
+    done
+    cd ../
+done
+

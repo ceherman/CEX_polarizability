@@ -1,0 +1,14 @@
+#!/bin/bash
+
+pair=$1
+
+cd $pair
+# Generate simulation files
+ln -sf ../utilities/gen_7p ./
+cp ../files/wbigbox_template.namd ./
+bash gen_7p
+cd ../
+
+
+
+

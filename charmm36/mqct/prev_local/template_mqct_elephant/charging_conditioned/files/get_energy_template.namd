@@ -1,0 +1,50 @@
+set JobId get_energy
+set xsc_file ../xx_base_name_xx.restart.xsc
+set coord_file ../xx_base_name_xx.coor 
+#
+structure           ../system.psf
+outputName          $JobId
+
+coordinates         $coord_file
+extendedSystem      $xsc_file
+
+set temperature 0
+
+temperature         $temperature
+#
+switching                       off
+cutoff                          9.5
+pairlistdist                    11.5
+#
+paraTypeCharmm          on
+parameters              ../../../../shared/files/par_all36_prot.prm
+parameters              ../../../../shared/files/par_all36_lipid.prm
+parameters              ../../../../shared/files/par_all36_carb.prm
+parameters              ../../../../shared/files/par_all36_na.prm
+parameters              ../../../../shared/files/par_all36_cgenff.prm
+parameters              ../../../../shared/files/toppar_all36_prot_model.str
+parameters              ../../../../shared/files/toppar_water_ions_spc_e.str
+# Novel ligands
+parameters              ../../../../shared/novel_ligands/trea.prm
+
+exclude                         scaled1-4
+1-4scaling                      1
+#
+PME                             on
+PMEGridSpacing                  0.5
+#
+set ts 0
+#
+pairInteraction on
+pairInteractionCol O
+pairInteractionSelf off
+pairInteractionGroup1 1
+pairInteractionGroup2 0
+
+coorfile open dcd xx_job_id_xx.dcd
+while { ![coorfile read] } {
+       firstTimeStep $ts
+       run 0
+       incr ts 1
+}
+coorfile close

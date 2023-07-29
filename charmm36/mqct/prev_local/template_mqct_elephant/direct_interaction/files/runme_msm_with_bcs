@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# /home/chase/codes/namd/namd2 +p30 msm_with_bcs.namd > msm_with_bcs.log
+/home/soumi/NAMD/namd2 +p30 msm_with_bcs.namd > msm_with_bcs.log

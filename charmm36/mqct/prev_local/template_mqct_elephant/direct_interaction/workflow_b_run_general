@@ -1,0 +1,14 @@
+#!/bin/bash
+
+pair=$1
+method=$2
+
+results=results_${method}.dat
+# rm -f $results
+
+cd $pair
+bash runme_${method}
+energy=$(awk '/ENERGY:/ {print $12}' ${method}.log)
+echo $pair $energy | awk '{printf "%-12s%10.4f\n", $1, $2}' >> ../${results}
+cd ../
+

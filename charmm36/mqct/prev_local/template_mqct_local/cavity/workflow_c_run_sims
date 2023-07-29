@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pair=$1
+
+cd $pair
+bash runme
+cd ../

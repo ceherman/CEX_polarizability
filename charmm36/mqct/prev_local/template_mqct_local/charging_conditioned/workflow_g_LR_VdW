@@ -1,0 +1,28 @@
+#!/bin/bash
+
+pair=$1
+
+results=results_LR_VdW.dat
+# rm -f $results
+
+cd ./${pair}/q_0.0000
+            
+egrep '^ENERGY:' get_energy.log | awk '{printf("%d %f\n",$2,$8)}' | tail -n 4800 > out1
+ln -sf ../../utilities/binMod.py ./
+python binMod.py out1 1 298.15 I > long_range_vdw.dat
+vdw_energy=$(awk '{if(NR==4) print $0}' long_range_vdw.dat)
+std_error=$(awk '{if(NR==5) print $0}' long_range_vdw.dat)
+
+echo $pair $vdw_energy $std_error |\
+     awk '{printf "%-12s%15.10f%20.12f\n", $1, $2, $3}' >> ../../${results}
+
+cd ../../
+
+
+
+
+
+
+
+
+

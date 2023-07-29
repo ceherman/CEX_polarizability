@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# /home/chase/codes/namd/namd2 +p30 with_bcs.namd > with_bcs.log
+/home/soumi/NAMD/namd2 +p30 with_bcs.namd > with_bcs.log

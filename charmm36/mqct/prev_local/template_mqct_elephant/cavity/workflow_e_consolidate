@@ -1,0 +1,13 @@
+#!/bin/bash
+
+pair=$1
+
+results_3=./results_lambda_3.dat
+results_5=./results_lambda_5.dat
+# rm -f $results_3 $results_5
+
+line_3=$(sed '3q;d' ./${pair}/integral.dat)
+echo $pair $line_3 | awk '{printf "%-12s%15.10f%20.12f\n", $1, $3, $4}' >> $results_3
+line_5=$(sed '5q;d' ./${pair}/integral.dat)
+echo $pair $line_5 | awk '{printf "%-12s%15.10f%20.12f\n", $1, $3, $4}' >> $results_5
+

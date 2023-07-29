@@ -1,0 +1,12 @@
+#!/bin/bash
+# Get files for equilibrating systems
+
+pair=$1
+
+cd $pair
+cp ../files/equilibrate.namd ./
+cp ../files/runme_equilibrate ./
+cp ../../../shared/files/starting.xsc ./
+cd ../
+
+

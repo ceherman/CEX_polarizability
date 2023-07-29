@@ -1,0 +1,35 @@
+#!/bin/bash
+
+pair=$1
+
+mkdir -p $pair
+cd $pair
+
+base_path=../../equilibrate
+cp ${base_path}/${pair}/just_solutes.psf ./
+cp ${base_path}/${pair}/solutes.pdb ./
+cp ${base_path}/${pair}/equilibrate.restart.xsc ./
+
+awk '/CION/ {$9 = 2.00} {if ($1=="ATOM")
+     printf "%-6s%5.0f%2s%-4s%4s%5.0f%4s%8.3f%8.3f%8.3f%6.2f%6.2f%10s%2s\n",
+     $1, $2, "  ", $3, $4, $5, "    ", $6, $7, $8, $9, $10, $11, $12;
+     else print}' solutes.pdb > solutes_diff.pdb
+
+cp ../files/no_bcs.namd ./
+cp ../files/runme_no_bcs ./
+cp ../files/with_bcs.namd ./
+cp ../files/runme_with_bcs ./
+cp ../files/full_direct.namd ./
+cp ../files/runme_full_direct ./
+cp ../files/msm.namd ./
+cp ../files/runme_msm ./
+cp ../files/msm_with_bcs.namd ./
+cp ../files/runme_msm_with_bcs ./
+cp ../files/full_direct_with_bcs.namd ./
+cp ../files/runme_full_direct_with_bcs ./
+cp ../files/no_elec_with_bcs.namd ./
+cp ../files/runme_no_elec_with_bcs ./
+
+cd ../
+
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+# Get files for equilibrating systems
+
+pair=$1
+
+cd $pair
+bash runme_equilibrate
+cd ../
+
+
+

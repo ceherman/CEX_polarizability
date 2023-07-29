@@ -1,0 +1,18 @@
+#!/bin/bash
+# Get files for equilibrating systems
+
+conformer=$1
+pair=$2
+orientation=$3
+
+mkdir -p $conformer
+cd $conformer
+path=../../../abf/${pair}
+cp ${path}/results/conformers/${orientation}.pdb ./solutes.pdb
+cp ${path}/system.psf ./
+cp ${path}/just_solutes.psf ./
+cp ../../../shared/pdb_files/spce.pdb ./water.pdb
+cd ../
+
+
+

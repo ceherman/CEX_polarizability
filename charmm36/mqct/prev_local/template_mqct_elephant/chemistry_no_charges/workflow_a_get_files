@@ -1,0 +1,42 @@
+#!/bin/bash
+# Prepare files for chemistry simulations
+# NOTE:  this requires a python 2 environment
+
+pair=$1
+
+mkdir -p $pair
+cd $pair
+
+## Get equilibrated files
+path=../../equilibrate/${pair}/
+new_name=wbigbox_0.0
+        
+cp ${path}/system.psf ./
+cp ${path}/equilibrate.coor ./${new_name}.coor
+cp ${path}/equilibrate.restart.xsc ./${new_name}.restart.xsc
+
+## Difference from chemistry - generation of .psf file with zero charges
+python ../utilities/fix_charge.py [AION,CION] 0 system.psf
+
+## Create the zero.pdb file (with only solute heavy atoms)
+cp ${path}/solutes.pdb ./
+echo REMARK > zero.pdb
+awk '{if ( $1=="ATOM" && substr($3,1,1)!="H" ) print}' solutes.pdb >> zero.pdb
+echo END >> zero.pdb
+
+## Create the zero.bones, zero.com, and residuebased.zero.tcl files
+ln -sf ../utilities/writecenters.py ./
+ln -sf ../utilities/residuebased.py ./
+python writecenters.py zero.pdb
+python residuebased.py zero.bones zero.com > fast.out
+cat ../files/generalinfo.tcl temp.dat ../files/forcefile.tcl > residuebased.zero.tcl
+# rm temp.dat fast.out
+
+## Generate simulation files
+ln -sf ../utilities/gen_7p ./
+cp ../files/wbigbox_template.namd ./
+bash gen_7p
+       
+cd ../
+
+

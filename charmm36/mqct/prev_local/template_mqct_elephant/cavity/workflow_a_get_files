@@ -1,0 +1,41 @@
+#!/bin/bash
+
+pair=$1
+n_water=$2
+
+# Get and rename MD files
+base_name=../../w${n_water}/w${n_water}
+mkdir -p ./files/
+cp ${base_name}.coor ./files/wbigbox_0.0.coor 
+cp ${base_name}.restart.coor ./files/wbigbox_0.0.restart.coor
+cp ${base_name}.restart.vel ./files/wbigbox_0.0.restart.vel 
+cp ${base_name}.restart.xsc ./files/wbigbox_0.0.restart.xsc 
+cp ${base_name}.x ./files/wbigbox.x 
+cp ${base_name}.psf ./files/wbigbox.psf 
+
+
+mkdir -p $pair
+cd $pair
+
+## Copy the water box files
+cp ../files/wbigbox_0.0.coor ./
+cp ../files/wbigbox_0.0.restart.coor ./
+cp ../files/wbigbox_0.0.restart.vel ./
+cp ../files/wbigbox_0.0.restart.xsc ./
+cp ../files/wbigbox.x ./
+cp ../files/wbigbox.psf ./
+
+## Get the solutes.pdb, residuebased.zero.tcl, zero.pdb, zero.bones, and zero.com files
+path=../../chemistry_with_charges/${pair}
+cp ${path}/solutes.pdb ./
+cp ${path}/residuebased.zero.tcl ./
+cp ${path}/zero.pdb ./
+cp ${path}/zero.bones ./
+cp ${path}/zero.com ./
+
+cd ../
+
+
+
+
+

@@ -1,0 +1,21 @@
+#!/bin/bash
+# Python 2
+
+pair=$1
+
+cd $pair
+ln -sf ../utilities/process_seven_point.py ./
+ln -sf ../utilities/7p_integral.py ./
+ln -sf ../utilities/extract_column ./
+ln -sf ../utilities/block_averaging_replacement.py ./
+cp ../utilities/input ./
+
+python process_seven_point.py 0
+python 7p_integral.py force.dat > integral.dat
+cd ../
+
+
+
+
+
+

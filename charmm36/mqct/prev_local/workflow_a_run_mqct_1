@@ -1,0 +1,121 @@
+#!/bin/bash
+eval "$(conda shell.bash hook)"
+
+# Create/update the relevant MQCT directory with mqct_template files
+rsync -rav ./template_mqct_elephant/ ./mqct
+cd ./mqct
+
+for orientation in pmf_min # separated
+do
+    for pair in esna_mamm
+    do
+        conformer=${pair}_${orientation}_3
+        echo "Conformer:"
+        echo $conformer
+
+        # Equilibration of a water box with solutes in fixed position
+        echo "Equilibration"
+        echo "Date:"
+        date
+        cd equilibrate
+        bash workflow_a_get_files $conformer $pair $orientation
+        bash workflow_b_packmol $conformer
+        bash workflow_c_prep_equilibrate $conformer
+        bash workflow_d_run_equilibrate $conformer
+        cd ../
+
+        # Chemistry with charges
+        echo "Chemistry with charges"
+        echo "Date:"
+        date
+        cd chemistry_with_charges
+        conda activate py2
+        bash workflow_a_get_files $conformer
+        bash workflow_b_run_chemistry $conformer
+        bash workflow_c_integrate $conformer
+        bash workflow_d_consolidate $conformer
+        conda deactivate
+        cd ../
+
+        # Charging - conditioned
+        echo "Charging - conditioned"
+        echo "Date:"
+        date
+        cd charging_conditioned
+        conda activate py2
+        bash workflow_a_get_files $conformer
+        bash workflow_b_run_sims $conformer
+        bash workflow_c_run_get_energy $conformer
+        bash workflow_d_analyze $conformer
+        conda deactivate
+        bash workflow_e_prep_self $conformer $pair
+        conda activate py2
+        bash workflow_f_self_correction $conformer
+        bash workflow_g_LR_VdW $conformer
+        conda deactivate
+        cd ../
+
+        # Cavity
+        echo "Cavity"
+        echo "Date:"
+        date
+        cd cavity
+        bash workflow_a_get_files $conformer 2470
+        bash workflow_b_generate_sim_files $conformer
+        bash workflow_c_run_sims $conformer
+        conda activate py2
+        bash workflow_d_integrate $conformer
+        conda deactivate
+        bash workflow_e_consolidate $conformer
+        cd ../
+
+        # Direct interaction
+        echo "Direct interaction"
+        echo "Date:"
+        date
+        cd direct_interaction
+        bash workflow_a_get_files $conformer
+        for method in msm # full_direct no_bcs with_bcs msm_with_bcs no_elec_with_bcs full_direct_with_bcs
+        do
+            bash workflow_b_run_general $conformer $method
+        done
+        cd ../
+
+        # Chemistry without charges
+        echo "Chemistry without charges"
+        echo "Date:"
+        date
+        cd chemistry_no_charges
+        conda activate py2
+        bash workflow_a_get_files $conformer
+        bash workflow_b_run_chemistry $conformer
+        bash workflow_c_integrate $conformer
+        bash workflow_d_consolidate $conformer
+        conda deactivate
+        cd ../
+
+        # Charging - unconditioned
+        echo "Charging - unconditioned"
+        echo "Date:"
+        date
+        cd charging_unconditioned
+        conda activate py2
+        bash workflow_a_get_files $conformer
+        bash workflow_b_run_sims $conformer
+        bash workflow_c_run_get_energy $conformer
+        bash workflow_d_analyze $conformer
+        conda deactivate
+        bash workflow_e_prep_self $conformer $pair
+        conda activate py2
+        bash workflow_f_self_correction $conformer
+        conda deactivate
+        cd ../
+
+        echo "End"
+        echo "Date:"
+        date
+
+    done
+done
+
+cd ../

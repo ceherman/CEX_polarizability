@@ -1,0 +1,29 @@
+#!/bin/bash
+# Python 2 
+
+pair=$1
+
+results=results_self_correction.dat
+# rm -f $results
+
+cd $pair
+box_length=$(awk '! /#/ {print $1}' average_length.dat)
+
+# Run the self interaction correction code
+cp ../utilities/self_clean_local.py ./
+python self_clean_local.py just_solutes.pdb just_solutes.psf $box_length > self_correction.dat
+
+# Extract the last number to consolidate results
+value=$(tac self_correction.dat | awk 'NF{print $NF; exit}')
+echo $pair $value | awk '{printf "%-12s%15.10f\n", $1, $2}' >> ../$results
+
+cd ../
+
+
+
+
+
+
+
+
+

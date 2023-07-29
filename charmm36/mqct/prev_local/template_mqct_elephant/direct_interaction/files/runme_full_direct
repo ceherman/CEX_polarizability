@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# /home/chase/codes/namd/namd2 +p30 full_direct.namd > full_direct.log
+/home/soumi/NAMD/namd2 +p30 full_direct.namd > full_direct.log
