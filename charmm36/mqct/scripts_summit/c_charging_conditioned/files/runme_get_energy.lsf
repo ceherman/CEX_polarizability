@@ -1,0 +1,15 @@
+#!/bin/bash
+#BSUB -P GEN006
+#BSUB -W 01:00
+#BSUB -nnodes 1
+#BSUB -alloc_flags "gpumps smt1"
+#BSUB -J xxx_ion_xxx_get_ener_xxx_lambda_xxx
+#BSUB -e %J.err
+#BSUB -o %J.out
+
+module unload xl
+module load ums/default
+module load ums-gen119/default
+module load namd/2.14-gcc
+
+jsrun --bind rs -r1 -g1 -c42 namd2 +ignoresharing +ppn 41 get_energy.namd > get_energy.log

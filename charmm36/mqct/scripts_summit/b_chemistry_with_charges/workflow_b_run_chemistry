@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# esna, mso4, guan needed
+
+for ion in acet esna mso4 guan imim # mamm
+do
+    cd $ion
+    bash dep_file_jbs.sh
+    cd ../
+done
+

@@ -1,0 +1,45 @@
+#!/bin/bash
+# Prepare files for chemistry simulations
+# NOTE:  this requires a python 2 environment
+
+eval "$(conda shell.bash hook)"
+conda activate py2
+
+for ion in acet esna mso4 guan imim mamm
+do
+    mkdir -p $ion
+    cd $ion
+
+    ## Get equilibrated files
+    path=../../a_equilibrate/${ion}/
+    new_name=wbigbox_0.0
+
+    cp ${path}/system.psf ./
+    cp ${path}/equilibrate.coor ./${new_name}.coor
+    cp ${path}/equilibrate.restart.xsc ./${new_name}.restart.xsc
+
+    ## Create the zero.pdb file (with only solute heavy atoms)
+    cp ${path}/positioned_ion.pdb ./
+    echo REMARK > zero.pdb
+    awk '{if ( $1=="ATOM" && substr($3,1,1)!="H" ) print}' positioned_ion.pdb >> zero.pdb
+    echo END >> zero.pdb
+
+    ## Create the zero.bones, zero.com, and residuebased.zero.tcl files
+    ln -sf ../utilities/writecenters.py ./
+    ln -sf ../utilities/residuebased.py ./
+    python writecenters.py zero.pdb # writes zero.bones and zero.com from zero.pdb input
+    python residuebased.py zero.bones zero.com > fast.out # creates temp.dat - not sure why I need the fast.out file
+    cat ../files/generalinfo.tcl temp.dat ../files/forcefile.tcl > residuebased.zero.tcl
+    # rm temp.dat fast.out
+
+    ## Generate simulation files (.namd, runme_.lsf, and the .sh to coordinate)
+    ln -sf ../utilities/gen_7p.sh ./
+    cp ../files/wbigbox_template.namd ./
+    bash gen_7p.sh $ion
+
+    cd ../
+done
+
+conda deactivate
+
+

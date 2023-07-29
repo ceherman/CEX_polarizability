@@ -1,0 +1,38 @@
+#!/bin/bash
+# Prepare files for chemistry simulations
+# NOTE:  this requires a python 2 environment
+
+eval "$(conda shell.bash hook)"
+conda activate py2
+
+for ion in acet esna mso4 guan imim mamm
+do
+    mkdir -p $ion
+    cd $ion
+
+    ## Get and rename MD files
+    path=../../d_water_box/w1500
+    cp ${path}/equilibrate.coor ./wbigbox_0.0.coor
+    cp ${path}/equilibrate.restart.coor ./wbigbox_0.0.restart.coor
+    cp ${path}/equilibrate.restart.vel ./wbigbox_0.0.restart.vel
+    cp ${path}/equilibrate.restart.xsc ./wbigbox_0.0.restart.xsc
+    # cp ${path}/starting.pdb ./wbigbox.x
+    cp ${path}/system.psf ./system.psf
+
+    ## Get the solutes.pdb, residuebased.zero.tcl, zero.pdb, zero.bones, and zero.com files
+    path=../../../mqct_for_summit_tip/b_chemistry_with_charges/${ion}
+    cp ${path}/positioned_ion.pdb ./
+    cp ${path}/residuebased.zero.tcl ./
+    cp ${path}/zero.pdb ./
+    cp ${path}/zero.bones ./
+    cp ${path}/zero.com ./
+
+    ## Generate simulation files (.namd, runme_.lsf, and the .sh to coordinate)
+    ln -sf ../utilities/gen_7p_darwin.sh ./
+    cp ../files/wbigbox_template.namd ./
+    bash gen_7p_darwin.sh $ion
+
+    cd ../
+done
+
+conda deactivate

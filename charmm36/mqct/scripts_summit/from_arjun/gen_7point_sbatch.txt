@@ -1,0 +1,146 @@
+#!/bin/bash
+#
+####################
+#
+MasterRadius=0.0
+npt=30
+K=5.0
+Rate=0.001
+RadiusDelta=0.1
+Sigma=1.0
+Epsilon=0.2
+####
+templateDir=./
+template=wbigbox.template
+MasterDir=.
+file_master=wbigbox_$MasterRadius
+
+
+coordinates=$MasterDir/$file_master.coor
+coordinates_p=$MasterDir/$file_master.pdb
+coordinates_m=$MasterDir/$file_master.pdb
+
+extendedsystem=$MasterDir/$file_master.xsc
+bin_coordinates=$MasterDir/$file_master.restart.coor
+bin_velocities=$MasterDir/$file_master.restart.vel
+
+#####
+# Quadrature rules
+#
+z1="-0.94911 -0.74153 -0.40585 0.0 0.40585 0.74153 0.94911"
+# z1="-0.90618 -0.53847  0.0  0.53847 0.90618"
+# z2="-0.77460   0.0  0.77460"
+# z3="-0.57735 0.57735"
+####
+hours=00
+minutes=20
+ncores=4
+
+aprun="ibrun namd2_skx +ppn 11 +pemap 2-22:2,26-46:2,3-23:2,27-47:2 +commap 0,24,1,25 "
+queue=skx-normal
+#queue=debug
+
+####
+file=${template%.template}
+dep_file=dep_file.jbs
+rm -f $dep_file
+
+RadiusPrevious_p=$MasterRadius
+RadiusPrevious_m=$MasterRadius
+
+####
+
+###########################################
+
+# first point
+
+radius=$MasterRadius
+input=$file"_"$radius.namd
+output=$file"_"$radius.log
+echo $radius $input
+
+echo "set JobId" $radius                   >  $input
+echo "set xsc_file" $extendedsystem        >> $input
+echo "set bin_vel_file" $bin_velocities    >> $input
+echo "set bin_coord_file" $bin_coordinates >> $input
+echo "set coord_file" $coordinates         >> $input
+echo "set rs 0"                            >> $input
+cat $templateDir/$template                 >> $input
+echo "tclBCArgs {$radius $radius $Rate $Sigma $Epsilon}" >> $input
+
+header="#!/bin/bash -l\n#SBATCH -p $queue\n#SBATCH -J SOD_$radius\n#SBATCH -A Free-energies-by-reg\n#SBATCH -N 1\n#SBATCH -n 4\n#SBATCH -t $hours:$minutes:00\n#SBATCH --mail-user=av42@rice.edu\n#SBATCH --mail-type=ALL\ncd \$SLURM_SUBMIT_DIR\n\nmodule load namd/2.14\n"
+runme=runme_$radius
+echo -e $header                >  $runme
+echo $aprun $input ">" $output >> $runme
+
+echo "id_p=\`sbatch runme_$radius\`" >> $dep_file
+echo "id_p=\`echo \$id_p | awk '{print \$NF}'\`" >> $dep_file
+
+bin_coordinates_p=$file"_"$radius.restart.coor
+bin_velocities_p=$file"_"$radius.restart.vel
+extendedsystem_p=$file"_"$radius.restart.xsc
+
+bin_coordinates_m=$file"_"$radius.restart.coor
+bin_velocities_m=$file"_"$radius.restart.vel
+extendedsystem_m=$file"_"$radius.restart.xsc
+
+##########################################
+
+OldRadius=$MasterRadius
+for i in `seq 1 6`
+do
+
+    NextRadius=$(echo " ( 1.0 + $OldRadius )" | bc -l) 
+    dr=$(echo " ($NextRadius - $OldRadius)" | bc -l)
+
+    if [ $i -eq  1 ]; then
+        gausspoints=$z1
+    else 
+        gausspoints=$z1
+    fi 
+
+    for z in `echo $gausspoints`
+    do
+    radius_p=$(echo " ( 0.5 * $z * $dr + 0.5 * ($NextRadius+$OldRadius))" | bc -l)
+    radius_print=` printf "%6.4f\n" $(echo " ( 0.5 * $z * $dr + 0.5 * ($NextRadius+$OldRadius))" | bc -l) `
+
+    input_p=$file"_"$radius_print.namd
+    output_p=$file"_"$radius_print.log
+    echo $radius_p $input_p
+
+    echo "set JobId" $radius_print               >  $input_p
+    echo "set xsc_file" $extendedsystem_p        >> $input_p
+    echo "set bin_vel_file" $bin_velocities_p    >> $input_p
+    echo "set bin_coord_file" $bin_coordinates_p >> $input_p
+    echo "set coord_file" $coordinates           >> $input_p
+    echo "set rs 1"                              >> $input_p
+    cat $templateDir/$template                   >> $input_p
+    echo "tclBCArgs {$MasterRadius $radius_p $Rate $Sigma $Epsilon}" >> $input_p
+
+##############
+    header="#!/bin/bash -l\n#SBATCH -p $queue\n#SBATCH -J SOD_${radius_print}\n#SBATCH -A Free-energies-by-reg\n#SBATCH -N 1\n#SBATCH -n 4\n#SBATCH -t $hours:$minutes:00\n#SBATCH --mail-user=av42@rice.edu\n#SBATCH --mail-type=ALL\ncd \$SLURM_SUBMIT_DIR\n\nmodule load namd/2.14\n"
+
+    runme_p=runme_$radius_print
+    echo -e $header                     > $runme_p
+    echo $aprun $input_p ">" $output_p >> $runme_p
+
+##############
+
+    echo "id_p=\`sbatch -d afterok:\${id_p} runme_$radius_print\`" >> $dep_file
+    echo "id_p=\`echo \$id_p | awk '{print \$NF}'\`" >> $dep_file
+
+    MasterRadius=$radius_p
+    bin_coordinates_p=$file"_"$radius_print.restart.coor
+    bin_velocities_p=$file"_"$radius_print.restart.vel
+    extendedsystem_p=$file"_"$radius_print.restart.xsc
+
+    done
+
+# reset starting frame etc
+
+    OldRadius=$NextRadius
+
+
+done
+
+

@@ -1,0 +1,33 @@
+#!/bin/bash
+# Python 3
+
+radius_rounded=4.9746
+
+for ion in acet esna mso4 guan imim mamm
+do
+    cd $ion
+
+    # Make a .pdb file with only the solute species
+    awk '! /SOLV/ {print}' wbigbox_${radius_rounded}.coor > just_solutes.pdb
+
+    # Get the corresponding (previously-generated) .psf files
+    cp ../../a_equilibrate/${ion}/just_solutes.psf ./
+
+    # Get average simulation box lengths
+    for lambda in 0.0000 0.1127 0.5000 0.8873
+    do
+        folder=q_${lambda}
+        cd $folder
+
+        ln -sf ../../utilities/block_averaging_functions.py
+        ln -sf ../../utilities/get_box_length.py
+        python get_box_length.py ${folder}.dcd ../scaled_${lambda}.psf
+
+        cd ../
+    done
+
+    ln -sf ../utilities/get_box_length_average.py
+    python get_box_length_average.py
+
+    cd ../
+done

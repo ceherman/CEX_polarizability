@@ -1,0 +1,23 @@
+#!/bin/bash
+
+for ion in acet esna mso4 guan imim mamm
+do
+    cd $ion
+    for lambda in 0.0000 0.1127 0.5000 0.8873
+    do
+        folder=q_${lambda}
+        cd $folder
+        echo $ion $folder
+	ls core.*
+        cd ../
+    done
+    cd ../
+done
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+for ion in acet esna mso4 guan imim mamm
+do
+    cd $ion
+    for lambda in 0.0000 0.1127 0.5000 0.8873
+    do
+        folder=q_${lambda}
+        cd $folder
+        # bsub runme_get_energy.lsf
+
+        echo $ion $folder
+        bash runme_get_energy_local.sh
+
+        cd ../
+    done
+    cd ../
+done

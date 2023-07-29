@@ -1,0 +1,114 @@
+set thisJob         xx_job_id_xx
+set xsc_file        xx_base_name_xx.restart.xsc
+set bin_vel_file    xx_base_name_xx.restart.vel
+set bin_coord_file  xx_base_name_xx.restart.coor
+set coord_file      xx_base_name_xx.coor
+set rs 1
+
+#############################################################
+## ADJUSTABLE PARAMETERS                                   ##
+#############################################################
+set homeDir   	.
+set outputDir   .
+set commonDir 	.
+
+structure           system.psf
+outputName          $outputDir/$thisJob
+
+coordinates         $coord_file
+extendedSystem      $xsc_file
+
+#
+# We will print out the boundary info often. 
+# We can later correct for correlated data with our blocking method
+#
+outputEnergies                 25
+timestep                       2.0
+#
+# We can save a handful of files for some eventuality
+# 
+DCDfile             $outputDir/$thisJob.dcd
+DCDFreq             50
+
+#
+# restart files
+#
+restartFreq         10000
+restartName         $outputDir/$thisJob.restart
+
+if {$rs==1} {
+  binCoordinates $bin_coord_file
+  binVelocities $bin_vel_file
+}
+
+
+#
+# for x I need to fix the water inside the cavity
+#
+fixedAtoms                      on
+fixedAtomsCol                   O
+
+#############################################################
+## SIMULATION PARAMETERS                                   ##
+#############################################################
+
+set temperature 298.0
+
+firsttimestep       0
+numsteps            500000
+if {$rs==0} {
+  temperature         $temperature
+}
+### equilibration specific parameters
+
+langevin                on
+langevinTemp            $temperature
+langevinDamping         1.0
+langevinHydrogen        off
+
+useGroupPressure        yes
+LangevinPiston          on
+LangevinPistonTarget    1.0
+LangevinPistonPeriod    200
+LangevinPistonDecay     100
+LangevinPistonTemp      $temperature
+
+switching               off
+cutoff                  9.5
+pairlistdist            11.5
+
+binaryOutput            no
+binaryRestart           yes
+
+paraTypeCharmm          on
+parameters              ../../toppar_c36_jul22/par_all36m_prot.prm
+parameters              ../../toppar_c36_jul22/par_all36_carb.prm
+parameters              ../../toppar_c36_jul22/par_all36_lipid.prm
+parameters              ../../toppar_c36_jul22/par_all36_na.prm
+parameters              ../../toppar_c36_jul22/par_all36_cgenff.prm
+parameters              ../../toppar_c36_jul22/ch_par_water_ions.prm
+
+exclude                         scaled1-4
+1-4scaling                      1
+
+Rigidbonds                      water
+wrapall                         on
+
+COMmotion                       no
+
+PME                             on
+PMEGridSpacing                  0.5
+
+#############################################################
+## EXECUTION SCRIPT                                        ##
+#############################################################
+
+tclBC on
+
+tclBCScript {
+  set bubbleCenter    "0.0  0.0  0.0"
+  set tclBCScript     residuebased.zero.tcl
+  set pdbSource       xx_base_name_xx.coor
+  source $tclBCScript
+} 
+tclBCArgs {xx_previous_radius_xx xx_new_radius_xx 0.001 3.165492 0.155425}
