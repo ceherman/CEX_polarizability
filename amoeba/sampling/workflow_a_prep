@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for cation in guan imim mamm
+do
+	for anion in acet esna mso4
+	do
+	mkdir -p ${anion}_${cation}
+	cd ${anion}_${cation}
+	# cp ../pdb_files/${anion}_${cation}.pdb ./starting.pdb
+	cp ../run_sampling.py ./
+	cp ../job_template.qs ./
+	cd ../
+	done
+done
+

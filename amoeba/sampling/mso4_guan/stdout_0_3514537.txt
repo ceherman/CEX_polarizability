@@ -1,0 +1,24 @@
+Adding dependency `cuda/11.6.2-510.47.03` to your environment
+Adding dependency `anaconda/2020.11:python3` to your environment
+Adding package `openmm/20221108` to your environment
+
+System Time is: 2022-11-10 16:26:55.864509
+Creating the simulation system...
+
+System Time is: 2022-11-10 16:27:08.465687
+The simulation system has been created. Preparing for simulation...
+
+System Time is: 2022-11-10 16:27:08.510440
+Starting minimization...
+
+System Time is: 2022-11-10 16:27:23.462718
+Minimization complete.
+
+System Time is: 2022-11-10 16:27:23.768409
+Starting simulation...
+
+
+System Time is: 2022-11-10 17:33:47.609438
+Finished simulation.
+
+Total simulation time:  1:06:51.744929

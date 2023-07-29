@@ -1,0 +1,21 @@
+Adding dependency `cuda/11.6.2-510.47.03` to your environment
+Adding dependency `anaconda/2020.11:python3` to your environment
+Adding package `openmm/20221108` to your environment
+
+System Time is: 2022-11-10 17:53:20.996093
+Creating the simulation system...
+
+System Time is: 2022-11-10 17:53:33.054431
+The simulation system has been created. Preparing for simulation...
+
+System Time is: 2022-11-10 17:53:33.058370
+The checkpoint_0.chk file has been loaded.
+
+System Time is: 2022-11-10 17:53:33.061358
+Starting simulation...
+
+
+System Time is: 2022-11-16 14:30:45.402610
+Finished simulation.
+
+Total simulation time:  5 days, 20:37:24.406517

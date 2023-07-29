@@ -1,0 +1,22 @@
+#!/bin/bash
+
+for pair in acet_guan esna_guan
+do
+	cd ${pair}
+	echo ${pair}
+	echo ''
+	tail sim_2.log -n 1
+	echo '--------------------------------------'
+	cd ../
+done
+
+for pair in acet_imim acet_mamm esna_imim esna_mamm mso4_guan mso4_imim mso4_mamm
+do
+	cd ${pair}
+	echo ${pair}
+	echo ''
+	tail sim_1.log -n 1
+	echo '--------------------------------------'
+	cd ../
+done
+

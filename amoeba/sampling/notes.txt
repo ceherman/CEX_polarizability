@@ -1,0 +1,23 @@
+The .pdb files came from the original packmol setup of systems for GROMACS sampling,
+aside from esna_mamm, for which I used the file after NVT equilibration in GROMACS
+(because the packmol generated system was having problems in minimization), and 
+the following line was added to the pdb files manually:
+CRYST1   42.000   42.000   42.000  90.00  90.00  90.00 P 1           1
+
+Instructions
+1. Run workflow_a to copy a fresh version of job_template.qs into all directories
+2. Rename job_template.qs to job_<iteration-number>.qs and modify it as needed
+3. sbatch job_<iteration-number>.qs
+
+Prioritizing acet_guan and esna_guan 
+0 - equilibrating for 0.2 ns
+1 - simulate for 10 ns
+2 - tentatively running for 25 ns more (with data saving every 100 steps)
+
+(I changed the data saving frequency to every 100 steps)
+Everything else - started running in the idle partition
+0 - equilibrated for 0.2 ns
+1 - tentatively running for 25 ns
+
+
+
