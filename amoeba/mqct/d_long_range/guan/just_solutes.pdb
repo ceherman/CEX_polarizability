@@ -1,0 +1,12 @@
+REMARK  FINAL COORDINATES WRITTEN BY NAMD AT TIMESTEP 500000
+ATOM      1  C   GUAN    1       1.298   1.191   1.289  1.00  0.00      CION C 
+ATOM      2  N1  GUAN    1       1.639   1.153   0.030  1.00  0.00      CION N 
+ATOM      3  H11 GUAN    1       1.071   0.464  -0.521  1.00  0.00      CION H 
+ATOM      4  H12 GUAN    1       2.324   1.819  -0.288  1.00  0.00      CION H 
+ATOM      5  N2  GUAN    1       0.393   0.501   1.823  1.00  0.00      CION N 
+ATOM      6  H21 GUAN    1       0.077  -0.189   1.102  1.00  0.00      CION H 
+ATOM      7  H22 GUAN    1       0.235   0.466   2.820  1.00  0.00      CION H 
+ATOM      8  N3  GUAN    1       1.832   2.146   1.991  1.00  0.00      CION N 
+ATOM      9  H31 GUAN    1       2.401   2.921   1.636  1.00  0.00      CION H 
+ATOM     10  H32 GUAN    1       1.439   2.237   2.826  1.00  0.00      CION H 
+END

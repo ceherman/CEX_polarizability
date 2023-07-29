@@ -1,0 +1,8 @@
+REMARK
+ATOM      1  S   MSO4    1      -0.190  -0.340   0.203  1.00  0.00      AION S
+ATOM      2  OS1 MSO4    1       0.288   0.720  -1.024  1.00  0.00      AION O
+ATOM      3  OS2 MSO4    1      -1.156   0.493   0.937  1.00  0.00      AION O
+ATOM      4  OS3 MSO4    1      -0.865  -1.426  -0.550  1.00  0.00      AION O
+ATOM      5  OS4 MSO4    1       0.973  -0.850   0.911  1.00  0.00      AION O
+ATOM      6  C1  MSO4    1       1.170   1.799  -0.724  1.00  0.00      AION C
+END

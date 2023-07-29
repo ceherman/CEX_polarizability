@@ -1,0 +1,8 @@
+MODEL        0
+ATOM      1  C   GUA A   1      17.788  17.789  17.814  1.00  0.00      CION C  
+ATOM      2  N1  GUA A   1      17.624  18.444  16.681  1.00  0.00      CION N  
+ATOM      5  N2  GUA A   1      18.641  18.300  18.686  1.00  0.00      CION N  
+ATOM      8  N3  GUA A   1      17.138  16.649  18.025  1.00  0.00      CION N  
+TER       9      GUA A   1
+ENDMDL
+END

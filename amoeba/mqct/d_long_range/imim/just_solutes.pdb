@@ -1,0 +1,12 @@
+REMARK  FINAL COORDINATES WRITTEN BY NAMD AT TIMESTEP 500000
+ATOM      1  CG  IMIM    1       1.789   1.853   0.421  1.00  0.00      CION C 
+ATOM      2  HG  IMIM    1       2.302   2.054  -0.516  1.00  0.00      CION H 
+ATOM      3  CD2 IMIM    1       2.462   1.910   1.592  1.00  0.00      CION C 
+ATOM      4  HD2 IMIM    1       3.434   2.369   1.629  1.00  0.00      CION H 
+ATOM      5  ND1 IMIM    1       0.617   1.225   0.659  1.00  0.00      CION N 
+ATOM      6  HD1 IMIM    1      -0.081   1.056   0.024  1.00  0.00      CION H 
+ATOM      7  NE2 IMIM    1       1.646   1.369   2.586  1.00  0.00      CION N 
+ATOM      8  HE2 IMIM    1       1.849   1.267   3.592  1.00  0.00      CION H 
+ATOM      9  CE1 IMIM    1       0.561   0.939   1.975  1.00  0.00      CION C 
+ATOM     10  HE1 IMIM    1      -0.192   0.346   2.426  1.00  0.00      CION H 
+END

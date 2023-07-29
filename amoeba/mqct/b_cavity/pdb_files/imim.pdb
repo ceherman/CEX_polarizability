@@ -1,0 +1,13 @@
+REMARK
+CRYST1   42.000   42.000   42.000  90.00  90.00  90.00 P 1           1
+ATOM      1  CG  IMIM    1      36.957  29.149  16.694  1.00  0.00      CION C
+ATOM      2  HG  IMIM    1      36.250  29.869  16.338  1.00  0.00      CION H
+ATOM      3  CD2 IMIM    1      38.218  29.153  17.191  1.00  0.00      CION C
+ATOM      4  HD2 IMIM    1      38.855  29.957  17.493  1.00  0.00      CION H
+ATOM      5  ND1 IMIM    1      36.558  27.758  16.779  1.00  0.00      CION N
+ATOM      6  HD1 IMIM    1      35.622  27.454  16.563  1.00  0.00      CION H
+ATOM      7  NE2 IMIM    1      38.514  27.820  17.467  1.00  0.00      CION N
+ATOM      8  HE2 IMIM    1      39.469  27.604  17.858  1.00  0.00      CION H
+ATOM      9  CE1 IMIM    1      37.516  26.950  17.309  1.00  0.00      CION C
+ATOM     10  HE1 IMIM    1      37.311  25.944  17.687  1.00  0.00      CION H
+END

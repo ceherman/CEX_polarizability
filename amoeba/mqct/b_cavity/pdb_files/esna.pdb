@@ -1,0 +1,14 @@
+REMARK
+CRYST1   42.000   42.000   42.000  90.00  90.00  90.00 P 1           1
+ATOM      1  S   ESNA    1      42.341  26.008  18.249  1.00  0.00      AION S
+ATOM      2  O1  ESNA    1      43.407  27.046  18.004  1.00  0.00      AION O
+ATOM      3  O2  ESNA    1      41.598  26.244  19.555  1.00  0.00      AION O
+ATOM      4  O3  ESNA    1      41.382  26.098  17.125  1.00  0.00      AION O
+ATOM      5  C1  ESNA    1      43.075  24.324  18.313  1.00  0.00      AION C
+ATOM      6  H11 ESNA    1      44.040  24.432  18.860  1.00  0.00      AION H
+ATOM      7  H12 ESNA    1      43.264  24.146  17.262  1.00  0.00      AION H
+ATOM      8  C2  ESNA    1      42.069  23.312  18.971  1.00  0.00      AION C
+ATOM      9  H21 ESNA    1      41.876  23.552  20.020  1.00  0.00      AION H
+ATOM     10  H22 ESNA    1      42.438  22.283  19.012  1.00  0.00      AION H
+ATOM     11  H23 ESNA    1      41.094  23.243  18.480  1.00  0.00      AION H
+END

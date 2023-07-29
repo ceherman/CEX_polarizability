@@ -1,0 +1,8 @@
+MODEL        0
+ATOM      1  C1  ACE A   1      16.359  17.929  17.879  1.00  0.00      AION C  
+ATOM      2  C2  ACE A   1      17.907  17.849  17.793  1.00  0.00      AION C  
+ATOM      6  O1  ACE A   1      18.420  18.254  16.722  1.00  0.00      AION O  
+ATOM      7  O2  ACE A   1      18.520  17.187  18.800  1.00  0.00      AION O  
+TER       8      ACE A   1
+ENDMDL
+END

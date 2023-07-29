@@ -1,0 +1,341 @@
+Adding dependency `cuda/11.6.2-510.47.03` to your environment
+Adding dependency `anaconda/2020.11:python3` to your environment
+Adding package `openmm/20221108` to your environment
+
+System Time is: 2023-03-23 18:34:34.366056
+Creating the simulation system...
+4.0*epsilon0*(frac^6)*((frac^6) - 1.0) + epsilon0;	                frac = sigma0/(r- bubble0 + sigma0*(2^(1/6)));	                r = min(bubble0,abs(periodicdistance(x, y, z, x0, y0, z0)));
+4.0*epsilon1*(frac^6)*((frac^6) - 1.0) + epsilon1;	                frac = sigma1/(r- bubble1 + sigma1*(2^(1/6)));	                r = min(bubble1,abs(periodicdistance(x, y, z, x1, y1, z1)));
+4.0*epsilon2*(frac^6)*((frac^6) - 1.0) + epsilon2;	                frac = sigma2/(r- bubble2 + sigma2*(2^(1/6)));	                r = min(bubble2,abs(periodicdistance(x, y, z, x2, y2, z2)));
+4.0*epsilon3*(frac^6)*((frac^6) - 1.0) + epsilon3;	                frac = sigma3/(r- bubble3 + sigma3*(2^(1/6)));	                r = min(bubble3,abs(periodicdistance(x, y, z, x3, y3, z3)));
+
+System Time is: 2023-03-23 18:34:42.572345
+The simulation system has been created. Preparing for simulation...
+bubble radius: 0.0254 A
+
+System Time is: 2023-03-23 18:34:43.354851
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:34:44.417857
+Starting production...
+
+bubble radius: 0.1292 A
+
+System Time is: 2023-03-23 18:34:45.334404
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:34:46.131846
+Starting production...
+
+bubble radius: 0.2971 A
+
+System Time is: 2023-03-23 18:34:47.053399
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:34:47.846510
+Starting production...
+
+bubble radius: 0.5 A
+
+System Time is: 2023-03-23 18:34:48.885468
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:34:49.681245
+Starting production...
+
+bubble radius: 0.7029 A
+
+System Time is: 2023-03-23 18:34:50.604417
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:34:51.399598
+Starting production...
+
+#"Step","Total Energy (kJ/mole)","Time Remaining"
+1000,-40653.30381838935,--
+bubble radius: 0.8708 A
+
+System Time is: 2023-03-23 18:34:52.373376
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:34:53.174866
+Starting production...
+
+bubble radius: 0.9746 A
+
+System Time is: 2023-03-23 18:34:54.102630
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:34:54.901512
+Starting production...
+
+bubble radius: 1.0254 A
+
+System Time is: 2023-03-23 18:34:56.139804
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:34:56.935031
+Starting production...
+
+bubble radius: 1.1292 A
+
+System Time is: 2023-03-23 18:34:57.866761
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:34:58.669560
+Starting production...
+
+bubble radius: 1.2971 A
+
+System Time is: 2023-03-23 18:34:59.597284
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:00.399400
+Starting production...
+
+2000,-40046.00823022971,0:44
+bubble radius: 1.5 A
+
+System Time is: 2023-03-23 18:35:01.338054
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:02.143065
+Starting production...
+
+bubble radius: 1.7029 A
+
+System Time is: 2023-03-23 18:35:03.073754
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:03.880204
+Starting production...
+
+bubble radius: 1.8708 A
+
+System Time is: 2023-03-23 18:35:04.815504
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:05.623356
+Starting production...
+
+bubble radius: 1.9746 A
+
+System Time is: 2023-03-23 18:35:06.562105
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:07.367867
+Starting production...
+
+bubble radius: 2.0254 A
+
+System Time is: 2023-03-23 18:35:08.299732
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:09.106854
+Starting production...
+
+3000,-40121.90493793332,0:35
+bubble radius: 2.1292 A
+
+System Time is: 2023-03-23 18:35:10.046473
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:10.856065
+Starting production...
+
+bubble radius: 2.2971 A
+
+System Time is: 2023-03-23 18:35:11.784592
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:12.591943
+Starting production...
+
+bubble radius: 2.5 A
+
+System Time is: 2023-03-23 18:35:13.529244
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:14.338773
+Starting production...
+
+bubble radius: 2.7029 A
+
+System Time is: 2023-03-23 18:35:15.273544
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:16.086850
+Starting production...
+
+bubble radius: 2.8708 A
+
+System Time is: 2023-03-23 18:35:17.024542
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:17.831253
+Starting production...
+
+4000,-39798.65155340136,0:26
+bubble radius: 2.9746 A
+
+System Time is: 2023-03-23 18:35:18.773136
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:19.586318
+Starting production...
+
+bubble radius: 3.0254 A
+
+System Time is: 2023-03-23 18:35:20.524544
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:21.337834
+Starting production...
+
+bubble radius: 3.1292 A
+
+System Time is: 2023-03-23 18:35:22.276462
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:23.091218
+Starting production...
+
+bubble radius: 3.2971 A
+
+System Time is: 2023-03-23 18:35:24.031410
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:24.839587
+Starting production...
+
+bubble radius: 3.5 A
+
+System Time is: 2023-03-23 18:35:25.776020
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:26.579769
+Starting production...
+
+5000,-39454.86795065595,0:17
+bubble radius: 3.7029 A
+
+System Time is: 2023-03-23 18:35:27.520403
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:28.330520
+Starting production...
+
+bubble radius: 3.8708 A
+
+System Time is: 2023-03-23 18:35:29.273874
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:30.087014
+Starting production...
+
+bubble radius: 3.9746 A
+
+System Time is: 2023-03-23 18:35:31.028677
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:31.844783
+Starting production...
+
+bubble radius: 4.0254 A
+
+System Time is: 2023-03-23 18:35:32.787806
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:33.604958
+Starting production...
+
+bubble radius: 4.1292 A
+
+System Time is: 2023-03-23 18:35:34.550701
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:35.361992
+Starting production...
+
+6000,-39101.8239377477,0:08
+bubble radius: 4.2971 A
+
+System Time is: 2023-03-23 18:35:36.314250
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:37.128243
+Starting production...
+
+bubble radius: 4.5 A
+
+System Time is: 2023-03-23 18:35:38.068733
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:38.884796
+Starting production...
+
+bubble radius: 4.7029 A
+
+System Time is: 2023-03-23 18:35:39.822263
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:40.637217
+Starting production...
+
+bubble radius: 4.8708 A
+
+System Time is: 2023-03-23 18:35:41.569089
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:42.372267
+Starting production...
+
+bubble radius: 4.9746 A
+
+System Time is: 2023-03-23 18:35:43.307328
+Starting equilibration...
+
+
+System Time is: 2023-03-23 18:35:44.118074
+Starting production...
+
+7000,-40274.04044617555,0:00
+
+System Time is: 2023-03-23 18:35:45.069779
+Finished simulation.
+
+Total simulation time:  0:01:10.703723

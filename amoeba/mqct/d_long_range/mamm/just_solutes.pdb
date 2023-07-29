@@ -1,0 +1,10 @@
+REMARK  FINAL COORDINATES WRITTEN BY NAMD AT TIMESTEP 500000
+ATOM      1  CE  MAMM    1       1.903   0.978   1.167  1.00  0.00      CION C 
+ATOM      2  NZ  MAMM    1       0.522   1.456   1.312  1.00  0.00      CION N 
+ATOM      3  HE1 MAMM    1       2.031   0.567   0.111  1.00  0.00      CION H 
+ATOM      4  HE2 MAMM    1       2.220   0.174   1.852  1.00  0.00      CION H 
+ATOM      5  HE3 MAMM    1       2.562   1.929   1.120  1.00  0.00      CION H 
+ATOM      6  HZ1 MAMM    1       0.348   2.473   1.035  1.00  0.00      CION H 
+ATOM      7  HZ2 MAMM    1       0.338   1.472   2.295  1.00  0.00      CION H 
+ATOM      8  HZ3 MAMM    1      -0.137   0.737   0.894  1.00  0.00      CION H 
+END

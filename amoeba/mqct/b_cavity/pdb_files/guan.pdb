@@ -1,0 +1,13 @@
+REMARK
+CRYST1   42.000   42.000   42.000  90.00  90.00  90.00 P 1           1
+ATOM      1  C   GUAN    1       6.482  20.824  28.445  1.00  0.00      CION C
+ATOM      2  N1  GUAN    1       6.318  21.479  27.312  1.00  0.00      CION N
+ATOM      3  H11 GUAN    1       6.953  22.297  27.029  1.00  0.00      CION H
+ATOM      4  H12 GUAN    1       5.821  21.154  26.470  1.00  0.00      CION H
+ATOM      5  N2  GUAN    1       7.335  21.335  29.317  1.00  0.00      CION N
+ATOM      6  H21 GUAN    1       7.644  22.303  29.239  1.00  0.00      CION H
+ATOM      7  H22 GUAN    1       7.471  20.948  30.229  1.00  0.00      CION H
+ATOM      8  N3  GUAN    1       5.832  19.684  28.656  1.00  0.00      CION N
+ATOM      9  H31 GUAN    1       5.291  19.269  27.984  1.00  0.00      CION H
+ATOM     10  H32 GUAN    1       5.881  19.277  29.550  1.00  0.00      CION H
+END

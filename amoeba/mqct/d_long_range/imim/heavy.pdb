@@ -1,0 +1,7 @@
+REMARK
+ATOM      1  CG  IMIM    1      -0.591   1.005  -0.403  1.00  0.00      CION C
+ATOM      3  CD2 IMIM    1       0.670   1.009   0.094  1.00  0.00      CION C
+ATOM      5  ND1 IMIM    1      -0.990  -0.386  -0.318  1.00  0.00      CION N
+ATOM      7  NE2 IMIM    1       0.966  -0.324   0.370  1.00  0.00      CION N
+ATOM      9  CE1 IMIM    1      -0.032  -1.194   0.212  1.00  0.00      CION C
+END

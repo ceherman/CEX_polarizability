@@ -1,0 +1,11 @@
+REMARK   1 CREATED WITH MDTraj 1.9.7, 2023-03-23
+CRYST1   42.000   42.000   42.000  90.00  90.00  90.00 P 1           1 
+ATOM      1  CE  MAMM    1       0.018   0.798  -0.188  1.00  0.00      CION C
+ATOM      2  NZ  MAMM    1      -0.011  -0.689   0.153  1.00  0.00      CION N
+ATOM      3  HE1 MAMM    1      -0.594   0.878  -1.051  1.00  0.00      CION H
+ATOM      4  HE2 MAMM    1       1.100   1.012  -0.322  1.00  0.00      CION H
+ATOM      5  HE3 MAMM    1      -0.526   1.377   0.555  1.00  0.00      CION H
+ATOM      6  HZ1 MAMM    1       0.340  -1.353  -0.538  1.00  0.00      CION H
+ATOM      7  HZ2 MAMM    1      -0.940  -1.008   0.470  1.00  0.00      CION H
+ATOM      8  HZ3 MAMM    1       0.546  -0.856   0.994  1.00  0.00      CION H
+END

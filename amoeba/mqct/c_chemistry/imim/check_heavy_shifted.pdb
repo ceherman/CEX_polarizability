@@ -1,0 +1,9 @@
+MODEL        0
+ATOM      1  CG  IMI A   1      17.209  18.805  17.397  1.00  0.00      CION C  
+ATOM      3  CD2 IMI A   1      18.470  18.809  17.894  1.00  0.00      CION C  
+ATOM      5  ND1 IMI A   1      16.810  17.414  17.482  1.00  0.00      CION N  
+ATOM      7  NE2 IMI A   1      18.766  17.476  18.170  1.00  0.00      CION N  
+ATOM      9  CE1 IMI A   1      17.768  16.606  18.012  1.00  0.00      CION C  
+TER      10      IMI A   1
+ENDMDL
+END

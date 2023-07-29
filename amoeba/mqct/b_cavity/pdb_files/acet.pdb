@@ -1,0 +1,10 @@
+REMARK
+CRYST1   42.000   42.000   42.000  90.00  90.00  90.00 P 1           1
+ATOM      1  C1  ACET    1      21.681  32.675  16.422  1.00  0.00      AION C
+ATOM      2  C2  ACET    1      23.229  32.595  16.336  1.00  0.00      AION C
+ATOM      3  H1  ACET    1      21.188  32.572  15.438  1.00  0.00      AION H
+ATOM      4  H2  ACET    1      21.367  33.647  16.833  1.00  0.00      AION H
+ATOM      5  H3  ACET    1      21.413  31.824  17.122  1.00  0.00      AION H
+ATOM      6  O1  ACET    1      23.742  33.000  15.265  1.00  0.00      AION O
+ATOM      7  O2  ACET    1      23.842  31.933  17.343  1.00  0.00      AION O
+END

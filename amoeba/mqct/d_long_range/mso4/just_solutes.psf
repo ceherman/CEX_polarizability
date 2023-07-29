@@ -1,0 +1,52 @@
+PSF EXT
+
+         4 !NTITLE
+ REMARKS original generated structure x-plor psf file
+ REMARKS topology ../../toppar_c36_jul22/top_all36_cgenff.rtf 
+ REMARKS topology ../../toppar_c36_jul22/ch_top_water_ions.rtf 
+ REMARKS segment AION { first NONE; last NONE; auto angles dihedrals }
+
+         9 !NATOM
+         1 AION     1        MSO4     S        SG3O1    1.330000       32.0600           0
+         2 AION     1        MSO4     OS1      OG303   -0.280000       15.9994           0
+         3 AION     1        MSO4     OS2      OG2P1   -0.650000       15.9994           0
+         4 AION     1        MSO4     OS3      OG2P1   -0.650000       15.9994           0
+         5 AION     1        MSO4     OS4      OG2P1   -0.650000       15.9994           0
+         6 AION     1        MSO4     C1       CG331   -0.370000       12.0110           0
+         7 AION     1        MSO4     H11      HGA3     0.090000        1.0080           0
+         8 AION     1        MSO4     H12      HGA3     0.090000        1.0080           0
+         9 AION     1        MSO4     H13      HGA3     0.090000        1.0080           0
+
+         8 !NBOND: bonds
+         1         2         1         3         1         4         1         5
+         2         6         6         7         6         8         6         9
+
+        13 !NTHETA: angles
+         1         2         6         2         6         9         2         6         8
+         2         6         7         2         1         5         2         1         4
+         2         1         3         3         1         5         3         1         4
+         4         1         5         7         6         9         7         6         8
+         8         6         9
+
+         6 !NPHI: dihedrals
+         1         2         6         9         1         2         6         8
+         1         2         6         7         3         1         2         6
+         4         1         2         6         5         1         2         6
+
+         0 !NIMPHI: impropers
+
+
+         0 !NDON: donors
+
+
+         0 !NACC: acceptors
+
+
+         0 !NNB
+
+         0         0         0         0         0         0         0         0
+         0
+
+         1         0 !NGRP
+         0         0         0
+

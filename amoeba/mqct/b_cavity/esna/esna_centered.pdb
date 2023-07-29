@@ -1,0 +1,14 @@
+REMARK   1 CREATED WITH MDTraj 1.9.7, 2023-03-23
+CRYST1   42.000   42.000   42.000  90.00  90.00  90.00 P 1           1 
+ATOM      1  S   ESNA    1       0.033   0.396  -0.099  1.00  0.00      AION S
+ATOM      2  O1  ESNA    1       1.099   1.434  -0.344  1.00  0.00      AION O
+ATOM      3  O2  ESNA    1      -0.710   0.632   1.207  1.00  0.00      AION O
+ATOM      4  O3  ESNA    1      -0.926   0.486  -1.223  1.00  0.00      AION O
+ATOM      5  C1  ESNA    1       0.767  -1.288  -0.035  1.00  0.00      AION C
+ATOM      6  H11 ESNA    1       1.732  -1.180   0.512  1.00  0.00      AION H
+ATOM      7  H12 ESNA    1       0.956  -1.466  -1.086  1.00  0.00      AION H
+ATOM      8  C2  ESNA    1      -0.239  -2.300   0.623  1.00  0.00      AION C
+ATOM      9  H21 ESNA    1      -0.432  -2.060   1.672  1.00  0.00      AION H
+ATOM     10  H22 ESNA    1       0.130  -3.329   0.664  1.00  0.00      AION H
+ATOM     11  H23 ESNA    1      -1.214  -2.369   0.132  1.00  0.00      AION H
+END

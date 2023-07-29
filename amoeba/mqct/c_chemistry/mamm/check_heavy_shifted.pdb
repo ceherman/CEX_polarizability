@@ -1,0 +1,6 @@
+MODEL        0
+ATOM      1  CE  MAM A   1      17.818  18.598  17.612  1.00  0.00      CION C  
+ATOM      2  NZ  MAM A   1      17.789  17.111  17.953  1.00  0.00      CION N  
+TER       3      MAM A   1
+ENDMDL
+END

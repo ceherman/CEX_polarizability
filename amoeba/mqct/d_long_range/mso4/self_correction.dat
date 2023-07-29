@@ -1,0 +1,23 @@
+MDTools 0.65 Exp (1996/05/24) by James Phillips.  md.help() for more info.
+- HomoCoord 0.66 Exp (1996/08/28)
+- Constants 0.65 Exp (1996/05/24)
+- AtomGroup 0.70 Exp (1996/11/16)
+- local 0.8 Exp (1996/05/24)
+Unknown OSTYPE ??? set.  Viewing and plotting are disabled.
+- Trans 0.65 Exp (1996/05/24)
+- DCD 0.71 Exp (1996/11/16)
+- Data 0.67 Exp (1997/03/14)
+REMARK  FINAL COORDINATES WRITTEN BY NAMD AT TIMESTEP 500000
+REMARKS original generated structure x-plor psf file
+REMARKS topology ../../toppar_c36_jul22/top_all36_cgenff.rtf
+REMARKS topology ../../toppar_c36_jul22/ch_top_water_ions.rtf
+REMARKS segment AION { first NONE; last NONE; auto angles dihedrals }
+Number of atoms =  9
+Molecule monopole =  -1.0
+Molecule dipole =  9.02825368209999
+Done with atom-atom interaction part
+Total Ewald contributions =  -405.8382299737214
+Total Coulomb interactions =  -434.91834746318756
+Total background contributions =  1.061722145240703
+The self interaction term =  -43.28261498404915
+Correction to Ewald  -13.140775349342277

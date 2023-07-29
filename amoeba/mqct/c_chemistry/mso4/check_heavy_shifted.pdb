@@ -1,0 +1,10 @@
+MODEL        0
+ATOM      1  S   MSO A   1      17.610  17.460  18.003  1.00  0.00      AION S  
+ATOM      2  OS1 MSO A   1      18.088  18.520  16.776  1.00  0.00      AION O  
+ATOM      3  OS2 MSO A   1      16.644  18.293  18.737  1.00  0.00      AION O  
+ATOM      4  OS3 MSO A   1      16.935  16.374  17.250  1.00  0.00      AION O  
+ATOM      5  OS4 MSO A   1      18.773  16.950  18.711  1.00  0.00      AION O  
+ATOM      6  C1  MSO A   1      18.970  19.599  17.076  1.00  0.00      AION C  
+TER       7      MSO A   1
+ENDMDL
+END

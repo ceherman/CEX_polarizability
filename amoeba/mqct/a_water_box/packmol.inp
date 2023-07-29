@@ -1,0 +1,10 @@
+tolerance 2.0
+filetype pdb
+output starting.pdb
+
+structure water.pdb
+    number 1500
+    inside cube -17.8 -17.8 -17.8 35.6
+    resnumbers 2
+    chain ""
+end structure

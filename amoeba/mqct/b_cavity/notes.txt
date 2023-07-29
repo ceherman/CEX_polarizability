@@ -1,0 +1,5 @@
+I pulled ion .pdb structures from the end of brute-force AMOEBA simulations and
+put them in the pdb_files directory
+
+I centered these and extracted the heavy atoms using the bash and python scripts
+in pdb_files before running workflow_a

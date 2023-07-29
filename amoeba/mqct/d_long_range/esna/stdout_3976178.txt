@@ -1,0 +1,28 @@
+Adding dependency `anaconda/2020.11:python3` to your environment
+Adding package `my_py_env/20221129` to your environment
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: C1
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: C2
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: H11
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: H12
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: H21
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: H22
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: H23
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: O1
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: O2
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: O3
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: HW1
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: HW2
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))
+/home/2688/.conda/my_py_env/20221129/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py:146: UserWarning: Failed to guess the mass for the following atom types: OW
+  warnings.warn("Failed to guess the mass for the following atom types: {}".format(atom_type))

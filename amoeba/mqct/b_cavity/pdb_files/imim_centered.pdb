@@ -1,0 +1,13 @@
+REMARK   1 CREATED WITH MDTraj 1.9.7, 2023-03-23
+CRYST1   42.000   42.000   42.000  90.00  90.00  90.00 P 1           1 
+ATOM      1  CG  IMIM    1      -0.591   1.005  -0.403  1.00  0.00      CION C
+ATOM      2  HG  IMIM    1      -1.298   1.725  -0.759  1.00  0.00      CION H
+ATOM      3  CD2 IMIM    1       0.670   1.009   0.094  1.00  0.00      CION C
+ATOM      4  HD2 IMIM    1       1.307   1.813   0.396  1.00  0.00      CION H
+ATOM      5  ND1 IMIM    1      -0.990  -0.386  -0.318  1.00  0.00      CION N
+ATOM      6  HD1 IMIM    1      -1.926  -0.690  -0.534  1.00  0.00      CION H
+ATOM      7  NE2 IMIM    1       0.966  -0.324   0.370  1.00  0.00      CION N
+ATOM      8  HE2 IMIM    1       1.921  -0.540   0.761  1.00  0.00      CION H
+ATOM      9  CE1 IMIM    1      -0.032  -1.194   0.212  1.00  0.00      CION C
+ATOM     10  HE1 IMIM    1      -0.237  -2.200   0.590  1.00  0.00      CION H
+END
