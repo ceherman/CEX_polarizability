@@ -1,4 +1,4 @@
-# CEX_polarizability
+# Relevance of molecular polarizability to CEX chromatography
 
 This repository contains information pertaining to the manuscript
 
