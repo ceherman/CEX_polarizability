@@ -1,0 +1,12 @@
+REMARK
+ATOM      8  C   GUAN    2       1.298   1.191   1.289  1.00  0.00      CION C  
+ATOM      9  N1  GUAN    2       1.639   1.153   0.030  1.00  0.00      CION N  
+ATOM     10  H11 GUAN    2       1.071   0.464  -0.521  1.00  0.00      CION H  
+ATOM     11  H12 GUAN    2       2.324   1.819  -0.288  1.00  0.00      CION H  
+ATOM     12  N2  GUAN    2       0.393   0.501   1.823  1.00  0.00      CION N  
+ATOM     13  H21 GUAN    2       0.077  -0.189   1.102  1.00  0.00      CION H  
+ATOM     14  H22 GUAN    2       0.235   0.466   2.820  1.00  0.00      CION H  
+ATOM     15  N3  GUAN    2       1.832   2.146   1.991  1.00  0.00      CION N  
+ATOM     16  H31 GUAN    2       2.401   2.921   1.636  1.00  0.00      CION H  
+ATOM     17  H32 GUAN    2       1.439   2.237   2.826  1.00  0.00      CION H  
+END

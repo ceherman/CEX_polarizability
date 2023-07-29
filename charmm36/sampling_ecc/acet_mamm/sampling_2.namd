@@ -1,0 +1,76 @@
+set i                   2
+set JobId               sampling_2
+set temperature         298.0
+
+structure               scaled_0.7500.psf
+
+if {$i==0} {
+  set rs                0
+
+  temperature           $temperature
+  extendedSystem        starting.xsc
+  coordinates           starting.pdb
+}
+if {$i>0} {
+  set rs                1
+  set prevJobId         sampling_1
+
+  extendedSystem        $prevJobId\.restart.xsc
+  coordinates           starting.pdb
+  binCoordinates        $prevJobId\.restart.coor
+  binVelocities         $prevJobId\.restart.vel
+}
+
+outputName              $JobId
+outputEnergies          250
+DCDfile                 $JobId\.dcd
+DCDFreq                 2000
+restartFreq             50000
+restartName             $JobId\.restart
+
+langevin                on
+langevinTemp            $temperature
+langevinDamping         1.0
+langevinHydrogen        off
+
+useGroupPressure        yes
+LangevinPiston          on
+LangevinPistonTarget    1.0
+LangevinPistonPeriod    200
+LangevinPistonDecay     100
+LangevinPistonTemp      $temperature
+
+switching               off
+cutoff                  9.5
+pairlistdist            11.5
+
+binaryOutput            no
+binaryRestart           yes
+
+paraTypeCharmm          on
+parameters              ../toppar_c36_jul22/par_all36m_prot.prm
+parameters              ../toppar_c36_jul22/par_all36_carb.prm
+parameters              ../toppar_c36_jul22/par_all36_lipid.prm
+parameters              ../toppar_c36_jul22/par_all36_na.prm
+parameters              ../toppar_c36_jul22/par_all36_cgenff.prm
+parameters              ../toppar_c36_jul22/ch_par_water_ions.prm
+
+exclude                 scaled1-4
+1-4scaling              1
+
+Rigidbonds              water
+wrapall                 on
+
+COMmotion               no
+
+PME                     on
+PMEGridSpacing          0.5
+
+timestep                2.0
+
+if {$i==0} {
+  minimize              1000
+}
+
+firsttimestep           45300000
+run                     4700000

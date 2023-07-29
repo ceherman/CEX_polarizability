@@ -1,0 +1,1114 @@
+PSF EXT
+
+         5 !NTITLE
+ REMARKS original generated structure x-plor psf file
+ REMARKS topology ../toppar_c36_jul22/top_all36_cgenff.rtf 
+ REMARKS topology ../toppar_c36_jul22/ch_top_water_ions.rtf 
+ REMARKS segment AION { first NONE; last NONE; auto angles dihedrals }
+ REMARKS segment CION { first NONE; last NONE; auto angles dihedrals }
+
+       418 !NATOM
+         1 AION     1        ESNA     S        SG3O1    0.730000       32.0600           0
+         2 AION     1        ESNA     O1       OG2P1   -0.550000       15.9994           0
+         3 AION     1        ESNA     O2       OG2P1   -0.550000       15.9994           0
+         4 AION     1        ESNA     O3       OG2P1   -0.550000       15.9994           0
+         5 AION     1        ESNA     C1       CG321   -0.260000       12.0110           0
+         6 AION     1        ESNA     H11      HGA2     0.090000        1.0080           0
+         7 AION     1        ESNA     H12      HGA2     0.090000        1.0080           0
+         8 AION     1        ESNA     C2       CG331   -0.270000       12.0110           0
+         9 AION     1        ESNA     H21      HGA3     0.090000        1.0080           0
+        10 AION     1        ESNA     H22      HGA3     0.090000        1.0080           0
+        11 AION     1        ESNA     H23      HGA3     0.090000        1.0080           0
+        12 AION     2        ESNA     S        SG3O1    0.730000       32.0600           0
+        13 AION     2        ESNA     O1       OG2P1   -0.550000       15.9994           0
+        14 AION     2        ESNA     O2       OG2P1   -0.550000       15.9994           0
+        15 AION     2        ESNA     O3       OG2P1   -0.550000       15.9994           0
+        16 AION     2        ESNA     C1       CG321   -0.260000       12.0110           0
+        17 AION     2        ESNA     H11      HGA2     0.090000        1.0080           0
+        18 AION     2        ESNA     H12      HGA2     0.090000        1.0080           0
+        19 AION     2        ESNA     C2       CG331   -0.270000       12.0110           0
+        20 AION     2        ESNA     H21      HGA3     0.090000        1.0080           0
+        21 AION     2        ESNA     H22      HGA3     0.090000        1.0080           0
+        22 AION     2        ESNA     H23      HGA3     0.090000        1.0080           0
+        23 AION     3        ESNA     S        SG3O1    0.730000       32.0600           0
+        24 AION     3        ESNA     O1       OG2P1   -0.550000       15.9994           0
+        25 AION     3        ESNA     O2       OG2P1   -0.550000       15.9994           0
+        26 AION     3        ESNA     O3       OG2P1   -0.550000       15.9994           0
+        27 AION     3        ESNA     C1       CG321   -0.260000       12.0110           0
+        28 AION     3        ESNA     H11      HGA2     0.090000        1.0080           0
+        29 AION     3        ESNA     H12      HGA2     0.090000        1.0080           0
+        30 AION     3        ESNA     C2       CG331   -0.270000       12.0110           0
+        31 AION     3        ESNA     H21      HGA3     0.090000        1.0080           0
+        32 AION     3        ESNA     H22      HGA3     0.090000        1.0080           0
+        33 AION     3        ESNA     H23      HGA3     0.090000        1.0080           0
+        34 AION     4        ESNA     S        SG3O1    0.730000       32.0600           0
+        35 AION     4        ESNA     O1       OG2P1   -0.550000       15.9994           0
+        36 AION     4        ESNA     O2       OG2P1   -0.550000       15.9994           0
+        37 AION     4        ESNA     O3       OG2P1   -0.550000       15.9994           0
+        38 AION     4        ESNA     C1       CG321   -0.260000       12.0110           0
+        39 AION     4        ESNA     H11      HGA2     0.090000        1.0080           0
+        40 AION     4        ESNA     H12      HGA2     0.090000        1.0080           0
+        41 AION     4        ESNA     C2       CG331   -0.270000       12.0110           0
+        42 AION     4        ESNA     H21      HGA3     0.090000        1.0080           0
+        43 AION     4        ESNA     H22      HGA3     0.090000        1.0080           0
+        44 AION     4        ESNA     H23      HGA3     0.090000        1.0080           0
+        45 AION     5        ESNA     S        SG3O1    0.730000       32.0600           0
+        46 AION     5        ESNA     O1       OG2P1   -0.550000       15.9994           0
+        47 AION     5        ESNA     O2       OG2P1   -0.550000       15.9994           0
+        48 AION     5        ESNA     O3       OG2P1   -0.550000       15.9994           0
+        49 AION     5        ESNA     C1       CG321   -0.260000       12.0110           0
+        50 AION     5        ESNA     H11      HGA2     0.090000        1.0080           0
+        51 AION     5        ESNA     H12      HGA2     0.090000        1.0080           0
+        52 AION     5        ESNA     C2       CG331   -0.270000       12.0110           0
+        53 AION     5        ESNA     H21      HGA3     0.090000        1.0080           0
+        54 AION     5        ESNA     H22      HGA3     0.090000        1.0080           0
+        55 AION     5        ESNA     H23      HGA3     0.090000        1.0080           0
+        56 AION     6        ESNA     S        SG3O1    0.730000       32.0600           0
+        57 AION     6        ESNA     O1       OG2P1   -0.550000       15.9994           0
+        58 AION     6        ESNA     O2       OG2P1   -0.550000       15.9994           0
+        59 AION     6        ESNA     O3       OG2P1   -0.550000       15.9994           0
+        60 AION     6        ESNA     C1       CG321   -0.260000       12.0110           0
+        61 AION     6        ESNA     H11      HGA2     0.090000        1.0080           0
+        62 AION     6        ESNA     H12      HGA2     0.090000        1.0080           0
+        63 AION     6        ESNA     C2       CG331   -0.270000       12.0110           0
+        64 AION     6        ESNA     H21      HGA3     0.090000        1.0080           0
+        65 AION     6        ESNA     H22      HGA3     0.090000        1.0080           0
+        66 AION     6        ESNA     H23      HGA3     0.090000        1.0080           0
+        67 AION     7        ESNA     S        SG3O1    0.730000       32.0600           0
+        68 AION     7        ESNA     O1       OG2P1   -0.550000       15.9994           0
+        69 AION     7        ESNA     O2       OG2P1   -0.550000       15.9994           0
+        70 AION     7        ESNA     O3       OG2P1   -0.550000       15.9994           0
+        71 AION     7        ESNA     C1       CG321   -0.260000       12.0110           0
+        72 AION     7        ESNA     H11      HGA2     0.090000        1.0080           0
+        73 AION     7        ESNA     H12      HGA2     0.090000        1.0080           0
+        74 AION     7        ESNA     C2       CG331   -0.270000       12.0110           0
+        75 AION     7        ESNA     H21      HGA3     0.090000        1.0080           0
+        76 AION     7        ESNA     H22      HGA3     0.090000        1.0080           0
+        77 AION     7        ESNA     H23      HGA3     0.090000        1.0080           0
+        78 AION     8        ESNA     S        SG3O1    0.730000       32.0600           0
+        79 AION     8        ESNA     O1       OG2P1   -0.550000       15.9994           0
+        80 AION     8        ESNA     O2       OG2P1   -0.550000       15.9994           0
+        81 AION     8        ESNA     O3       OG2P1   -0.550000       15.9994           0
+        82 AION     8        ESNA     C1       CG321   -0.260000       12.0110           0
+        83 AION     8        ESNA     H11      HGA2     0.090000        1.0080           0
+        84 AION     8        ESNA     H12      HGA2     0.090000        1.0080           0
+        85 AION     8        ESNA     C2       CG331   -0.270000       12.0110           0
+        86 AION     8        ESNA     H21      HGA3     0.090000        1.0080           0
+        87 AION     8        ESNA     H22      HGA3     0.090000        1.0080           0
+        88 AION     8        ESNA     H23      HGA3     0.090000        1.0080           0
+        89 AION     9        ESNA     S        SG3O1    0.730000       32.0600           0
+        90 AION     9        ESNA     O1       OG2P1   -0.550000       15.9994           0
+        91 AION     9        ESNA     O2       OG2P1   -0.550000       15.9994           0
+        92 AION     9        ESNA     O3       OG2P1   -0.550000       15.9994           0
+        93 AION     9        ESNA     C1       CG321   -0.260000       12.0110           0
+        94 AION     9        ESNA     H11      HGA2     0.090000        1.0080           0
+        95 AION     9        ESNA     H12      HGA2     0.090000        1.0080           0
+        96 AION     9        ESNA     C2       CG331   -0.270000       12.0110           0
+        97 AION     9        ESNA     H21      HGA3     0.090000        1.0080           0
+        98 AION     9        ESNA     H22      HGA3     0.090000        1.0080           0
+        99 AION     9        ESNA     H23      HGA3     0.090000        1.0080           0
+       100 AION     10       ESNA     S        SG3O1    0.730000       32.0600           0
+       101 AION     10       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       102 AION     10       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       103 AION     10       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       104 AION     10       ESNA     C1       CG321   -0.260000       12.0110           0
+       105 AION     10       ESNA     H11      HGA2     0.090000        1.0080           0
+       106 AION     10       ESNA     H12      HGA2     0.090000        1.0080           0
+       107 AION     10       ESNA     C2       CG331   -0.270000       12.0110           0
+       108 AION     10       ESNA     H21      HGA3     0.090000        1.0080           0
+       109 AION     10       ESNA     H22      HGA3     0.090000        1.0080           0
+       110 AION     10       ESNA     H23      HGA3     0.090000        1.0080           0
+       111 AION     11       ESNA     S        SG3O1    0.730000       32.0600           0
+       112 AION     11       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       113 AION     11       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       114 AION     11       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       115 AION     11       ESNA     C1       CG321   -0.260000       12.0110           0
+       116 AION     11       ESNA     H11      HGA2     0.090000        1.0080           0
+       117 AION     11       ESNA     H12      HGA2     0.090000        1.0080           0
+       118 AION     11       ESNA     C2       CG331   -0.270000       12.0110           0
+       119 AION     11       ESNA     H21      HGA3     0.090000        1.0080           0
+       120 AION     11       ESNA     H22      HGA3     0.090000        1.0080           0
+       121 AION     11       ESNA     H23      HGA3     0.090000        1.0080           0
+       122 AION     12       ESNA     S        SG3O1    0.730000       32.0600           0
+       123 AION     12       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       124 AION     12       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       125 AION     12       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       126 AION     12       ESNA     C1       CG321   -0.260000       12.0110           0
+       127 AION     12       ESNA     H11      HGA2     0.090000        1.0080           0
+       128 AION     12       ESNA     H12      HGA2     0.090000        1.0080           0
+       129 AION     12       ESNA     C2       CG331   -0.270000       12.0110           0
+       130 AION     12       ESNA     H21      HGA3     0.090000        1.0080           0
+       131 AION     12       ESNA     H22      HGA3     0.090000        1.0080           0
+       132 AION     12       ESNA     H23      HGA3     0.090000        1.0080           0
+       133 AION     13       ESNA     S        SG3O1    0.730000       32.0600           0
+       134 AION     13       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       135 AION     13       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       136 AION     13       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       137 AION     13       ESNA     C1       CG321   -0.260000       12.0110           0
+       138 AION     13       ESNA     H11      HGA2     0.090000        1.0080           0
+       139 AION     13       ESNA     H12      HGA2     0.090000        1.0080           0
+       140 AION     13       ESNA     C2       CG331   -0.270000       12.0110           0
+       141 AION     13       ESNA     H21      HGA3     0.090000        1.0080           0
+       142 AION     13       ESNA     H22      HGA3     0.090000        1.0080           0
+       143 AION     13       ESNA     H23      HGA3     0.090000        1.0080           0
+       144 AION     14       ESNA     S        SG3O1    0.730000       32.0600           0
+       145 AION     14       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       146 AION     14       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       147 AION     14       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       148 AION     14       ESNA     C1       CG321   -0.260000       12.0110           0
+       149 AION     14       ESNA     H11      HGA2     0.090000        1.0080           0
+       150 AION     14       ESNA     H12      HGA2     0.090000        1.0080           0
+       151 AION     14       ESNA     C2       CG331   -0.270000       12.0110           0
+       152 AION     14       ESNA     H21      HGA3     0.090000        1.0080           0
+       153 AION     14       ESNA     H22      HGA3     0.090000        1.0080           0
+       154 AION     14       ESNA     H23      HGA3     0.090000        1.0080           0
+       155 AION     15       ESNA     S        SG3O1    0.730000       32.0600           0
+       156 AION     15       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       157 AION     15       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       158 AION     15       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       159 AION     15       ESNA     C1       CG321   -0.260000       12.0110           0
+       160 AION     15       ESNA     H11      HGA2     0.090000        1.0080           0
+       161 AION     15       ESNA     H12      HGA2     0.090000        1.0080           0
+       162 AION     15       ESNA     C2       CG331   -0.270000       12.0110           0
+       163 AION     15       ESNA     H21      HGA3     0.090000        1.0080           0
+       164 AION     15       ESNA     H22      HGA3     0.090000        1.0080           0
+       165 AION     15       ESNA     H23      HGA3     0.090000        1.0080           0
+       166 AION     16       ESNA     S        SG3O1    0.730000       32.0600           0
+       167 AION     16       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       168 AION     16       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       169 AION     16       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       170 AION     16       ESNA     C1       CG321   -0.260000       12.0110           0
+       171 AION     16       ESNA     H11      HGA2     0.090000        1.0080           0
+       172 AION     16       ESNA     H12      HGA2     0.090000        1.0080           0
+       173 AION     16       ESNA     C2       CG331   -0.270000       12.0110           0
+       174 AION     16       ESNA     H21      HGA3     0.090000        1.0080           0
+       175 AION     16       ESNA     H22      HGA3     0.090000        1.0080           0
+       176 AION     16       ESNA     H23      HGA3     0.090000        1.0080           0
+       177 AION     17       ESNA     S        SG3O1    0.730000       32.0600           0
+       178 AION     17       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       179 AION     17       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       180 AION     17       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       181 AION     17       ESNA     C1       CG321   -0.260000       12.0110           0
+       182 AION     17       ESNA     H11      HGA2     0.090000        1.0080           0
+       183 AION     17       ESNA     H12      HGA2     0.090000        1.0080           0
+       184 AION     17       ESNA     C2       CG331   -0.270000       12.0110           0
+       185 AION     17       ESNA     H21      HGA3     0.090000        1.0080           0
+       186 AION     17       ESNA     H22      HGA3     0.090000        1.0080           0
+       187 AION     17       ESNA     H23      HGA3     0.090000        1.0080           0
+       188 AION     18       ESNA     S        SG3O1    0.730000       32.0600           0
+       189 AION     18       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       190 AION     18       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       191 AION     18       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       192 AION     18       ESNA     C1       CG321   -0.260000       12.0110           0
+       193 AION     18       ESNA     H11      HGA2     0.090000        1.0080           0
+       194 AION     18       ESNA     H12      HGA2     0.090000        1.0080           0
+       195 AION     18       ESNA     C2       CG331   -0.270000       12.0110           0
+       196 AION     18       ESNA     H21      HGA3     0.090000        1.0080           0
+       197 AION     18       ESNA     H22      HGA3     0.090000        1.0080           0
+       198 AION     18       ESNA     H23      HGA3     0.090000        1.0080           0
+       199 AION     19       ESNA     S        SG3O1    0.730000       32.0600           0
+       200 AION     19       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       201 AION     19       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       202 AION     19       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       203 AION     19       ESNA     C1       CG321   -0.260000       12.0110           0
+       204 AION     19       ESNA     H11      HGA2     0.090000        1.0080           0
+       205 AION     19       ESNA     H12      HGA2     0.090000        1.0080           0
+       206 AION     19       ESNA     C2       CG331   -0.270000       12.0110           0
+       207 AION     19       ESNA     H21      HGA3     0.090000        1.0080           0
+       208 AION     19       ESNA     H22      HGA3     0.090000        1.0080           0
+       209 AION     19       ESNA     H23      HGA3     0.090000        1.0080           0
+       210 AION     20       ESNA     S        SG3O1    0.730000       32.0600           0
+       211 AION     20       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       212 AION     20       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       213 AION     20       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       214 AION     20       ESNA     C1       CG321   -0.260000       12.0110           0
+       215 AION     20       ESNA     H11      HGA2     0.090000        1.0080           0
+       216 AION     20       ESNA     H12      HGA2     0.090000        1.0080           0
+       217 AION     20       ESNA     C2       CG331   -0.270000       12.0110           0
+       218 AION     20       ESNA     H21      HGA3     0.090000        1.0080           0
+       219 AION     20       ESNA     H22      HGA3     0.090000        1.0080           0
+       220 AION     20       ESNA     H23      HGA3     0.090000        1.0080           0
+       221 AION     21       ESNA     S        SG3O1    0.730000       32.0600           0
+       222 AION     21       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       223 AION     21       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       224 AION     21       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       225 AION     21       ESNA     C1       CG321   -0.260000       12.0110           0
+       226 AION     21       ESNA     H11      HGA2     0.090000        1.0080           0
+       227 AION     21       ESNA     H12      HGA2     0.090000        1.0080           0
+       228 AION     21       ESNA     C2       CG331   -0.270000       12.0110           0
+       229 AION     21       ESNA     H21      HGA3     0.090000        1.0080           0
+       230 AION     21       ESNA     H22      HGA3     0.090000        1.0080           0
+       231 AION     21       ESNA     H23      HGA3     0.090000        1.0080           0
+       232 AION     22       ESNA     S        SG3O1    0.730000       32.0600           0
+       233 AION     22       ESNA     O1       OG2P1   -0.550000       15.9994           0
+       234 AION     22       ESNA     O2       OG2P1   -0.550000       15.9994           0
+       235 AION     22       ESNA     O3       OG2P1   -0.550000       15.9994           0
+       236 AION     22       ESNA     C1       CG321   -0.260000       12.0110           0
+       237 AION     22       ESNA     H11      HGA2     0.090000        1.0080           0
+       238 AION     22       ESNA     H12      HGA2     0.090000        1.0080           0
+       239 AION     22       ESNA     C2       CG331   -0.270000       12.0110           0
+       240 AION     22       ESNA     H21      HGA3     0.090000        1.0080           0
+       241 AION     22       ESNA     H22      HGA3     0.090000        1.0080           0
+       242 AION     22       ESNA     H23      HGA3     0.090000        1.0080           0
+       243 CION     23       MAMM     CE       CG334    0.040000       12.0110           0
+       244 CION     23       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       245 CION     23       MAMM     HE1      HGA3     0.090000        1.0080           0
+       246 CION     23       MAMM     HE2      HGA3     0.090000        1.0080           0
+       247 CION     23       MAMM     HE3      HGA3     0.090000        1.0080           0
+       248 CION     23       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       249 CION     23       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       250 CION     23       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       251 CION     24       MAMM     CE       CG334    0.040000       12.0110           0
+       252 CION     24       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       253 CION     24       MAMM     HE1      HGA3     0.090000        1.0080           0
+       254 CION     24       MAMM     HE2      HGA3     0.090000        1.0080           0
+       255 CION     24       MAMM     HE3      HGA3     0.090000        1.0080           0
+       256 CION     24       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       257 CION     24       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       258 CION     24       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       259 CION     25       MAMM     CE       CG334    0.040000       12.0110           0
+       260 CION     25       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       261 CION     25       MAMM     HE1      HGA3     0.090000        1.0080           0
+       262 CION     25       MAMM     HE2      HGA3     0.090000        1.0080           0
+       263 CION     25       MAMM     HE3      HGA3     0.090000        1.0080           0
+       264 CION     25       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       265 CION     25       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       266 CION     25       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       267 CION     26       MAMM     CE       CG334    0.040000       12.0110           0
+       268 CION     26       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       269 CION     26       MAMM     HE1      HGA3     0.090000        1.0080           0
+       270 CION     26       MAMM     HE2      HGA3     0.090000        1.0080           0
+       271 CION     26       MAMM     HE3      HGA3     0.090000        1.0080           0
+       272 CION     26       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       273 CION     26       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       274 CION     26       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       275 CION     27       MAMM     CE       CG334    0.040000       12.0110           0
+       276 CION     27       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       277 CION     27       MAMM     HE1      HGA3     0.090000        1.0080           0
+       278 CION     27       MAMM     HE2      HGA3     0.090000        1.0080           0
+       279 CION     27       MAMM     HE3      HGA3     0.090000        1.0080           0
+       280 CION     27       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       281 CION     27       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       282 CION     27       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       283 CION     28       MAMM     CE       CG334    0.040000       12.0110           0
+       284 CION     28       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       285 CION     28       MAMM     HE1      HGA3     0.090000        1.0080           0
+       286 CION     28       MAMM     HE2      HGA3     0.090000        1.0080           0
+       287 CION     28       MAMM     HE3      HGA3     0.090000        1.0080           0
+       288 CION     28       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       289 CION     28       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       290 CION     28       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       291 CION     29       MAMM     CE       CG334    0.040000       12.0110           0
+       292 CION     29       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       293 CION     29       MAMM     HE1      HGA3     0.090000        1.0080           0
+       294 CION     29       MAMM     HE2      HGA3     0.090000        1.0080           0
+       295 CION     29       MAMM     HE3      HGA3     0.090000        1.0080           0
+       296 CION     29       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       297 CION     29       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       298 CION     29       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       299 CION     30       MAMM     CE       CG334    0.040000       12.0110           0
+       300 CION     30       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       301 CION     30       MAMM     HE1      HGA3     0.090000        1.0080           0
+       302 CION     30       MAMM     HE2      HGA3     0.090000        1.0080           0
+       303 CION     30       MAMM     HE3      HGA3     0.090000        1.0080           0
+       304 CION     30       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       305 CION     30       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       306 CION     30       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       307 CION     31       MAMM     CE       CG334    0.040000       12.0110           0
+       308 CION     31       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       309 CION     31       MAMM     HE1      HGA3     0.090000        1.0080           0
+       310 CION     31       MAMM     HE2      HGA3     0.090000        1.0080           0
+       311 CION     31       MAMM     HE3      HGA3     0.090000        1.0080           0
+       312 CION     31       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       313 CION     31       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       314 CION     31       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       315 CION     32       MAMM     CE       CG334    0.040000       12.0110           0
+       316 CION     32       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       317 CION     32       MAMM     HE1      HGA3     0.090000        1.0080           0
+       318 CION     32       MAMM     HE2      HGA3     0.090000        1.0080           0
+       319 CION     32       MAMM     HE3      HGA3     0.090000        1.0080           0
+       320 CION     32       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       321 CION     32       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       322 CION     32       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       323 CION     33       MAMM     CE       CG334    0.040000       12.0110           0
+       324 CION     33       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       325 CION     33       MAMM     HE1      HGA3     0.090000        1.0080           0
+       326 CION     33       MAMM     HE2      HGA3     0.090000        1.0080           0
+       327 CION     33       MAMM     HE3      HGA3     0.090000        1.0080           0
+       328 CION     33       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       329 CION     33       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       330 CION     33       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       331 CION     34       MAMM     CE       CG334    0.040000       12.0110           0
+       332 CION     34       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       333 CION     34       MAMM     HE1      HGA3     0.090000        1.0080           0
+       334 CION     34       MAMM     HE2      HGA3     0.090000        1.0080           0
+       335 CION     34       MAMM     HE3      HGA3     0.090000        1.0080           0
+       336 CION     34       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       337 CION     34       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       338 CION     34       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       339 CION     35       MAMM     CE       CG334    0.040000       12.0110           0
+       340 CION     35       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       341 CION     35       MAMM     HE1      HGA3     0.090000        1.0080           0
+       342 CION     35       MAMM     HE2      HGA3     0.090000        1.0080           0
+       343 CION     35       MAMM     HE3      HGA3     0.090000        1.0080           0
+       344 CION     35       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       345 CION     35       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       346 CION     35       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       347 CION     36       MAMM     CE       CG334    0.040000       12.0110           0
+       348 CION     36       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       349 CION     36       MAMM     HE1      HGA3     0.090000        1.0080           0
+       350 CION     36       MAMM     HE2      HGA3     0.090000        1.0080           0
+       351 CION     36       MAMM     HE3      HGA3     0.090000        1.0080           0
+       352 CION     36       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       353 CION     36       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       354 CION     36       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       355 CION     37       MAMM     CE       CG334    0.040000       12.0110           0
+       356 CION     37       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       357 CION     37       MAMM     HE1      HGA3     0.090000        1.0080           0
+       358 CION     37       MAMM     HE2      HGA3     0.090000        1.0080           0
+       359 CION     37       MAMM     HE3      HGA3     0.090000        1.0080           0
+       360 CION     37       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       361 CION     37       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       362 CION     37       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       363 CION     38       MAMM     CE       CG334    0.040000       12.0110           0
+       364 CION     38       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       365 CION     38       MAMM     HE1      HGA3     0.090000        1.0080           0
+       366 CION     38       MAMM     HE2      HGA3     0.090000        1.0080           0
+       367 CION     38       MAMM     HE3      HGA3     0.090000        1.0080           0
+       368 CION     38       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       369 CION     38       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       370 CION     38       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       371 CION     39       MAMM     CE       CG334    0.040000       12.0110           0
+       372 CION     39       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       373 CION     39       MAMM     HE1      HGA3     0.090000        1.0080           0
+       374 CION     39       MAMM     HE2      HGA3     0.090000        1.0080           0
+       375 CION     39       MAMM     HE3      HGA3     0.090000        1.0080           0
+       376 CION     39       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       377 CION     39       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       378 CION     39       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       379 CION     40       MAMM     CE       CG334    0.040000       12.0110           0
+       380 CION     40       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       381 CION     40       MAMM     HE1      HGA3     0.090000        1.0080           0
+       382 CION     40       MAMM     HE2      HGA3     0.090000        1.0080           0
+       383 CION     40       MAMM     HE3      HGA3     0.090000        1.0080           0
+       384 CION     40       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       385 CION     40       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       386 CION     40       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       387 CION     41       MAMM     CE       CG334    0.040000       12.0110           0
+       388 CION     41       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       389 CION     41       MAMM     HE1      HGA3     0.090000        1.0080           0
+       390 CION     41       MAMM     HE2      HGA3     0.090000        1.0080           0
+       391 CION     41       MAMM     HE3      HGA3     0.090000        1.0080           0
+       392 CION     41       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       393 CION     41       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       394 CION     41       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       395 CION     42       MAMM     CE       CG334    0.040000       12.0110           0
+       396 CION     42       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       397 CION     42       MAMM     HE1      HGA3     0.090000        1.0080           0
+       398 CION     42       MAMM     HE2      HGA3     0.090000        1.0080           0
+       399 CION     42       MAMM     HE3      HGA3     0.090000        1.0080           0
+       400 CION     42       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       401 CION     42       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       402 CION     42       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       403 CION     43       MAMM     CE       CG334    0.040000       12.0110           0
+       404 CION     43       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       405 CION     43       MAMM     HE1      HGA3     0.090000        1.0080           0
+       406 CION     43       MAMM     HE2      HGA3     0.090000        1.0080           0
+       407 CION     43       MAMM     HE3      HGA3     0.090000        1.0080           0
+       408 CION     43       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       409 CION     43       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       410 CION     43       MAMM     HZ3      HGP2     0.330000        1.0080           0
+       411 CION     44       MAMM     CE       CG334    0.040000       12.0110           0
+       412 CION     44       MAMM     NZ       NG3P3   -0.300000       14.0070           0
+       413 CION     44       MAMM     HE1      HGA3     0.090000        1.0080           0
+       414 CION     44       MAMM     HE2      HGA3     0.090000        1.0080           0
+       415 CION     44       MAMM     HE3      HGA3     0.090000        1.0080           0
+       416 CION     44       MAMM     HZ1      HGP2     0.330000        1.0080           0
+       417 CION     44       MAMM     HZ2      HGP2     0.330000        1.0080           0
+       418 CION     44       MAMM     HZ3      HGP2     0.330000        1.0080           0
+
+       374 !NBOND: bonds
+         1         2         1         3         1         4         1         5
+         5         6         5         7         5         8         8         9
+         8        10         8        11        12        13        12        14
+        12        15        12        16        16        17        16        18
+        16        19        19        20        19        21        19        22
+        23        24        23        25        23        26        23        27
+        27        28        27        29        27        30        30        31
+        30        32        30        33        34        35        34        36
+        34        37        34        38        38        39        38        40
+        38        41        41        42        41        43        41        44
+        45        46        45        47        45        48        45        49
+        49        50        49        51        49        52        52        53
+        52        54        52        55        56        57        56        58
+        56        59        56        60        60        61        60        62
+        60        63        63        64        63        65        63        66
+        67        68        67        69        67        70        67        71
+        71        72        71        73        71        74        74        75
+        74        76        74        77        78        79        78        80
+        78        81        78        82        82        83        82        84
+        82        85        85        86        85        87        85        88
+        89        90        89        91        89        92        89        93
+        93        94        93        95        93        96        96        97
+        96        98        96        99       100       101       100       102
+       100       103       100       104       104       105       104       106
+       104       107       107       108       107       109       107       110
+       111       112       111       113       111       114       111       115
+       115       116       115       117       115       118       118       119
+       118       120       118       121       122       123       122       124
+       122       125       122       126       126       127       126       128
+       126       129       129       130       129       131       129       132
+       133       134       133       135       133       136       133       137
+       137       138       137       139       137       140       140       141
+       140       142       140       143       144       145       144       146
+       144       147       144       148       148       149       148       150
+       148       151       151       152       151       153       151       154
+       155       156       155       157       155       158       155       159
+       159       160       159       161       159       162       162       163
+       162       164       162       165       166       167       166       168
+       166       169       166       170       170       171       170       172
+       170       173       173       174       173       175       173       176
+       177       178       177       179       177       180       177       181
+       181       182       181       183       181       184       184       185
+       184       186       184       187       188       189       188       190
+       188       191       188       192       192       193       192       194
+       192       195       195       196       195       197       195       198
+       199       200       199       201       199       202       199       203
+       203       204       203       205       203       206       206       207
+       206       208       206       209       210       211       210       212
+       210       213       210       214       214       215       214       216
+       214       217       217       218       217       219       217       220
+       221       222       221       223       221       224       221       225
+       225       226       225       227       225       228       228       229
+       228       230       228       231       232       233       232       234
+       232       235       232       236       236       237       236       238
+       236       239       239       240       239       241       239       242
+       243       245       243       246       243       247       243       244
+       244       248       244       249       244       250       251       253
+       251       254       251       255       251       252       252       256
+       252       257       252       258       259       261       259       262
+       259       263       259       260       260       264       260       265
+       260       266       267       269       267       270       267       271
+       267       268       268       272       268       273       268       274
+       275       277       275       278       275       279       275       276
+       276       280       276       281       276       282       283       285
+       283       286       283       287       283       284       284       288
+       284       289       284       290       291       293       291       294
+       291       295       291       292       292       296       292       297
+       292       298       299       301       299       302       299       303
+       299       300       300       304       300       305       300       306
+       307       309       307       310       307       311       307       308
+       308       312       308       313       308       314       315       317
+       315       318       315       319       315       316       316       320
+       316       321       316       322       323       325       323       326
+       323       327       323       324       324       328       324       329
+       324       330       331       333       331       334       331       335
+       331       332       332       336       332       337       332       338
+       339       341       339       342       339       343       339       340
+       340       344       340       345       340       346       347       349
+       347       350       347       351       347       348       348       352
+       348       353       348       354       355       357       355       358
+       355       359       355       356       356       360       356       361
+       356       362       363       365       363       366       363       367
+       363       364       364       368       364       369       364       370
+       371       373       371       374       371       375       371       372
+       372       376       372       377       372       378       379       381
+       379       382       379       383       379       380       380       384
+       380       385       380       386       387       389       387       390
+       387       391       387       388       388       392       388       393
+       388       394       395       397       395       398       395       399
+       395       396       396       400       396       401       396       402
+       403       405       403       406       403       407       403       404
+       404       408       404       409       404       410       411       413
+       411       414       411       415       411       412       412       416
+       412       417       412       418
+
+       660 !NTHETA: angles
+         1         5         8         1         5         7         1         5         6
+         2         1         5         2         1         4         2         1         3
+         3         1         5         3         1         4         4         1         5
+         5         8        11         5         8        10         5         8         9
+         6         5         8         6         5         7         7         5         8
+         9         8        11         9         8        10        10         8        11
+        12        16        19        12        16        18        12        16        17
+        13        12        16        13        12        15        13        12        14
+        14        12        16        14        12        15        15        12        16
+        16        19        22        16        19        21        16        19        20
+        17        16        19        17        16        18        18        16        19
+        20        19        22        20        19        21        21        19        22
+        23        27        30        23        27        29        23        27        28
+        24        23        27        24        23        26        24        23        25
+        25        23        27        25        23        26        26        23        27
+        27        30        33        27        30        32        27        30        31
+        28        27        30        28        27        29        29        27        30
+        31        30        33        31        30        32        32        30        33
+        34        38        41        34        38        40        34        38        39
+        35        34        38        35        34        37        35        34        36
+        36        34        38        36        34        37        37        34        38
+        38        41        44        38        41        43        38        41        42
+        39        38        41        39        38        40        40        38        41
+        42        41        44        42        41        43        43        41        44
+        45        49        52        45        49        51        45        49        50
+        46        45        49        46        45        48        46        45        47
+        47        45        49        47        45        48        48        45        49
+        49        52        55        49        52        54        49        52        53
+        50        49        52        50        49        51        51        49        52
+        53        52        55        53        52        54        54        52        55
+        56        60        63        56        60        62        56        60        61
+        57        56        60        57        56        59        57        56        58
+        58        56        60        58        56        59        59        56        60
+        60        63        66        60        63        65        60        63        64
+        61        60        63        61        60        62        62        60        63
+        64        63        66        64        63        65        65        63        66
+        67        71        74        67        71        73        67        71        72
+        68        67        71        68        67        70        68        67        69
+        69        67        71        69        67        70        70        67        71
+        71        74        77        71        74        76        71        74        75
+        72        71        74        72        71        73        73        71        74
+        75        74        77        75        74        76        76        74        77
+        78        82        85        78        82        84        78        82        83
+        79        78        82        79        78        81        79        78        80
+        80        78        82        80        78        81        81        78        82
+        82        85        88        82        85        87        82        85        86
+        83        82        85        83        82        84        84        82        85
+        86        85        88        86        85        87        87        85        88
+        89        93        96        89        93        95        89        93        94
+        90        89        93        90        89        92        90        89        91
+        91        89        93        91        89        92        92        89        93
+        93        96        99        93        96        98        93        96        97
+        94        93        96        94        93        95        95        93        96
+        97        96        99        97        96        98        98        96        99
+       100       104       107       100       104       106       100       104       105
+       101       100       104       101       100       103       101       100       102
+       102       100       104       102       100       103       103       100       104
+       104       107       110       104       107       109       104       107       108
+       105       104       107       105       104       106       106       104       107
+       108       107       110       108       107       109       109       107       110
+       111       115       118       111       115       117       111       115       116
+       112       111       115       112       111       114       112       111       113
+       113       111       115       113       111       114       114       111       115
+       115       118       121       115       118       120       115       118       119
+       116       115       118       116       115       117       117       115       118
+       119       118       121       119       118       120       120       118       121
+       122       126       129       122       126       128       122       126       127
+       123       122       126       123       122       125       123       122       124
+       124       122       126       124       122       125       125       122       126
+       126       129       132       126       129       131       126       129       130
+       127       126       129       127       126       128       128       126       129
+       130       129       132       130       129       131       131       129       132
+       133       137       140       133       137       139       133       137       138
+       134       133       137       134       133       136       134       133       135
+       135       133       137       135       133       136       136       133       137
+       137       140       143       137       140       142       137       140       141
+       138       137       140       138       137       139       139       137       140
+       141       140       143       141       140       142       142       140       143
+       144       148       151       144       148       150       144       148       149
+       145       144       148       145       144       147       145       144       146
+       146       144       148       146       144       147       147       144       148
+       148       151       154       148       151       153       148       151       152
+       149       148       151       149       148       150       150       148       151
+       152       151       154       152       151       153       153       151       154
+       155       159       162       155       159       161       155       159       160
+       156       155       159       156       155       158       156       155       157
+       157       155       159       157       155       158       158       155       159
+       159       162       165       159       162       164       159       162       163
+       160       159       162       160       159       161       161       159       162
+       163       162       165       163       162       164       164       162       165
+       166       170       173       166       170       172       166       170       171
+       167       166       170       167       166       169       167       166       168
+       168       166       170       168       166       169       169       166       170
+       170       173       176       170       173       175       170       173       174
+       171       170       173       171       170       172       172       170       173
+       174       173       176       174       173       175       175       173       176
+       177       181       184       177       181       183       177       181       182
+       178       177       181       178       177       180       178       177       179
+       179       177       181       179       177       180       180       177       181
+       181       184       187       181       184       186       181       184       185
+       182       181       184       182       181       183       183       181       184
+       185       184       187       185       184       186       186       184       187
+       188       192       195       188       192       194       188       192       193
+       189       188       192       189       188       191       189       188       190
+       190       188       192       190       188       191       191       188       192
+       192       195       198       192       195       197       192       195       196
+       193       192       195       193       192       194       194       192       195
+       196       195       198       196       195       197       197       195       198
+       199       203       206       199       203       205       199       203       204
+       200       199       203       200       199       202       200       199       201
+       201       199       203       201       199       202       202       199       203
+       203       206       209       203       206       208       203       206       207
+       204       203       206       204       203       205       205       203       206
+       207       206       209       207       206       208       208       206       209
+       210       214       217       210       214       216       210       214       215
+       211       210       214       211       210       213       211       210       212
+       212       210       214       212       210       213       213       210       214
+       214       217       220       214       217       219       214       217       218
+       215       214       217       215       214       216       216       214       217
+       218       217       220       218       217       219       219       217       220
+       221       225       228       221       225       227       221       225       226
+       222       221       225       222       221       224       222       221       223
+       223       221       225       223       221       224       224       221       225
+       225       228       231       225       228       230       225       228       229
+       226       225       228       226       225       227       227       225       228
+       229       228       231       229       228       230       230       228       231
+       232       236       239       232       236       238       232       236       237
+       233       232       236       233       232       235       233       232       234
+       234       232       236       234       232       235       235       232       236
+       236       239       242       236       239       241       236       239       240
+       237       236       239       237       236       238       238       236       239
+       240       239       242       240       239       241       241       239       242
+       243       244       250       243       244       249       243       244       248
+       245       243       244       245       243       247       245       243       246
+       246       243       244       246       243       247       247       243       244
+       248       244       250       248       244       249       249       244       250
+       251       252       258       251       252       257       251       252       256
+       253       251       252       253       251       255       253       251       254
+       254       251       252       254       251       255       255       251       252
+       256       252       258       256       252       257       257       252       258
+       259       260       266       259       260       265       259       260       264
+       261       259       260       261       259       263       261       259       262
+       262       259       260       262       259       263       263       259       260
+       264       260       266       264       260       265       265       260       266
+       267       268       274       267       268       273       267       268       272
+       269       267       268       269       267       271       269       267       270
+       270       267       268       270       267       271       271       267       268
+       272       268       274       272       268       273       273       268       274
+       275       276       282       275       276       281       275       276       280
+       277       275       276       277       275       279       277       275       278
+       278       275       276       278       275       279       279       275       276
+       280       276       282       280       276       281       281       276       282
+       283       284       290       283       284       289       283       284       288
+       285       283       284       285       283       287       285       283       286
+       286       283       284       286       283       287       287       283       284
+       288       284       290       288       284       289       289       284       290
+       291       292       298       291       292       297       291       292       296
+       293       291       292       293       291       295       293       291       294
+       294       291       292       294       291       295       295       291       292
+       296       292       298       296       292       297       297       292       298
+       299       300       306       299       300       305       299       300       304
+       301       299       300       301       299       303       301       299       302
+       302       299       300       302       299       303       303       299       300
+       304       300       306       304       300       305       305       300       306
+       307       308       314       307       308       313       307       308       312
+       309       307       308       309       307       311       309       307       310
+       310       307       308       310       307       311       311       307       308
+       312       308       314       312       308       313       313       308       314
+       315       316       322       315       316       321       315       316       320
+       317       315       316       317       315       319       317       315       318
+       318       315       316       318       315       319       319       315       316
+       320       316       322       320       316       321       321       316       322
+       323       324       330       323       324       329       323       324       328
+       325       323       324       325       323       327       325       323       326
+       326       323       324       326       323       327       327       323       324
+       328       324       330       328       324       329       329       324       330
+       331       332       338       331       332       337       331       332       336
+       333       331       332       333       331       335       333       331       334
+       334       331       332       334       331       335       335       331       332
+       336       332       338       336       332       337       337       332       338
+       339       340       346       339       340       345       339       340       344
+       341       339       340       341       339       343       341       339       342
+       342       339       340       342       339       343       343       339       340
+       344       340       346       344       340       345       345       340       346
+       347       348       354       347       348       353       347       348       352
+       349       347       348       349       347       351       349       347       350
+       350       347       348       350       347       351       351       347       348
+       352       348       354       352       348       353       353       348       354
+       355       356       362       355       356       361       355       356       360
+       357       355       356       357       355       359       357       355       358
+       358       355       356       358       355       359       359       355       356
+       360       356       362       360       356       361       361       356       362
+       363       364       370       363       364       369       363       364       368
+       365       363       364       365       363       367       365       363       366
+       366       363       364       366       363       367       367       363       364
+       368       364       370       368       364       369       369       364       370
+       371       372       378       371       372       377       371       372       376
+       373       371       372       373       371       375       373       371       374
+       374       371       372       374       371       375       375       371       372
+       376       372       378       376       372       377       377       372       378
+       379       380       386       379       380       385       379       380       384
+       381       379       380       381       379       383       381       379       382
+       382       379       380       382       379       383       383       379       380
+       384       380       386       384       380       385       385       380       386
+       387       388       394       387       388       393       387       388       392
+       389       387       388       389       387       391       389       387       390
+       390       387       388       390       387       391       391       387       388
+       392       388       394       392       388       393       393       388       394
+       395       396       402       395       396       401       395       396       400
+       397       395       396       397       395       399       397       395       398
+       398       395       396       398       395       399       399       395       396
+       400       396       402       400       396       401       401       396       402
+       403       404       410       403       404       409       403       404       408
+       405       403       404       405       403       407       405       403       406
+       406       403       404       406       403       407       407       403       404
+       408       404       410       408       404       409       409       404       410
+       411       412       418       411       412       417       411       412       416
+       413       411       412       413       411       415       413       411       414
+       414       411       412       414       411       415       415       411       412
+       416       412       418       416       412       417       417       412       418
+
+       594 !NPHI: dihedrals
+         1         5         8        11         1         5         8        10
+         1         5         8         9         2         1         5         8
+         2         1         5         7         2         1         5         6
+         3         1         5         8         3         1         5         7
+         3         1         5         6         4         1         5         8
+         4         1         5         7         4         1         5         6
+         6         5         8        11         6         5         8        10
+         6         5         8         9         7         5         8        11
+         7         5         8        10         7         5         8         9
+        12        16        19        22        12        16        19        21
+        12        16        19        20        13        12        16        19
+        13        12        16        18        13        12        16        17
+        14        12        16        19        14        12        16        18
+        14        12        16        17        15        12        16        19
+        15        12        16        18        15        12        16        17
+        17        16        19        22        17        16        19        21
+        17        16        19        20        18        16        19        22
+        18        16        19        21        18        16        19        20
+        23        27        30        33        23        27        30        32
+        23        27        30        31        24        23        27        30
+        24        23        27        29        24        23        27        28
+        25        23        27        30        25        23        27        29
+        25        23        27        28        26        23        27        30
+        26        23        27        29        26        23        27        28
+        28        27        30        33        28        27        30        32
+        28        27        30        31        29        27        30        33
+        29        27        30        32        29        27        30        31
+        34        38        41        44        34        38        41        43
+        34        38        41        42        35        34        38        41
+        35        34        38        40        35        34        38        39
+        36        34        38        41        36        34        38        40
+        36        34        38        39        37        34        38        41
+        37        34        38        40        37        34        38        39
+        39        38        41        44        39        38        41        43
+        39        38        41        42        40        38        41        44
+        40        38        41        43        40        38        41        42
+        45        49        52        55        45        49        52        54
+        45        49        52        53        46        45        49        52
+        46        45        49        51        46        45        49        50
+        47        45        49        52        47        45        49        51
+        47        45        49        50        48        45        49        52
+        48        45        49        51        48        45        49        50
+        50        49        52        55        50        49        52        54
+        50        49        52        53        51        49        52        55
+        51        49        52        54        51        49        52        53
+        56        60        63        66        56        60        63        65
+        56        60        63        64        57        56        60        63
+        57        56        60        62        57        56        60        61
+        58        56        60        63        58        56        60        62
+        58        56        60        61        59        56        60        63
+        59        56        60        62        59        56        60        61
+        61        60        63        66        61        60        63        65
+        61        60        63        64        62        60        63        66
+        62        60        63        65        62        60        63        64
+        67        71        74        77        67        71        74        76
+        67        71        74        75        68        67        71        74
+        68        67        71        73        68        67        71        72
+        69        67        71        74        69        67        71        73
+        69        67        71        72        70        67        71        74
+        70        67        71        73        70        67        71        72
+        72        71        74        77        72        71        74        76
+        72        71        74        75        73        71        74        77
+        73        71        74        76        73        71        74        75
+        78        82        85        88        78        82        85        87
+        78        82        85        86        79        78        82        85
+        79        78        82        84        79        78        82        83
+        80        78        82        85        80        78        82        84
+        80        78        82        83        81        78        82        85
+        81        78        82        84        81        78        82        83
+        83        82        85        88        83        82        85        87
+        83        82        85        86        84        82        85        88
+        84        82        85        87        84        82        85        86
+        89        93        96        99        89        93        96        98
+        89        93        96        97        90        89        93        96
+        90        89        93        95        90        89        93        94
+        91        89        93        96        91        89        93        95
+        91        89        93        94        92        89        93        96
+        92        89        93        95        92        89        93        94
+        94        93        96        99        94        93        96        98
+        94        93        96        97        95        93        96        99
+        95        93        96        98        95        93        96        97
+       100       104       107       110       100       104       107       109
+       100       104       107       108       101       100       104       107
+       101       100       104       106       101       100       104       105
+       102       100       104       107       102       100       104       106
+       102       100       104       105       103       100       104       107
+       103       100       104       106       103       100       104       105
+       105       104       107       110       105       104       107       109
+       105       104       107       108       106       104       107       110
+       106       104       107       109       106       104       107       108
+       111       115       118       121       111       115       118       120
+       111       115       118       119       112       111       115       118
+       112       111       115       117       112       111       115       116
+       113       111       115       118       113       111       115       117
+       113       111       115       116       114       111       115       118
+       114       111       115       117       114       111       115       116
+       116       115       118       121       116       115       118       120
+       116       115       118       119       117       115       118       121
+       117       115       118       120       117       115       118       119
+       122       126       129       132       122       126       129       131
+       122       126       129       130       123       122       126       129
+       123       122       126       128       123       122       126       127
+       124       122       126       129       124       122       126       128
+       124       122       126       127       125       122       126       129
+       125       122       126       128       125       122       126       127
+       127       126       129       132       127       126       129       131
+       127       126       129       130       128       126       129       132
+       128       126       129       131       128       126       129       130
+       133       137       140       143       133       137       140       142
+       133       137       140       141       134       133       137       140
+       134       133       137       139       134       133       137       138
+       135       133       137       140       135       133       137       139
+       135       133       137       138       136       133       137       140
+       136       133       137       139       136       133       137       138
+       138       137       140       143       138       137       140       142
+       138       137       140       141       139       137       140       143
+       139       137       140       142       139       137       140       141
+       144       148       151       154       144       148       151       153
+       144       148       151       152       145       144       148       151
+       145       144       148       150       145       144       148       149
+       146       144       148       151       146       144       148       150
+       146       144       148       149       147       144       148       151
+       147       144       148       150       147       144       148       149
+       149       148       151       154       149       148       151       153
+       149       148       151       152       150       148       151       154
+       150       148       151       153       150       148       151       152
+       155       159       162       165       155       159       162       164
+       155       159       162       163       156       155       159       162
+       156       155       159       161       156       155       159       160
+       157       155       159       162       157       155       159       161
+       157       155       159       160       158       155       159       162
+       158       155       159       161       158       155       159       160
+       160       159       162       165       160       159       162       164
+       160       159       162       163       161       159       162       165
+       161       159       162       164       161       159       162       163
+       166       170       173       176       166       170       173       175
+       166       170       173       174       167       166       170       173
+       167       166       170       172       167       166       170       171
+       168       166       170       173       168       166       170       172
+       168       166       170       171       169       166       170       173
+       169       166       170       172       169       166       170       171
+       171       170       173       176       171       170       173       175
+       171       170       173       174       172       170       173       176
+       172       170       173       175       172       170       173       174
+       177       181       184       187       177       181       184       186
+       177       181       184       185       178       177       181       184
+       178       177       181       183       178       177       181       182
+       179       177       181       184       179       177       181       183
+       179       177       181       182       180       177       181       184
+       180       177       181       183       180       177       181       182
+       182       181       184       187       182       181       184       186
+       182       181       184       185       183       181       184       187
+       183       181       184       186       183       181       184       185
+       188       192       195       198       188       192       195       197
+       188       192       195       196       189       188       192       195
+       189       188       192       194       189       188       192       193
+       190       188       192       195       190       188       192       194
+       190       188       192       193       191       188       192       195
+       191       188       192       194       191       188       192       193
+       193       192       195       198       193       192       195       197
+       193       192       195       196       194       192       195       198
+       194       192       195       197       194       192       195       196
+       199       203       206       209       199       203       206       208
+       199       203       206       207       200       199       203       206
+       200       199       203       205       200       199       203       204
+       201       199       203       206       201       199       203       205
+       201       199       203       204       202       199       203       206
+       202       199       203       205       202       199       203       204
+       204       203       206       209       204       203       206       208
+       204       203       206       207       205       203       206       209
+       205       203       206       208       205       203       206       207
+       210       214       217       220       210       214       217       219
+       210       214       217       218       211       210       214       217
+       211       210       214       216       211       210       214       215
+       212       210       214       217       212       210       214       216
+       212       210       214       215       213       210       214       217
+       213       210       214       216       213       210       214       215
+       215       214       217       220       215       214       217       219
+       215       214       217       218       216       214       217       220
+       216       214       217       219       216       214       217       218
+       221       225       228       231       221       225       228       230
+       221       225       228       229       222       221       225       228
+       222       221       225       227       222       221       225       226
+       223       221       225       228       223       221       225       227
+       223       221       225       226       224       221       225       228
+       224       221       225       227       224       221       225       226
+       226       225       228       231       226       225       228       230
+       226       225       228       229       227       225       228       231
+       227       225       228       230       227       225       228       229
+       232       236       239       242       232       236       239       241
+       232       236       239       240       233       232       236       239
+       233       232       236       238       233       232       236       237
+       234       232       236       239       234       232       236       238
+       234       232       236       237       235       232       236       239
+       235       232       236       238       235       232       236       237
+       237       236       239       242       237       236       239       241
+       237       236       239       240       238       236       239       242
+       238       236       239       241       238       236       239       240
+       245       243       244       250       245       243       244       249
+       245       243       244       248       246       243       244       250
+       246       243       244       249       246       243       244       248
+       247       243       244       250       247       243       244       249
+       247       243       244       248       253       251       252       258
+       253       251       252       257       253       251       252       256
+       254       251       252       258       254       251       252       257
+       254       251       252       256       255       251       252       258
+       255       251       252       257       255       251       252       256
+       261       259       260       266       261       259       260       265
+       261       259       260       264       262       259       260       266
+       262       259       260       265       262       259       260       264
+       263       259       260       266       263       259       260       265
+       263       259       260       264       269       267       268       274
+       269       267       268       273       269       267       268       272
+       270       267       268       274       270       267       268       273
+       270       267       268       272       271       267       268       274
+       271       267       268       273       271       267       268       272
+       277       275       276       282       277       275       276       281
+       277       275       276       280       278       275       276       282
+       278       275       276       281       278       275       276       280
+       279       275       276       282       279       275       276       281
+       279       275       276       280       285       283       284       290
+       285       283       284       289       285       283       284       288
+       286       283       284       290       286       283       284       289
+       286       283       284       288       287       283       284       290
+       287       283       284       289       287       283       284       288
+       293       291       292       298       293       291       292       297
+       293       291       292       296       294       291       292       298
+       294       291       292       297       294       291       292       296
+       295       291       292       298       295       291       292       297
+       295       291       292       296       301       299       300       306
+       301       299       300       305       301       299       300       304
+       302       299       300       306       302       299       300       305
+       302       299       300       304       303       299       300       306
+       303       299       300       305       303       299       300       304
+       309       307       308       314       309       307       308       313
+       309       307       308       312       310       307       308       314
+       310       307       308       313       310       307       308       312
+       311       307       308       314       311       307       308       313
+       311       307       308       312       317       315       316       322
+       317       315       316       321       317       315       316       320
+       318       315       316       322       318       315       316       321
+       318       315       316       320       319       315       316       322
+       319       315       316       321       319       315       316       320
+       325       323       324       330       325       323       324       329
+       325       323       324       328       326       323       324       330
+       326       323       324       329       326       323       324       328
+       327       323       324       330       327       323       324       329
+       327       323       324       328       333       331       332       338
+       333       331       332       337       333       331       332       336
+       334       331       332       338       334       331       332       337
+       334       331       332       336       335       331       332       338
+       335       331       332       337       335       331       332       336
+       341       339       340       346       341       339       340       345
+       341       339       340       344       342       339       340       346
+       342       339       340       345       342       339       340       344
+       343       339       340       346       343       339       340       345
+       343       339       340       344       349       347       348       354
+       349       347       348       353       349       347       348       352
+       350       347       348       354       350       347       348       353
+       350       347       348       352       351       347       348       354
+       351       347       348       353       351       347       348       352
+       357       355       356       362       357       355       356       361
+       357       355       356       360       358       355       356       362
+       358       355       356       361       358       355       356       360
+       359       355       356       362       359       355       356       361
+       359       355       356       360       365       363       364       370
+       365       363       364       369       365       363       364       368
+       366       363       364       370       366       363       364       369
+       366       363       364       368       367       363       364       370
+       367       363       364       369       367       363       364       368
+       373       371       372       378       373       371       372       377
+       373       371       372       376       374       371       372       378
+       374       371       372       377       374       371       372       376
+       375       371       372       378       375       371       372       377
+       375       371       372       376       381       379       380       386
+       381       379       380       385       381       379       380       384
+       382       379       380       386       382       379       380       385
+       382       379       380       384       383       379       380       386
+       383       379       380       385       383       379       380       384
+       389       387       388       394       389       387       388       393
+       389       387       388       392       390       387       388       394
+       390       387       388       393       390       387       388       392
+       391       387       388       394       391       387       388       393
+       391       387       388       392       397       395       396       402
+       397       395       396       401       397       395       396       400
+       398       395       396       402       398       395       396       401
+       398       395       396       400       399       395       396       402
+       399       395       396       401       399       395       396       400
+       405       403       404       410       405       403       404       409
+       405       403       404       408       406       403       404       410
+       406       403       404       409       406       403       404       408
+       407       403       404       410       407       403       404       409
+       407       403       404       408       413       411       412       418
+       413       411       412       417       413       411       412       416
+       414       411       412       418       414       411       412       417
+       414       411       412       416       415       411       412       418
+       415       411       412       417       415       411       412       416
+
+         0 !NIMPHI: impropers
+
+
+         0 !NDON: donors
+
+
+         0 !NACC: acceptors
+
+
+         0 !NNB
+
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0         0         0         0         0         0         0
+         0         0
+
+         1         0 !NGRP
+         0         0         0
+

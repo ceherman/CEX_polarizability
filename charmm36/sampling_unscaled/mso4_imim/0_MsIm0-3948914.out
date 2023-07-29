@@ -1,0 +1,49 @@
+Adding dependency `gcc/10.1.0` to your environment
+Adding dependency `intel/2020u4` to your environment
+Adding dependency `openmpi/4.1.0:intel-2020` to your environment
+Adding dependency `pmix/4.1.2` to your environment
+Adding dependency `python/2.7.18` to your environment
+Adding dependency `charm/6.10.2:intel,ucx` to your environment
+Adding dependency `cuda/11.6.2-510.47.03` to your environment
+Adding package `namd/2.14:nvidia` to your environment
+-- Open MPI job setup complete (on r0m01):
+--  mpi job startup      = /opt/shared/openmpi/4.1.0-intel-2020/bin/mpirun
+--  nhosts               = 1
+--  nproc                = 
+--  nproc-per-node       = 1
+--  cpus-per-proc        = 
+
+-- Open MPI environment flags:
+--  OMPI_MCA_rmaps_base_display_map=true
+--  OMPI_MCA_hwloc_base_binding_policy=core
+--  OMPI_MCA_rmaps_base_mapping_policy=core
+
+CUDA initialization error on r0m01: CUDA driver version is insufficient for CUDA runtime version
+FATAL ERROR: CUDA error cudaGetDeviceCount(&deviceCount) in file src/DeviceCUDA.C, function initialize, line 135
+ on Pe 0 (r0m01): CUDA driver version is insufficient for CUDA runtime version
+[r0m01:84504:0:84504] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  84504) ====
+ 0 0x00000000015cf050 _INTERNALfc43d216::_exitHandler()  init.C:0
+ 1 0x000000000172666e CmiSendReduce()  ???:0
+ 2 0x00000000015cf4b2 _INTERNALfc43d216::_exitHandler()  init.C:0
+ 3 0x000000000172585d CsdScheduleForever()  ???:0
+ 4 0x00000000017257de CsdScheduler()  ???:0
+ 5 0x000000000079c8c9 NAMD_die()  ???:0
+ 6 0x0000000000e2cd02 cudaDie()  ???:0
+ 7 0x0000000000e2ed08 DeviceCUDA::initialize()  ???:0
+ 8 0x0000000001130aae WorkDistrib::buildNodeAwarePeOrdering()  ???:0
+ 9 0x000000000172a56e CcdRaiseCondition()  ???:0
+10 0x00000000017438f5 LrtsInitCpuTopo()  ???:0
+11 0x00000000015ccb00 _initCharm()  ???:0
+12 0x00000000007cb3ba BackEnd::init()  ???:0
+13 0x00000000007bc722 main()  ???:0
+14 0x0000000000022555 __libc_start_main()  ???:0
+15 0x00000000006a503e _start()  ???:0
+=================================
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 84504 on node r0m01 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

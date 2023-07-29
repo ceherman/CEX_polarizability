@@ -1,0 +1,21 @@
+Adding dependency `gcc/10.1.0` to your environment
+Adding dependency `intel/2020u4` to your environment
+Adding dependency `openmpi/4.1.0:intel-2020` to your environment
+Adding dependency `pmix/4.1.2` to your environment
+Adding dependency `python/2.7.18` to your environment
+Adding dependency `charm/6.10.2:intel,ucx` to your environment
+Adding dependency `cuda/11.6.2-510.47.03` to your environment
+Adding package `namd/2.14:nvidia` to your environment
+-- Open MPI job setup complete (on r2v02):
+--  mpi job startup      = /opt/shared/openmpi/4.1.0-intel-2020/bin/mpirun
+--  nhosts               = 1
+--  nproc                = 
+--  nproc-per-node       = 1
+--  cpus-per-proc        = 
+
+-- Open MPI environment flags:
+--  OMPI_MCA_rmaps_base_display_map=true
+--  OMPI_MCA_hwloc_base_binding_policy=core
+--  OMPI_MCA_rmaps_base_mapping_policy=core
+
+slurmstepd: error: *** JOB 3948987 ON r2v02 CANCELLED AT 2023-01-17T20:20:54 DUE TO PREEMPTION ***

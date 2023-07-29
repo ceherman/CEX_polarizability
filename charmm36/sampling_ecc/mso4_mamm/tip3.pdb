@@ -1,0 +1,5 @@
+REMARK
+ATOM      1  OH2 TIP3    1       0.229   0.307   0.041  0.00  1.00      SOLV O 
+ATOM      2  H1  TIP3    1      -0.191  -0.204   0.791  0.00  0.00      SOLV H
+ATOM      3  H2  TIP3    1      -0.038  -0.102  -0.831  0.00  0.00      SOLV H
+END

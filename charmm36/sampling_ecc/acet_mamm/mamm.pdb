@@ -1,0 +1,10 @@
+REMARK
+ATOM      8  CE  MAMM    2       1.903   0.978   1.167  1.00  0.00      CION C  
+ATOM      9  NZ  MAMM    2       0.522   1.456   1.312  1.00  0.00      CION N  
+ATOM     10  HE1 MAMM    2       2.031   0.567   0.111  1.00  0.00      CION H  
+ATOM     11  HE2 MAMM    2       2.220   0.174   1.852  1.00  0.00      CION H  
+ATOM     12  HE3 MAMM    2       2.562   1.929   1.120  1.00  0.00      CION H  
+ATOM     13  HZ1 MAMM    2       0.348   2.473   1.035  1.00  0.00      CION H  
+ATOM     14  HZ2 MAMM    2       0.338   1.472   2.295  1.00  0.00      CION H  
+ATOM     15  HZ3 MAMM    2      -0.137   0.737   0.894  1.00  0.00      CION H  
+END

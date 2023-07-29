@@ -1,0 +1,24 @@
+tolerance 2.0
+filetype pdb
+output starting.pdb
+
+structure mso4.pdb
+    number 22
+    inside cube 0.0 0.0 0.0 42.
+    resnumbers 2
+    chain ""
+end structure
+
+structure mamm.pdb
+    number 22
+    inside cube 0.0 0.0 0.0 42.
+    resnumbers 2
+    chain ""
+end structure
+
+structure tip3.pdb
+    number 2470
+    inside cube 0.0 0.0 0.0 42.
+    resnumbers 2
+    chain ""
+end structure

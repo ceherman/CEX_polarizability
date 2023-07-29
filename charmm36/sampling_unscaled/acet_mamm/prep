@@ -1,0 +1,5 @@
+s/xxx_i_xxx/1/g
+s/xxx_i_prev_xxx/0/g
+s/xxx_first_ts_xxx/0/g
+s/xxx_run_xxx/50000000/g
+s/xxx_job_name_xxx/AcMa1/g

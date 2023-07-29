@@ -1,0 +1,45 @@
+structure           ../scaled_0.7500.psf
+outputName          pair_energies_pme_off
+
+coordinates         ../sampling_0.coor
+extendedSystem      ../sampling_0.restart.xsc
+
+temperature         0
+
+switching           off
+cutoff              21.0
+pairlistdist        21.0
+
+paraTypeCharmm          on
+parameters              ../../toppar_c36_jul22/par_all36m_prot.prm
+parameters              ../../toppar_c36_jul22/par_all36_carb.prm
+parameters              ../../toppar_c36_jul22/par_all36_lipid.prm
+parameters              ../../toppar_c36_jul22/par_all36_na.prm
+parameters              ../../toppar_c36_jul22/par_all36_cgenff.prm
+parameters              ../../toppar_c36_jul22/ch_par_water_ions.prm
+
+exclude             scaled1-4
+1-4scaling          1
+
+PME                 off
+
+#############################################################
+## EXECUTION SCRIPT                                        ##
+#############################################################
+
+set ts 0
+
+pairInteraction on
+pairInteractionFile pair.pdb
+pairInteractionCol O
+pairInteractionSelf off
+pairInteractionGroup1 1
+pairInteractionGroup2 2
+
+coorfile open dcd ../sampling_1.dcd
+while { ![coorfile read] } {
+       firstTimeStep $ts
+       run 0
+       incr ts 1
+}
+coorfile close
