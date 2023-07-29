@@ -1,0 +1,20 @@
+molecule { 
+1 1
+ N   -0.573380    1.189075   -0.196384
+ C    0.011937   -0.019062   -0.051934
+ N    1.311273   -0.085213    0.197279
+ H    1.858847    0.758515    0.277752
+ H    1.793218   -0.963802    0.313826
+ N   -0.732009   -1.113579   -0.019353
+ H   -1.130462    1.409117   -1.003270
+ H   -0.470956    1.907728    0.498032
+ H   -1.735495   -1.048576   -0.102600
+ H   -0.332934   -2.034197    0.086605
+}
+memory 1GB
+set_num_threads(2)
+psi4_io.set_default_path("/home/chase/temp/Psi4-guan")
+set freeze_core True
+E, wfn = energy('wb97x-d/6-311+G*',return_wfn=True)
+oeprop(wfn,"WIBERG_LOWDIN_INDICES")
+clean()

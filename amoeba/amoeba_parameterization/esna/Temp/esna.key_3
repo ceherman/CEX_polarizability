@@ -1,0 +1,95 @@
+parameters /home/chase/codes/poltype2/ParameterFiles/amoebabio18_header.prm
+OPENMP-THREADS 6
+bondterm none
+angleterm none
+torsionterm none
+vdwterm none
+fix-monopole
+digits 8
+potential-offset 1.0
+RESP-WEIGHT 1
+
+atom          401    401    C     "esna                "         6    12.011    4
+atom          402    402    C     "esna                "         6    12.011    4
+atom          403    403    S     "esna                "        16    32.066    4
+atom          404    404    O     "esna                "         8    15.999    1
+atom          405    405    H     "esna                "         1     1.008    1
+atom          406    406    H     "esna                "         1     1.008    1
+
+multipole    401    403    402             -0.20120
+                                      0.17843    0.00000    0.12867
+                                      0.65865
+                                      0.00000   -0.16564
+                                     -0.22632    0.00000   -0.49301
+multipole    402    401    403             -0.18719
+                                     -0.06112    0.00000    0.15119
+                                     -0.19444
+                                      0.00000   -0.33506
+                                      0.03526    0.00000    0.52950
+multipole    403    401    402              1.54250
+                                      0.04660    0.00000   -0.38783
+                                      0.49505
+                                      0.00000    0.28914
+                                      0.03899    0.00000   -0.78419
+multipole    404    403    401             -0.81240
+                                     -0.02148    0.00000   -0.03561
+                                     -0.19966
+                                      0.00000   -0.31328
+                                     -0.04146    0.00000    0.51294
+multipole    405    401    405              0.06563
+                                     -0.01200    0.00000   -0.06873
+                                     -0.00895
+                                      0.00000   -0.00102
+                                     -0.01346    0.00000    0.00997
+multipole    406    402    401              0.05061
+                                      0.01171    0.00000   -0.08908
+                                      0.00538
+                                      0.00000   -0.01211
+                                      0.00237    0.00000    0.00673
+
+# amoeba21 comments=C on sulfur SMARTS match = [C][S]
+polarize           401          1.6196     0.3900 405
+# amoeba21 comments=C on non-aromatic carbon SMARTS match = [$([C][C])]
+polarize           402          1.4150     0.3900 406
+# amoeba21 comments=Sulfur connected to three oxygens with two of them having a valence of one SMARTS match = [SX4](=[OX1])(=[OX1])[OX1-1]
+polarize           403          2.4710     0.3900 404
+# amoeba21 comments=Oxygen with valence of one connected to sulfur SMARTS match = [OX1-1][S]
+polarize           404          1.5801     0.3900 403
+polarize           405          0.4960     0.3900 401
+# amoeba21 comments=H on non-aromatic carbon SMARTS match = [H][C]
+polarize           406          0.4803     0.3900 402
+
+#
+# Multipoles from Electrostatic Potential Fitting
+#
+
+multipole   401  403  402              -0.20120
+                                        0.24374    0.00000   -0.02655
+                                        0.63972
+                                        0.00000   -0.17013
+                                       -0.21517    0.00000   -0.46959
+multipole   402  401  403              -0.18719
+                                       -0.02633    0.00000    0.13188
+                                       -0.23229
+                                        0.00000   -0.27135
+                                       -0.00156    0.00000    0.50364
+multipole   403  401  402               1.54250
+                                        0.02378    0.00000   -0.34611
+                                        0.50732
+                                        0.00000    0.28492
+                                        0.08852    0.00000   -0.79224
+multipole   404  403  401              -0.81240
+                                       -0.04214    0.00000   -0.05692
+                                       -0.25493
+                                        0.00000   -0.29512
+                                       -0.02282    0.00000    0.55005
+multipole   405  401  405               0.06563
+                                       -0.02042    0.00000   -0.03864
+                                        0.01995
+                                        0.00000    0.03226
+                                       -0.00107    0.00000   -0.05221
+multipole   406  402  401               0.05061
+                                        0.03371    0.00000   -0.05696
+                                        0.03300
+                                        0.00000    0.00386
+                                       -0.01306    0.00000   -0.03686

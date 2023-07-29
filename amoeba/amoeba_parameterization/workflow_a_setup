@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for structure in guan imim mamm acet esna mso4
+do
+	mkdir -p $structure
+	cd $structure 
+	cp ../sdf_files/${structure}.sdf ./
+	echo s/xxx_structure_xxx/${structure}/g > tmp
+	sed -f ./tmp ../poltype_template.ini > poltype.ini
+	rm tmp
+	cd ../
+done

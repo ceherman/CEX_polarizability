@@ -1,0 +1,62 @@
+parameters /home/chase/codes/poltype2/ParameterFiles/amoebabio18_header.prm
+OPENMP-THREADS 6
+bondterm none
+angleterm none
+torsionterm none
+vdwterm none
+fix-monopole
+digits 8
+potential-offset 1.0
+RESP-WEIGHT 1
+
+atom          1    1    C     "acet                "         6    12.011    4
+atom          2    2    C     "acet                "         6    12.011    3
+atom          3    3    O     "acet                "         8    15.999    1
+atom          4    4    O     "acet                "         8    15.999    1
+atom          5    5    H     "acet                "         1     1.008    1
+atom          6    6    H     "acet                "         1     1.008    1
+atom          7    7    H     "acet                "         1     1.008    1
+
+multipole     1    2     0                   -0.28351
+                                        0.00000    0.00000   -0.18139
+                                        0.11210
+                                        0.00000    0.11210
+                                        0.00000    0.00000   -0.22420
+multipole     2   -3   -4               1.00127
+                                        0.00000    0.00000    0.29229
+                                        0.37563
+                                        0.00000   -0.51815
+                                        0.00000    0.00000    0.14252
+multipole     3    2    4              -0.87757
+                                        0.13106    0.00000   -0.19377
+                                       -0.49075
+                                        0.00000    0.30886
+                                        0.13966    0.00000    0.18189
+multipole     4    2    3              -0.87792
+                                        0.08837    0.00000   -0.21934
+                                       -0.32875
+                                        0.00000    0.22842
+                                        0.13274    0.00000    0.10033
+multipole     5    1    2               0.00255
+                                        0.02577    0.00000   -0.06950
+                                        0.00471
+                                        0.00000   -0.01972
+                                        0.02400    0.00000    0.01501
+multipole     6    1    2               0.01758
+                                        0.02781    0.00000   -0.08223
+                                        0.00152
+                                        0.00000   -0.01526
+                                        0.01036    0.00000    0.01374
+multipole     7    1    2               0.01760
+                                        0.02788    0.00000   -0.08222
+                                        0.00151
+                                        0.00000   -0.01525
+                                        0.01036    0.00000    0.01374
+
+polarize           1          1.3340     0.3900      5    6    7
+polarize           2          2.8384     0.3900      3    4
+polarize           3          0.9138     0.3900      2
+polarize           4          0.9138     0.3900      2
+polarize           5          0.4803     0.3900      1
+polarize           6          0.4803     0.3900      1
+polarize           7          0.4803     0.3900      1

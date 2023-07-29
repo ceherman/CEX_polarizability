@@ -1,0 +1,27 @@
+molecule { 
+1 1
+ N    0.590700   -0.957200    0.016100
+ C    1.082800    0.248900    0.315400
+ N    0.064400    1.107800    0.207100
+ H    0.139500    2.109200    0.377200
+ C   -1.087800    0.447900   -0.164000
+ C   -0.751700   -0.870800   -0.285900
+ H    1.139500   -1.815100    0.014400
+ H    2.104500    0.483800    0.591200
+ H   -1.995000    1.012400   -0.291100
+ H   -1.286800   -1.766900   -0.548100
+}
+set {
+  geom_maxiter 400
+  g_convergence GAU_LOOSE
+  dynamic_level 1
+}
+memory 5GB
+set_num_threads(6)
+psi4_io.set_default_path("/home/chase/temp/Psi4-imim")
+try:
+    optimize('mp2/6-31G*',engine='geometric')
+except:
+    set opt_coordinates both
+    optimize('mp2/6-31G*')
+clean()

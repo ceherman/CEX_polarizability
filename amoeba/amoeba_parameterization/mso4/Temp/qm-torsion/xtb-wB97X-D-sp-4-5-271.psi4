@@ -1,0 +1,19 @@
+molecule { 
+-1 1
+ S   -0.340127    0.222522   -0.076464
+ O   -0.019483    1.099078   -1.191761
+ O   -0.828259   -1.081646   -0.489889
+ O    1.138790   -0.096927    0.649442
+ C    1.935312   -0.709714   -0.306553
+ O   -1.102201    0.847920    0.981392
+ H    1.798845   -1.798304   -0.286542
+ H    1.657036   -0.333134   -1.294481
+ H    2.985771   -0.474586   -0.098077
+}
+memory 1GB
+set_num_threads(2)
+psi4_io.set_default_path("/home/chase/temp/Psi4-mso4")
+set freeze_core True
+E, wfn = energy('wb97x-d/6-311+G*',return_wfn=True)
+oeprop(wfn,"WIBERG_LOWDIN_INDICES")
+clean()

@@ -1,0 +1,53 @@
+I installed tinker, psi4, poltype2, and openmm
+(I needed OpenMM 7.7+ to make CUDA work on my laptop)
+
+I generated .sdf files from SMILES strings for the species of interest
+(with the help of hack-a-mol https://chemapps.stolaf.edu/jmol/jsmol/hackamol.htm)
+
+I ran workflow_a for directory setup
+I ran poltype2 with workflow_b
+
+I modified the atom/group numbers in the final.key and final.xyz outputs from poltype2
+manually after running workflow_b
+(i.e. I left acetate's numbers as 401+, I changed esna's to 411+, etc.)
+
+(this was because I encountered problems with the poltype2 input trying specify these values
+for reference, search the poltype python script for 401 - this is the 
+starting number parameter for the atom/group numbers
+I used %s/401/451/g in vi, for example, to change the numbers post hoc
+I probably should have re-labeled the atoms in .sdf files before running poltype2 - i.e.
+after running hack-a-mol to get the .sdf files)
+
+I ran workflow_d to append the generated AMOEBA parameters to amoebabio18_mod.prm
+(i.e. amoebabio18.prm copied from the tinker installation)
+
+After workflow_d, I downloaded processTinkerForceField.py and residuesFinal.xml from
+https://github.com/openmm/openmm/tree/master/devtools/forcefield-scripts
+
+python processTinkerForceField_mod.py amoebabio18_mod.prm
+
+(processTinkerForceField_mod.py was modified to remove vdwpwr, as this was 
+throwing errors and isn't believed to be relevant to my system
+I left the vdwpr / Class pair entries out of the .xml file for now.
+The _gk.xml file is for the Generalized Kirkwood imiplicit solvation model - 
+ignore this.
+The AMOEBA-BIO-2018.xml file is what we're after - I copied this to
+AMOEBA-BIO-2018_residues.xml before editing it manually.)
+
+I added residue entries to the AMOEBA-BIO-2018_residues.xml file manually
+(There are entries for each atom and each bond
+The atoms are named according to the CHARMM topology / rtf file naming convention 
+to enable use of the .pdb files that I have from the GROMACS runs)
+
+I copied residues.xml to residues_mod.xml (from the openmm installation
+at ~/psi4conda/lib/python3.8/site-packages/openmm/app/data/residues.xml)
+and I added residue entries to it as well
+(this is an annoying redundancy in openmm) 
+
+I copied AMOEBA-BIO-2018_residues.xml and residues_mod.xml to the appropriate locations
+for openmm using workflow_f. Note that I renamed residues_mod.xml to residues.xml
+while copying because I don't know how to specify a different residues.xml file to
+openmm (like we specify the parameter file). This is dangerous because residues.xml will
+be overwritten anytime OpenMM is upgraded, so keep a copy of residues_mod.xml available.
+
+

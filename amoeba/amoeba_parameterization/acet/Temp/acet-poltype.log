@@ -1,0 +1,233 @@
+Thu Nov  3 12:28:18 2022 Running on host: DESKTOP-26BCFJT
+Thu Nov  3 12:28:18 2022 Atom Type Classification
+Thu Nov  3 12:28:19 2022 Local Frame Symmetry Detection
+Thu Nov  3 12:28:19 2022 Define Polarization Groups and Polarization Parameters
+Thu Nov  3 12:28:19 2022 Relaxed Torsion Scan and Fitting
+Thu Nov  3 12:28:19 2022 Percent of jobs finished 0.0
+Thu Nov  3 12:28:19 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-122_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-122_constr.txt > xtb-opt-1-2-122.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:28:21 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-122.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:28:21 2022 Percent of jobs finished 8.33
+Thu Nov  3 12:28:21 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-152_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-152_constr.txt > xtb-opt-1-2-152.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:28:25 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-152.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:28:25 2022 Percent of jobs finished 16.67
+Thu Nov  3 12:28:25 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-182_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-182_constr.txt > xtb-opt-1-2-182.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:28:28 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-182.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:28:28 2022 Percent of jobs finished 25.0
+Thu Nov  3 12:28:28 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-212_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-212_constr.txt > xtb-opt-1-2-212.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:28:32 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-212.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:28:32 2022 Percent of jobs finished 33.33
+Thu Nov  3 12:28:32 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-242_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-242_constr.txt > xtb-opt-1-2-242.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:28:37 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-242.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:28:37 2022 Percent of jobs finished 41.67
+Thu Nov  3 12:28:37 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-272_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-272_constr.txt > xtb-opt-1-2-272.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:28:43 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-272.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:28:43 2022 Percent of jobs finished 50.0
+Thu Nov  3 12:28:43 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-302_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-302_constr.txt > xtb-opt-1-2-302.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:28:51 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-302.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:28:51 2022 Percent of jobs finished 58.33
+Thu Nov  3 12:28:51 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-092_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-092_constr.txt > xtb-opt-1-2-092.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:28:59 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-092.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:28:59 2022 Percent of jobs finished 66.67
+Thu Nov  3 12:28:59 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-062_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-062_constr.txt > xtb-opt-1-2-062.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:29:08 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-062.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:29:08 2022 Percent of jobs finished 75.0
+Thu Nov  3 12:29:08 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-032_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-032_constr.txt > xtb-opt-1-2-032.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:29:18 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-032.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:29:18 2022 Percent of jobs finished 83.33
+Thu Nov  3 12:29:18 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-002_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-002_constr.txt > xtb-opt-1-2-002.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:29:30 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-002.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:29:30 2022 Percent of jobs finished 91.67
+Thu Nov  3 12:29:30 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg -1 --uhf 0 acet-opt-1-2-332_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-332_constr.txt > xtb-opt-1-2-332.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:29:42 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-opt-1-2-332.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:29:55 2022 Percent of jobs finished 0.0
+Thu Nov  3 12:29:55 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-122.psi4 xtb-wB97X-D-sp-1-2-122.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:29:55 2022 Percent of jobs finished 0.0
+Thu Nov  3 12:29:55 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-152.psi4 xtb-wB97X-D-sp-1-2-152.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:29:55 2022 Percent of jobs finished 0.0
+Thu Nov  3 12:29:55 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-182.psi4 xtb-wB97X-D-sp-1-2-182.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:00 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-122.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:00 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-182.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:00 2022 Percent of jobs finished 16.67
+Thu Nov  3 12:30:00 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-212.psi4 xtb-wB97X-D-sp-1-2-212.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:00 2022 Percent of jobs finished 16.67
+Thu Nov  3 12:30:00 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-242.psi4 xtb-wB97X-D-sp-1-2-242.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:00 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-152.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:00 2022 Percent of jobs finished 25.0
+Thu Nov  3 12:30:00 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-272.psi4 xtb-wB97X-D-sp-1-2-272.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:07 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-242.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:07 2022 Percent of jobs finished 33.33
+Thu Nov  3 12:30:07 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-302.psi4 xtb-wB97X-D-sp-1-2-302.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:07 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-212.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:08 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-272.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:08 2022 Percent of jobs finished 50.0
+Thu Nov  3 12:30:08 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-092.psi4 xtb-wB97X-D-sp-1-2-092.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:08 2022 Percent of jobs finished 50.0
+Thu Nov  3 12:30:08 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-062.psi4 xtb-wB97X-D-sp-1-2-062.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:20 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-302.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:20 2022 Percent of jobs finished 58.33
+Thu Nov  3 12:30:20 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-032.psi4 xtb-wB97X-D-sp-1-2-032.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:21 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-062.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:21 2022 Percent of jobs finished 66.67
+Thu Nov  3 12:30:21 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-002.psi4 xtb-wB97X-D-sp-1-2-002.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:22 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-092.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:22 2022 Percent of jobs finished 75.0
+Thu Nov  3 12:30:22 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-332.psi4 xtb-wB97X-D-sp-1-2-332.log path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:32 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-032.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:32 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-002.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:33 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-332.log path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:35 2022 Torsions being fit 404 401 402 403 RMSD(QM-MM1)0.003874474719946101
+Thu Nov  3 12:30:36 2022 Submitting: minimize.x acet-opt-1-2-122_postQMOPTpostfit.xyz -k tmp-1-2-122_postQMOPTpostfit.key 0.1 >acet-opt-1-2-122_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:37 2022 Normal termination: logfile=acet-opt-1-2-122_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:37 2022 All jobs have terminated ['acet-opt-1-2-122_postQMOPTpostfit.out']
+Thu Nov  3 12:30:37 2022 Submitting: analyze.x acet-opt-1-2-122_postQMOPTpostfit.xyz_2 -k tmp-1-2-122_postQMOPTpostfit.key ed > acet-opt-1-2-122_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:38 2022 Normal termination: logfile=acet-opt-1-2-122_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:38 2022 All jobs have terminated ['acet-opt-1-2-122_postQMOPTpostfit.alz']
+Thu Nov  3 12:30:38 2022 Submitting: analyze.x acet-opt-1-2-122_preQMOPTpostfit.xyz -k tmp-1-2-122_preQMOPTpostfit.key ed > acet-opt-1-2-122_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:39 2022 Normal termination: logfile=acet-opt-1-2-122_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:39 2022 All jobs have terminated ['acet-opt-1-2-122_preQMOPTpostfit.alz']
+Thu Nov  3 12:30:39 2022 Submitting: minimize.x acet-opt-1-2-152_postQMOPTpostfit.xyz -k tmp-1-2-152_postQMOPTpostfit.key 0.1 >acet-opt-1-2-152_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:40 2022 Normal termination: logfile=acet-opt-1-2-152_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:40 2022 All jobs have terminated ['acet-opt-1-2-152_postQMOPTpostfit.out']
+Thu Nov  3 12:30:40 2022 Submitting: analyze.x acet-opt-1-2-152_postQMOPTpostfit.xyz_2 -k tmp-1-2-152_postQMOPTpostfit.key ed > acet-opt-1-2-152_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:41 2022 Normal termination: logfile=acet-opt-1-2-152_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:42 2022 All jobs have terminated ['acet-opt-1-2-152_postQMOPTpostfit.alz']
+Thu Nov  3 12:30:42 2022 Submitting: analyze.x acet-opt-1-2-152_preQMOPTpostfit.xyz -k tmp-1-2-152_preQMOPTpostfit.key ed > acet-opt-1-2-152_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:43 2022 Normal termination: logfile=acet-opt-1-2-152_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:43 2022 All jobs have terminated ['acet-opt-1-2-152_preQMOPTpostfit.alz']
+Thu Nov  3 12:30:43 2022 Submitting: minimize.x acet-opt-1-2-182_postQMOPTpostfit.xyz -k tmp-1-2-182_postQMOPTpostfit.key 0.1 >acet-opt-1-2-182_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:44 2022 Normal termination: logfile=acet-opt-1-2-182_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:44 2022 All jobs have terminated ['acet-opt-1-2-182_postQMOPTpostfit.out']
+Thu Nov  3 12:30:44 2022 Submitting: analyze.x acet-opt-1-2-182_postQMOPTpostfit.xyz_2 -k tmp-1-2-182_postQMOPTpostfit.key ed > acet-opt-1-2-182_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:45 2022 Normal termination: logfile=acet-opt-1-2-182_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:45 2022 All jobs have terminated ['acet-opt-1-2-182_postQMOPTpostfit.alz']
+Thu Nov  3 12:30:45 2022 Submitting: analyze.x acet-opt-1-2-182_preQMOPTpostfit.xyz -k tmp-1-2-182_preQMOPTpostfit.key ed > acet-opt-1-2-182_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:46 2022 Normal termination: logfile=acet-opt-1-2-182_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:46 2022 All jobs have terminated ['acet-opt-1-2-182_preQMOPTpostfit.alz']
+Thu Nov  3 12:30:46 2022 Submitting: minimize.x acet-opt-1-2-212_postQMOPTpostfit.xyz -k tmp-1-2-212_postQMOPTpostfit.key 0.1 >acet-opt-1-2-212_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:47 2022 Normal termination: logfile=acet-opt-1-2-212_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:47 2022 All jobs have terminated ['acet-opt-1-2-212_postQMOPTpostfit.out']
+Thu Nov  3 12:30:47 2022 Submitting: analyze.x acet-opt-1-2-212_postQMOPTpostfit.xyz_2 -k tmp-1-2-212_postQMOPTpostfit.key ed > acet-opt-1-2-212_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:48 2022 Normal termination: logfile=acet-opt-1-2-212_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:49 2022 All jobs have terminated ['acet-opt-1-2-212_postQMOPTpostfit.alz']
+Thu Nov  3 12:30:49 2022 Submitting: analyze.x acet-opt-1-2-212_preQMOPTpostfit.xyz -k tmp-1-2-212_preQMOPTpostfit.key ed > acet-opt-1-2-212_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:50 2022 Normal termination: logfile=acet-opt-1-2-212_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:50 2022 All jobs have terminated ['acet-opt-1-2-212_preQMOPTpostfit.alz']
+Thu Nov  3 12:30:50 2022 Submitting: minimize.x acet-opt-1-2-242_postQMOPTpostfit.xyz -k tmp-1-2-242_postQMOPTpostfit.key 0.1 >acet-opt-1-2-242_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:51 2022 Normal termination: logfile=acet-opt-1-2-242_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:51 2022 All jobs have terminated ['acet-opt-1-2-242_postQMOPTpostfit.out']
+Thu Nov  3 12:30:51 2022 Submitting: analyze.x acet-opt-1-2-242_postQMOPTpostfit.xyz_2 -k tmp-1-2-242_postQMOPTpostfit.key ed > acet-opt-1-2-242_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:52 2022 Normal termination: logfile=acet-opt-1-2-242_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:52 2022 All jobs have terminated ['acet-opt-1-2-242_postQMOPTpostfit.alz']
+Thu Nov  3 12:30:52 2022 Submitting: analyze.x acet-opt-1-2-242_preQMOPTpostfit.xyz -k tmp-1-2-242_preQMOPTpostfit.key ed > acet-opt-1-2-242_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:53 2022 Normal termination: logfile=acet-opt-1-2-242_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:53 2022 All jobs have terminated ['acet-opt-1-2-242_preQMOPTpostfit.alz']
+Thu Nov  3 12:30:53 2022 Submitting: minimize.x acet-opt-1-2-272_postQMOPTpostfit.xyz -k tmp-1-2-272_postQMOPTpostfit.key 0.1 >acet-opt-1-2-272_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:54 2022 Normal termination: logfile=acet-opt-1-2-272_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:54 2022 All jobs have terminated ['acet-opt-1-2-272_postQMOPTpostfit.out']
+Thu Nov  3 12:30:54 2022 Submitting: analyze.x acet-opt-1-2-272_postQMOPTpostfit.xyz_2 -k tmp-1-2-272_postQMOPTpostfit.key ed > acet-opt-1-2-272_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:55 2022 Normal termination: logfile=acet-opt-1-2-272_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:55 2022 All jobs have terminated ['acet-opt-1-2-272_postQMOPTpostfit.alz']
+Thu Nov  3 12:30:55 2022 Submitting: analyze.x acet-opt-1-2-272_preQMOPTpostfit.xyz -k tmp-1-2-272_preQMOPTpostfit.key ed > acet-opt-1-2-272_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:56 2022 Normal termination: logfile=acet-opt-1-2-272_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:57 2022 All jobs have terminated ['acet-opt-1-2-272_preQMOPTpostfit.alz']
+Thu Nov  3 12:30:57 2022 Submitting: minimize.x acet-opt-1-2-302_postQMOPTpostfit.xyz -k tmp-1-2-302_postQMOPTpostfit.key 0.1 >acet-opt-1-2-302_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:58 2022 Normal termination: logfile=acet-opt-1-2-302_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:58 2022 All jobs have terminated ['acet-opt-1-2-302_postQMOPTpostfit.out']
+Thu Nov  3 12:30:58 2022 Submitting: analyze.x acet-opt-1-2-302_postQMOPTpostfit.xyz_2 -k tmp-1-2-302_postQMOPTpostfit.key ed > acet-opt-1-2-302_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:59 2022 Normal termination: logfile=acet-opt-1-2-302_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:30:59 2022 All jobs have terminated ['acet-opt-1-2-302_postQMOPTpostfit.alz']
+Thu Nov  3 12:30:59 2022 Submitting: analyze.x acet-opt-1-2-302_preQMOPTpostfit.xyz -k tmp-1-2-302_preQMOPTpostfit.key ed > acet-opt-1-2-302_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:00 2022 Normal termination: logfile=acet-opt-1-2-302_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:00 2022 All jobs have terminated ['acet-opt-1-2-302_preQMOPTpostfit.alz']
+Thu Nov  3 12:31:00 2022 Submitting: minimize.x acet-opt-1-2-092_postQMOPTpostfit.xyz -k tmp-1-2-092_postQMOPTpostfit.key 0.1 >acet-opt-1-2-092_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:01 2022 Normal termination: logfile=acet-opt-1-2-092_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:01 2022 All jobs have terminated ['acet-opt-1-2-092_postQMOPTpostfit.out']
+Thu Nov  3 12:31:01 2022 Submitting: analyze.x acet-opt-1-2-092_postQMOPTpostfit.xyz_2 -k tmp-1-2-092_postQMOPTpostfit.key ed > acet-opt-1-2-092_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:02 2022 Normal termination: logfile=acet-opt-1-2-092_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:02 2022 All jobs have terminated ['acet-opt-1-2-092_postQMOPTpostfit.alz']
+Thu Nov  3 12:31:02 2022 Submitting: analyze.x acet-opt-1-2-092_preQMOPTpostfit.xyz -k tmp-1-2-092_preQMOPTpostfit.key ed > acet-opt-1-2-092_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:03 2022 Normal termination: logfile=acet-opt-1-2-092_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:04 2022 All jobs have terminated ['acet-opt-1-2-092_preQMOPTpostfit.alz']
+Thu Nov  3 12:31:04 2022 Submitting: minimize.x acet-opt-1-2-062_postQMOPTpostfit.xyz -k tmp-1-2-062_postQMOPTpostfit.key 0.1 >acet-opt-1-2-062_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:05 2022 Normal termination: logfile=acet-opt-1-2-062_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:05 2022 All jobs have terminated ['acet-opt-1-2-062_postQMOPTpostfit.out']
+Thu Nov  3 12:31:05 2022 Submitting: analyze.x acet-opt-1-2-062_postQMOPTpostfit.xyz_2 -k tmp-1-2-062_postQMOPTpostfit.key ed > acet-opt-1-2-062_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:06 2022 Normal termination: logfile=acet-opt-1-2-062_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:06 2022 All jobs have terminated ['acet-opt-1-2-062_postQMOPTpostfit.alz']
+Thu Nov  3 12:31:06 2022 Submitting: analyze.x acet-opt-1-2-062_preQMOPTpostfit.xyz -k tmp-1-2-062_preQMOPTpostfit.key ed > acet-opt-1-2-062_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:07 2022 Normal termination: logfile=acet-opt-1-2-062_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:07 2022 All jobs have terminated ['acet-opt-1-2-062_preQMOPTpostfit.alz']
+Thu Nov  3 12:31:07 2022 Submitting: minimize.x acet-opt-1-2-032_postQMOPTpostfit.xyz -k tmp-1-2-032_postQMOPTpostfit.key 0.1 >acet-opt-1-2-032_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:08 2022 Normal termination: logfile=acet-opt-1-2-032_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:08 2022 All jobs have terminated ['acet-opt-1-2-032_postQMOPTpostfit.out']
+Thu Nov  3 12:31:08 2022 Submitting: analyze.x acet-opt-1-2-032_postQMOPTpostfit.xyz_2 -k tmp-1-2-032_postQMOPTpostfit.key ed > acet-opt-1-2-032_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:09 2022 Normal termination: logfile=acet-opt-1-2-032_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:09 2022 All jobs have terminated ['acet-opt-1-2-032_postQMOPTpostfit.alz']
+Thu Nov  3 12:31:09 2022 Submitting: analyze.x acet-opt-1-2-032_preQMOPTpostfit.xyz -k tmp-1-2-032_preQMOPTpostfit.key ed > acet-opt-1-2-032_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:10 2022 Normal termination: logfile=acet-opt-1-2-032_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:10 2022 All jobs have terminated ['acet-opt-1-2-032_preQMOPTpostfit.alz']
+Thu Nov  3 12:31:10 2022 Submitting: minimize.x acet-opt-1-2-002_postQMOPTpostfit.xyz -k tmp-1-2-002_postQMOPTpostfit.key 0.1 >acet-opt-1-2-002_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:12 2022 Normal termination: logfile=acet-opt-1-2-002_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:12 2022 All jobs have terminated ['acet-opt-1-2-002_postQMOPTpostfit.out']
+Thu Nov  3 12:31:12 2022 Submitting: analyze.x acet-opt-1-2-002_postQMOPTpostfit.xyz_2 -k tmp-1-2-002_postQMOPTpostfit.key ed > acet-opt-1-2-002_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:13 2022 Normal termination: logfile=acet-opt-1-2-002_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:13 2022 All jobs have terminated ['acet-opt-1-2-002_postQMOPTpostfit.alz']
+Thu Nov  3 12:31:13 2022 Submitting: analyze.x acet-opt-1-2-002_preQMOPTpostfit.xyz -k tmp-1-2-002_preQMOPTpostfit.key ed > acet-opt-1-2-002_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:14 2022 Normal termination: logfile=acet-opt-1-2-002_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:14 2022 All jobs have terminated ['acet-opt-1-2-002_preQMOPTpostfit.alz']
+Thu Nov  3 12:31:14 2022 Submitting: minimize.x acet-opt-1-2-332_postQMOPTpostfit.xyz -k tmp-1-2-332_postQMOPTpostfit.key 0.1 >acet-opt-1-2-332_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:15 2022 Normal termination: logfile=acet-opt-1-2-332_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:15 2022 All jobs have terminated ['acet-opt-1-2-332_postQMOPTpostfit.out']
+Thu Nov  3 12:31:15 2022 Submitting: analyze.x acet-opt-1-2-332_postQMOPTpostfit.xyz_2 -k tmp-1-2-332_postQMOPTpostfit.key ed > acet-opt-1-2-332_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:16 2022 Normal termination: logfile=acet-opt-1-2-332_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:16 2022 All jobs have terminated ['acet-opt-1-2-332_postQMOPTpostfit.alz']
+Thu Nov  3 12:31:16 2022 Submitting: analyze.x acet-opt-1-2-332_preQMOPTpostfit.xyz -k tmp-1-2-332_preQMOPTpostfit.key ed > acet-opt-1-2-332_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:17 2022 Normal termination: logfile=acet-opt-1-2-332_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/acet/Temp/qm-torsion
+Thu Nov  3 12:31:17 2022 All jobs have terminated ['acet-opt-1-2-332_preQMOPTpostfit.alz']
+Thu Nov  3 12:31:17 2022 Torsion 404 401 402 403 RMSD(MM2,QM) 0.004785482617982155 RelativeRMSD(MM2,QM) 0.004700393284262418 
+
+Thu Nov  3 12:31:18 2022 
+Thu Nov  3 12:31:18 2022 =========================================================
+Thu Nov  3 12:31:18 2022 Minimizing structure
+
+Thu Nov  3 12:31:18 2022 Submitting: minimize.x -k final.key final.xyz 0.1 > Minimized_final.out path = /home/chase/amoeba_parameterization/acet/Temp
+Thu Nov  3 12:31:18 2022 
+
+Thu Nov  3 12:31:18 2022 =========================================================
+
+Thu Nov  3 12:31:18 2022 Structure RMSD Comparison
+
+
+Thu Nov  3 12:31:18 2022 Submitting: superpose.x acet.xyz_2 final.xyz_2 1 N M N 0  > acet-superin.txt path = /home/chase/amoeba_parameterization/acet/Temp
+Thu Nov  3 12:31:18 2022 RMSD = 0.008645 Tolerance is 1
+Thu Nov  3 12:31:18 2022 Submitting: analyze.x acet.xyz_2 -k final.key em | grep -A11 Charge>MMDipole.txt path = /home/chase/amoeba_parameterization/acet/Temp
+Thu Nov  3 12:31:18 2022 Relative error of 0.00557103064066846 for QMDipole 3.231 and 3.213 for MMDipole  tolerance = 0.5 /home/chase/amoeba_parameterization/acet/Temp
+Thu Nov  3 12:31:18 2022 Total torsion QM time for ((6, 1, 2, 3),) is 0.034 hours and 36 conformations
+Thu Nov  3 12:31:18 2022 OPT torsion QM time for ((6, 1, 2, 3),) is 0.008 hours and 36 conformations
+Thu Nov  3 12:31:18 2022 SP torsion QM time for ((6, 1, 2, 3),) is 0.026 hours and 36 conformations
+Thu Nov  3 12:31:18 2022 Poltype Job Finished
+

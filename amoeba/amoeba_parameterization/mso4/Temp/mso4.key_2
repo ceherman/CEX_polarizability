@@ -1,0 +1,53 @@
+parameters /home/chase/codes/poltype2/ParameterFiles/amoebabio18_header.prm
+OPENMP-THREADS 6
+bondterm none
+angleterm none
+torsionterm none
+vdwterm none
+fix-monopole
+digits 8
+potential-offset 1.0
+RESP-WEIGHT 1
+
+atom          401    401    S     "mso4                "        16    32.066    4
+atom          402    402    O     "mso4                "         8    15.999    1
+atom          403    403    O     "mso4                "         8    15.999    2
+atom          404    404    C     "mso4                "         6    12.011    4
+atom          405    405    H     "mso4                "         1     1.008    1
+
+multipole    401    403      0              1.76747
+                                      0.00000    0.00000    0.25109
+                                      0.06804
+                                      0.00000    0.06804
+                                      0.00000    0.00000   -0.13607
+multipole    402    401    403             -0.79566
+                                      0.01048    0.00000    0.04987
+                                     -0.19199
+                                      0.00000   -0.27376
+                                     -0.00043    0.00000    0.46575
+multipole    403    404    401             -0.54134
+                                      0.09365    0.00000    0.35922
+                                     -0.02469
+                                      0.00000   -0.55021
+                                      0.03267    0.00000    0.57490
+multipole    404    403      0              0.10262
+                                      0.00000    0.00000    0.07596
+                                     -0.39602
+                                      0.00000   -0.39602
+                                      0.00000    0.00000    0.79204
+multipole    405    404    403              0.01941
+                                      0.00014    0.00000   -0.13441
+                                      0.02176
+                                      0.00000    0.00462
+                                     -0.02925    0.00000   -0.02638
+
+# amoeba21 comments=Sulfur connected to three oxygens with two of them having a valence of one SMARTS match = [SX4](=[OX1])(=[OX1])[OX1-1]
+polarize           401          2.4710     0.3900 402 403
+# amoeba21 comments=Oxygen with valence of one connected to sulfur SMARTS match = [OX1-1][S]
+polarize           402          1.5801     0.3900 401
+# amoeba21 comments=O on non-polar carbon SMARTS match = [O][CX4]
+polarize           403          0.8122     0.3900 401
+# amoeba21 comments=C on non-aromatic oxygen SMARTS match = [C][O]
+polarize           404          1.6196     0.3900 405
+# amoeba21 comments=H on non-aromatic carbon SMARTS match = [H][C]
+polarize           405          0.4803     0.3900 404

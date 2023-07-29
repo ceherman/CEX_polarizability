@@ -1,0 +1,24 @@
+molecule { 
+-1 1
+ C   -0.634100   -0.088100   -0.025400
+ C    0.868200    0.127100    0.034000
+ O    1.246500    1.324800   -0.090400
+ O    1.547600   -0.924500    0.200800
+ H   -1.166900    0.856600   -0.170900
+ H   -0.880300   -0.755500   -0.856600
+ H   -0.980900   -0.540400    0.908500
+}
+set {
+  geom_maxiter 400
+  g_convergence GAU_LOOSE
+  dynamic_level 1
+}
+memory 5GB
+set_num_threads(6)
+psi4_io.set_default_path("/home/chase/temp/Psi4-acet")
+try:
+    optimize('mp2/6-31G*',engine='geometric')
+except:
+    set opt_coordinates both
+    optimize('mp2/6-31G*')
+clean()

@@ -1,0 +1,60 @@
+
+     ######################################################################
+   ##########################################################################
+  ###                                                                      ###
+ ###            Tinker  ---  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                       Version 8.10.4  October 2022                       ##
+ ##                                                                          ##
+ ##               Copyright (c)  Jay William Ponder  1990-2022               ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ###
+   ##########################################################################
+     ######################################################################
+
+
+ Additional Atom Definition Parameters :
+
+     Type  Class  Symbol  Description               Atomic    Mass   Valence
+
+      401   401     S     mso4                        16     32.066     4
+      402   402     O     mso4                         8     15.999     1
+      403   403     O     mso4                         8     15.999     2
+      404   404     C     mso4                         6     12.011     4
+      405   405     H     mso4                         1      1.008     1
+
+ Additional Atom Definition Parameters :
+
+     Type  Class  Symbol  Description               Atomic    Mass   Valence
+
+      401   401     S     mso4                        16     32.066     4
+      402   402     O     mso4                         8     15.999     1
+      403   403     O     mso4                         8     15.999     2
+      404   404     C     mso4                         6     12.011     4
+      405   405     H     mso4                         1      1.008     1
+
+ Structure File 1 :  mso4.xyz_2
+
+ Structure File 2 :  final.xyz_2
+
+ File 1 Frame :     1             File 2 Frame :     1
+
+ Summary of Results from Structural Superposition :
+
+ IMPOSE  --  Input Coordinates                0.019510
+ IMPOSE  --  After Translation                0.018446
+ IMPOSE  --  After Rotation                   0.017562
+
+ Root Mean Square Distance :                  0.017562        1      1
+
+   Atom in the         Atom in the            Distance          Weight
+ First Structure     Second Structure        Separated          in Fit
+
+         1-S                 1-S              0.006021         32.0660
+         2-O                 2-O              0.018269         15.9990
+         3-O                 3-O              0.018267         15.9990
+         4-O                 4-O              0.020855         15.9990
+         5-C                 5-C              0.022561         12.0110
+         6-O                 6-O              0.022939         15.9990
+
+ Root Mean Square Distance :                  0.017562

@@ -1,0 +1,131 @@
+
+     ######################################################################
+   ##########################################################################
+  ###                                                                      ###
+ ###            Tinker  ---  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                       Version 8.10.4  October 2022                       ##
+ ##                                                                          ##
+ ##               Copyright (c)  Jay William Ponder  1990-2022               ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ###
+   ##########################################################################
+     ######################################################################
+
+
+ Additional Atom Definition Parameters :
+
+     Type  Class  Symbol  Description               Atomic    Mass   Valence
+
+      401   401     C     mamm                         6     12.011     4
+      402   402     N     mamm                         7     14.007     4
+      403   403     H     mamm                         1      1.008     1
+      404   404     H     mamm                         1      1.008     1
+
+ Additional Bond Stretching Parameters :
+
+     Atom Classes             K(S)         Length
+
+       402 401             194.378         1.5100
+       404 401             345.979         1.0900
+       403 402             434.641         1.0300
+
+ Additional Angle Bending Parameters :
+
+     Atom Classes             K(B)          Angle
+
+     403 402 401            49.269        111.650
+     404 401 402            64.360        108.370
+     403 402 403            42.126        107.200
+     404 401 404            36.407        110.550
+
+ Additional Stretch-Bend Parameters :
+
+     Atom Classes          K(SB)-1        K(SB)-2
+
+     403 402 401            29.856         29.856
+     404 401 402             5.713          5.713
+     403 402 403            29.856         29.856
+     404 401 404             5.713          5.713
+
+ Additional Torsional Parameters :
+
+     Atom Classes     1-Fold    2-Fold    3-Fold    4-Fold    5-Fold    6-Fold
+
+   404 401 402 403   0.00   0  0.00 180  0.25   0  0.00 180  0.00   0 -0.00 180
+
+ Additional Atomic Multipole Parameters :
+
+     Atom Type     Coordinate Frame Definition         Multipole Moments
+
+         401      402      0      0   Z-Only      -0.03020
+                                                   0.00000  0.00000  0.44097
+                                                  -0.47059
+                                                   0.00000 -0.47059
+                                                   0.00000  0.00000  0.94118
+
+         402      401      0      0   Z-Only       0.13002
+                                                   0.00000  0.00000  0.08689
+                                                  -0.12954
+                                                   0.00000 -0.12954
+                                                   0.00000  0.00000  0.25908
+
+         403      402    401      0   Z-then-X     0.19356
+                                                   0.04232  0.00000 -0.15075
+                                                   0.02906
+                                                   0.00000  0.00247
+                                                   0.01555  0.00000 -0.03153
+
+         404      401    402      0   Z-then-X     0.10650
+                                                   0.00312  0.00000 -0.07874
+                                                   0.00340
+                                                   0.00000  0.02721
+                                                  -0.01603  0.00000 -0.03061
+
+ Additional Atomic Dipole Polarizability Parameters :
+
+     Atom Type           Alpha       Thole     Group Atom Types
+
+         401             0.807       0.390         404
+         402             1.185       0.390         403
+         403             0.262       0.390         402
+         404             0.480       0.390         401
+
+ Additional van der Waals Parameters :
+
+     Atom Class               Size        Epsilon        Reduction
+
+         401                3.8200         0.1010          0.000
+         402                3.7100         0.1050          0.000
+         403                2.4800         0.0115          0.900
+         404                2.8800         0.0240          0.910
+
+ Additional Solvation Parameters :
+
+     Atom Type                PB Size     CS Size     GK Size
+
+         403             3.0352      2.6860      3.3152
+         404             3.1430      3.3740      4.1440
+         401             3.5062      3.3090      4.5360
+         402             2.8836      2.9900      3.2180
+
+ Limited Memory BFGS Quasi-Newton Optimization :
+
+ QN Iter     F Value      G RMS      F Move   X Move   Angle  FG Call  Comment
+
+     0        8.6657     9.5485                                   1
+     1        8.2697     7.3383      0.3960   0.0108    0.00      3    Success 
+     2        8.2521     6.3760      0.0176   0.0007   36.84      5    Success 
+     3        8.1906     4.2777      0.0615   0.0020   40.30      7    Success 
+     4        8.1315     0.8259      0.0591   0.0048   49.44      8    Success 
+     5        8.1281     0.5051      0.0034   0.0009   34.48      9    Success 
+     6        8.1252     0.4373      0.0028   0.0011   29.13     10    Success 
+     7        8.1221     0.5002      0.0031   0.0020   38.17     11    Success 
+     8        8.1214     0.2975      0.0007   0.0006   56.68     13    Success 
+     9        8.1211     0.0880      0.0003   0.0004   49.75     14   SmallGrad
+
+ LBFGS  --  Normal Termination due to SmallGrad
+
+ Final Function Value :            8.12108657
+ Final RMS Gradient :              0.08795188
+ Final Gradient Norm :             0.24876547

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+cp amoebabio18.prm amoebabio18_mod.prm
+
+for word in atom vdw bond angle strbnd opbend torsion polarize
+do
+	for structure in acet esna mso4 guan imim mamm
+	do
+		grep $word ./${structure}/final.key >> amoebabio18_mod.prm		
+	done
+done
+
+for structure in acet esna mso4 guan imim mamm
+do
+	cd $structure 
+	grep -A 5 multipole final.key > multipole_tmp1
+	grep -v "#" multipole_tmp1 > multipole_tmp2
+	cat multipole_tmp2 >> ../amoebabio18_mod.prm
+	cd ../
+done

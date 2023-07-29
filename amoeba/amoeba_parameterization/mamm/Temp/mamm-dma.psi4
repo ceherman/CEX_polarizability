@@ -1,0 +1,23 @@
+molecule { 
+1 1
+C 0.795210347031 -0.061061835964 0.098450213896
+N -0.695205151533 0.053382288213 -0.08606908288
+H -1.122317037916 -0.857698994051 -0.298859606916
+H -1.155604888103 0.415137354094 0.759474147268
+H -0.934271493711 0.689220276298 -0.858297767647
+H 0.987037818056 -0.742579989867 0.9241432667
+H 1.226046814754 -0.446613948224 -0.822829416487
+H 1.190099300796 0.927875911153 0.320013531124
+no_reorient
+}
+memory 5GB
+set_num_threads(6)
+psi4_io.set_default_path("/home/chase/temp/Psi4-mamm")
+set freeze_core True
+set PROPERTIES_ORIGIN ["COM"]
+set cubeprop_tasks ['esp']
+set basis 6-311G** 
+E, wfn = properties('mp2',properties=['dipole'],return_wfn=True)
+cubeprop(wfn)
+fchk(wfn, "mamm-dma.fchk")
+clean()

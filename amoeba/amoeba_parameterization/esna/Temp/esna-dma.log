@@ -1,0 +1,554 @@
+2022-11-03:12:48:44,798 INFO     [psi4.driver.task_planner:266] PLANNING Atomic:  keywords={'CUBEPROP_TASKS': ['ESP'], 'FREEZE_CORE': 'TRUE', 'PROPERTIES_ORIGIN': ['COM'], 'function_kwargs': {}}
+2022-11-03:12:48:44,801 INFO     [psi4.driver.driver:774] Compute properties(): method=mp2, basis=6-311g**, molecule=default, nre=346.81550917137173
+2022-11-03:12:48:48,901 INFO     [psi4.driver.driver:777] Return properties(): -701.8783489013658
+ M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, and A. Jiang
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Thursday, 03 November 2022 12:48PM
+
+    Process ID: 8302
+    Host:       DESKTOP-26BCFJT
+    PSIDATADIR: /home/chase/psi4conda/share/psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+molecule { 
+-1 1
+C -1.081080587869 -0.905488388676 -0.014299768701
+C -2.300057939586 -0.019229123569 0.173122591
+S 0.449358044079 0.054532207768 -0.028398541071
+O 0.470256843619 0.722351991219 1.302771590869
+O 1.510481626599 -0.970088651321 -0.218573911066
+O 0.281338730189 0.987042284492 -1.177589425726
+H -0.986925461513 -1.636101047406 0.794668477137
+H -1.120822577288 -1.448474269382 -0.963340506262
+H -2.214887941471 0.524802440311 1.116185631952
+H -2.348376154545 0.711887585277 -0.636646628121
+H -3.226516109671 -0.604949022221 0.181162192179
+no_reorient
+}
+memory 5GB
+set_num_threads(6)
+psi4_io.set_default_path("/home/chase/temp/Psi4-esna")
+set freeze_core True
+set PROPERTIES_ORIGIN ["COM"]
+set cubeprop_tasks ['esp']
+set basis 6-311G** 
+E, wfn = properties('mp2',properties=['dipole'],return_wfn=True)
+cubeprop(wfn)
+fchk(wfn, "esna-dma.fchk")
+clean()
+--------------------------------------------------------------------------
+
+  Memory set to   4.657 GiB by Python driver.
+  Threads set to 6 by Python driver.
+    SCF Algorithm Type (re)set to DF.
+
+*** tstart() called on DESKTOP-26BCFJT
+*** at Thu Nov  3 12:48:44 2022
+
+   => Loading Basis Set <=
+
+    Name: 6-311G**
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-2  entry C          line   113 file /home/chase/psi4conda/share/psi4/basis/6-311gss.gbs 
+    atoms 3    entry S          line   393 file /home/chase/psi4conda/share/psi4/basis/6-311gss.gbs 
+    atoms 4-6  entry O          line   151 file /home/chase/psi4conda/share/psi4/basis/6-311gss.gbs 
+    atoms 7-11 entry H          line    32 file /home/chase/psi4conda/share/psi4/basis/6-311gss.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        6 Threads,   4768 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = -1, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -1.081080587869    -0.905488388676    -0.014299768701    12.000000000000
+         C           -2.300057939586    -0.019229123569     0.173122591000    12.000000000000
+         S            0.449358044079     0.054532207768    -0.028398541071    31.972071174400
+         O            0.470256843619     0.722351991219     1.302771590869    15.994914619570
+         O            1.510481626599    -0.970088651321    -0.218573911066    15.994914619570
+         O            0.281338730189     0.987042284492    -1.177589425726    15.994914619570
+         H           -0.986925461513    -1.636101047406     0.794668477137     1.007825032230
+         H           -1.120822577288    -1.448474269382    -0.963340506262     1.007825032230
+         H           -2.214887941471     0.524802440311     1.116185631952     1.007825032230
+         H           -2.348376154545     0.711887585277    -0.636646628121     1.007825032230
+         H           -3.226516109671    -0.604949022221     0.181162192179     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.15598  B =      0.08334  C =      0.08266 [cm^-1]
+  Rotational constants: A =   4676.06957  B =   2498.55580  C =   2478.16300 [MHz]
+  Nuclear repulsion =  346.815509171371730
+
+  Charge       = -1
+  Multiplicity = 1
+  Electrons    = 58
+  Nalpha       = 29
+  Nbeta        = 29
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-10
+  Density threshold  = 1.00e-10
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-311G**
+    Blend: 6-311G**
+    Number of shells: 72
+    Number of basis functions: 146
+    Number of Cartesian functions: 152
+    Spherical Harmonics?: true
+    Max angular momentum: 2
+
+   => Loading Basis Set <=
+
+    Name: (6-311G** AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1-2  entry C          line   125 file /home/chase/psi4conda/share/psi4/basis/cc-pvtz-jkfit.gbs 
+    atoms 3    entry S          line   613 file /home/chase/psi4conda/share/psi4/basis/cc-pvtz-jkfit.gbs 
+    atoms 4-6  entry O          line   229 file /home/chase/psi4conda/share/psi4/basis/cc-pvtz-jkfit.gbs 
+    atoms 7-11 entry H          line    51 file /home/chase/psi4conda/share/psi4/basis/cc-pvtz-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.109 GiB; user supplied 3.492 GiB. Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               6
+    Memory [MiB]:              3576
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       4.5881
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (6-311G** AUX)
+    Blend: CC-PVTZ-JKFIT
+    Number of shells: 212
+    Number of basis functions: 666
+    Number of Cartesian functions: 800
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 3.4111440175E-03.
+  Reciprocal condition number of the overlap matrix is 5.0301989129E-04.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A        146     146 
+   -------------------------
+    Total     146     146
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:  -700.33349789420981   -7.00333e+02   0.00000e+00 
+   @DF-RHF iter   1:  -700.53053947529247   -1.97042e-01   5.80143e-03 ADIIS/DIIS
+   @DF-RHF iter   2:  -700.71849390383784   -1.87954e-01   3.86036e-03 ADIIS/DIIS
+   @DF-RHF iter   3:  -700.82208555746467   -1.03592e-01   4.54540e-04 ADIIS/DIIS
+   @DF-RHF iter   4:  -700.82456166525344   -2.47611e-03   1.41564e-04 ADIIS/DIIS
+   @DF-RHF iter   5:  -700.82489960444082   -3.37939e-04   3.62037e-05 DIIS
+   @DF-RHF iter   6:  -700.82492134786378   -2.17434e-05   8.91912e-06 DIIS
+   @DF-RHF iter   7:  -700.82492348040330   -2.13254e-06   2.96583e-06 DIIS
+   @DF-RHF iter   8:  -700.82492369090346   -2.10500e-07   1.09170e-06 DIIS
+   @DF-RHF iter   9:  -700.82492371476474   -2.38613e-08   4.51696e-07 DIIS
+   @DF-RHF iter  10:  -700.82492371793523   -3.17050e-09   1.16087e-07 DIIS
+   @DF-RHF iter  11:  -700.82492371821502   -2.79783e-10   2.43416e-08 DIIS
+   @DF-RHF iter  12:  -700.82492371822968   -1.46656e-11   5.90573e-09 DIIS
+   @DF-RHF iter  13:  -700.82492371823139   -1.70530e-12   1.70676e-09 DIIS
+   @DF-RHF iter  14:  -700.82492371823139    0.00000e+00   5.89399e-10 DIIS
+   @DF-RHF iter  15:  -700.82492371823093    4.54747e-13   1.05853e-10 DIIS
+   @DF-RHF iter  16:  -700.82492371823093    0.00000e+00   3.20900e-11 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -91.992136     2A    -20.327992     3A    -20.327969  
+       4A    -20.327374     5A    -11.098613     6A    -11.089339  
+       7A     -8.963769     8A     -6.649158     9A     -6.649126  
+      10A     -6.648446    11A     -1.260049    12A     -1.111250  
+      13A     -1.110909    14A     -0.906822    15A     -0.741727  
+      16A     -0.604228    17A     -0.499593    18A     -0.491237  
+      19A     -0.454684    20A     -0.443252    21A     -0.415749  
+      22A     -0.383653    23A     -0.363177    24A     -0.312506  
+      25A     -0.312479    26A     -0.267719    27A     -0.267604  
+      28A     -0.242937    29A     -0.227293  
+
+    Virtual:                                                              
+
+      30A      0.283845    31A      0.332469    32A      0.340857  
+      33A      0.351455    34A      0.389105    35A      0.434699  
+      36A      0.464155    37A      0.470933    38A      0.488902  
+      39A      0.507902    40A      0.556467    41A      0.582828  
+      42A      0.590962    43A      0.619633    44A      0.632657  
+      45A      0.707822    46A      0.731336    47A      0.737724  
+      48A      0.897042    49A      0.905306    50A      0.929750  
+      51A      0.930823    52A      0.950424    53A      0.967965  
+      54A      0.989358    55A      1.100876    56A      1.129141  
+      57A      1.138081    58A      1.170296    59A      1.175279  
+      60A      1.193214    61A      1.232305    62A      1.338875  
+      63A      1.358161    64A      1.380887    65A      1.394945  
+      66A      1.413799    67A      1.417814    68A      1.430672  
+      69A      1.466356    70A      1.536066    71A      1.622925  
+      72A      1.634851    73A      1.649441    74A      1.748822  
+      75A      1.787903    76A      1.837532    77A      1.854105  
+      78A      1.863700    79A      1.909658    80A      1.940777  
+      81A      1.967399    82A      2.015901    83A      2.072578  
+      84A      2.082886    85A      2.148375    86A      2.158708  
+      87A      2.226083    88A      2.304784    89A      2.328184  
+      90A      2.330394    91A      2.445477    92A      2.460211  
+      93A      2.503212    94A      2.578203    95A      2.722661  
+      96A      2.760908    97A      2.866445    98A      2.867098  
+      99A      2.962037   100A      2.968445   101A      2.975017  
+     102A      3.066440   103A      3.084502   104A      3.115756  
+     105A      3.152447   106A      3.264721   107A      3.352757  
+     108A      3.412309   109A      3.417504   110A      3.425088  
+     111A      3.434089   112A      3.436743   113A      3.449176  
+     114A      3.535600   115A      3.553071   116A      3.563885  
+     117A      3.697346   118A      3.736683   119A      3.748808  
+     120A      3.860119   121A      4.010832   122A      4.131584  
+     123A      4.136078   124A      4.294789   125A      4.330654  
+     126A      4.345427   127A      4.712017   128A      5.611899  
+     129A      5.615451   130A      5.635130   131A      5.635222  
+     132A      5.642569   133A      5.648862   134A      5.743016  
+     135A      5.944665   136A      5.952040   137A      8.737295  
+     138A     18.510158   139A     18.620225   140A     18.636177  
+     141A     25.126312   142A     25.215322   143A     51.708190  
+     144A     51.720611   145A     51.815856   146A    192.447071  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    29 ]
+
+  @DF-RHF Final Energy:  -700.82492371823093
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            346.8155091713717297
+    One-Electron Energy =               -1666.2992879496143814
+    Two-Electron Energy =                 618.6588550600116605
+    Total Energy =                       -700.8249237182309344
+
+Computation Completed
+
+*** tstop() called on DESKTOP-26BCFJT at Thu Nov  3 12:48:46 2022
+Module time:
+	user time   =       7.69 seconds =       0.13 minutes
+	system time =       0.25 seconds =       0.00 minutes
+	total time  =          2 seconds =       0.03 minutes
+Total time:
+	user time   =       7.69 seconds =       0.13 minutes
+	system time =       0.25 seconds =       0.00 minutes
+	total time  =          2 seconds =       0.03 minutes
+   => Loading Basis Set <=
+
+    Name: (6-311G** AUX)
+    Role: RIFIT
+    Keyword: DF_BASIS_MP2
+    atoms 1-2  entry C          line   209 file /home/chase/psi4conda/share/psi4/basis/cc-pvtz-ri.gbs 
+    atoms 3    entry S          line   779 file /home/chase/psi4conda/share/psi4/basis/cc-pvtz-ri.gbs 
+    atoms 4-6  entry O          line   305 file /home/chase/psi4conda/share/psi4/basis/cc-pvtz-ri.gbs 
+    atoms 7-11 entry H          line    19 file /home/chase/psi4conda/share/psi4/basis/cc-pvtz-ri.gbs 
+
+
+*** tstart() called on DESKTOP-26BCFJT
+*** at Thu Nov  3 12:48:46 2022
+
+
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //               DFMP2               //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+	 --------------------------------------------------------
+	                          DF-MP2                         
+	      2nd-Order Density-Fitted Moller-Plesset Theory     
+	              RMP2 Wavefunction,   6 Threads             
+	                                                         
+	        Rob Parrish, Justin Turney, Andy Simmonett,      
+	           Ed Hohenstein, and C. David Sherrill          
+	 --------------------------------------------------------
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (6-311G** AUX)
+    Blend: CC-PVTZ-RI
+    Number of shells: 197
+    Number of basis functions: 677
+    Number of Cartesian functions: 836
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+	 --------------------------------------------------------
+	                 NBF =   146, NAUX =   677
+	 --------------------------------------------------------
+	   CLASS    FOCC     OCC    AOCC    AVIR     VIR    FVIR
+	   PAIRS      10      29      19     117     117       0
+	 --------------------------------------------------------
+
+  DFHelper Memory: AOs need 0.109 GiB; user supplied 3.492 GiB. Using in-core AOs.
+
+
+         ------------------------------------------------------------
+                                     CPHF                           
+                                  Rob Parrish                       
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = -1, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -1.081080587869    -0.905488388676    -0.014299768701    12.000000000000
+         C           -2.300057939586    -0.019229123569     0.173122591000    12.000000000000
+         S            0.449358044079     0.054532207768    -0.028398541071    31.972071174400
+         O            0.470256843619     0.722351991219     1.302771590869    15.994914619570
+         O            1.510481626599    -0.970088651321    -0.218573911066    15.994914619570
+         O            0.281338730189     0.987042284492    -1.177589425726    15.994914619570
+         H           -0.986925461513    -1.636101047406     0.794668477137     1.007825032230
+         H           -1.120822577288    -1.448474269382    -0.963340506262     1.007825032230
+         H           -2.214887941471     0.524802440311     1.116185631952     1.007825032230
+         H           -2.348376154545     0.711887585277    -0.636646628121     1.007825032230
+         H           -3.226516109671    -0.604949022221     0.181162192179     1.007825032230
+
+  Nuclear repulsion =  346.815509171371730
+  Reference energy  = -700.824923718230934
+
+  ==> Basis Set <==
+
+  Basis Set: 6-311G**
+    Blend: 6-311G**
+    Number of shells: 72
+    Number of basis functions: 146
+    Number of Cartesian functions: 152
+    Spherical Harmonics?: true
+    Max angular momentum: 2
+
+  ==> CGRSolver (by Rob Parrish) <==
+
+   Number of roots    =         1
+   Preconditioning    =    JACOBI
+   Convergence cutoff =     1E-06
+   Maximum iterations =       100
+
+  ==> CPHFRHamiltonian (by Rob Parrish) <== 
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               6
+    Memory [MiB]:              3576
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       4.5881
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (6-311G** AUX)
+    Blend: CC-PVTZ-JKFIT
+    Number of shells: 212
+    Number of basis functions: 666
+    Number of Cartesian functions: 800
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  ==> CPHF Iterations <==
+
+  => Iterations <=
+
+             Iter  Converged  Remaining    Residual
+  CGR           1          0          1   1.181E-01
+  CGR           2          0          1   3.017E-02
+  CGR           3          0          1   1.255E-02
+  CGR           4          0          1   2.525E-03
+  CGR           5          0          1   6.038E-04
+  CGR           6          0          1   2.436E-04
+  CGR           7          0          1   8.115E-05
+  CGR           8          0          1   3.034E-05
+  CGR           9          0          1   7.934E-06
+  CGR          10          0          1   1.883E-06
+  CGR          11          1          0   4.516E-07
+
+    CGRSolver converged.
+
+	-----------------------------------------------------------
+	 ==================> DF-MP2 Energies <==================== 
+	-----------------------------------------------------------
+	 Reference Energy          =    -700.8249237182309344 [Eh]
+	 Singles Energy            =      -0.0000000000000000 [Eh]
+	 Same-Spin Energy          =      -0.2787726593612576 [Eh]
+	 Opposite-Spin Energy      =      -0.7746525237736732 [Eh]
+	 Correlation Energy        =      -1.0534251831349308 [Eh]
+	 Total Energy              =    -701.8783489013658254 [Eh]
+	-----------------------------------------------------------
+	 ================> DF-SCS-MP2 Energies <================== 
+	-----------------------------------------------------------
+	 SCS Same-Spin Scale       =       0.3333333333333333 [-]
+	 SCS Opposite-Spin Scale   =       1.2000000000000000 [-]
+	 SCS Same-Spin Energy      =      -0.0929242197870858 [Eh]
+	 SCS Opposite-Spin Energy  =      -0.9295830285284078 [Eh]
+	 SCS Correlation Energy    =      -1.0225072483154936 [Eh]
+	 SCS Total Energy          =    -701.8474309665464261 [Eh]
+	-----------------------------------------------------------
+
+
+
+Properties will be evaluated at  -0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the MP2 density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          7.5352349           -9.2559033           -1.7206685
+ Dipole Y            :          1.5623646           -2.2944659           -0.7321013
+ Dipole Z            :         -0.4071206            0.4600642            0.0529435
+ Magnitude           :                                                    1.8706885
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on DESKTOP-26BCFJT at Thu Nov  3 12:48:48 2022
+Module time:
+	user time   =      14.62 seconds =       0.24 minutes
+	system time =       0.34 seconds =       0.01 minutes
+	total time  =          2 seconds =       0.03 minutes
+Total time:
+	user time   =      22.93 seconds =       0.38 minutes
+	system time =       0.60 seconds =       0.01 minutes
+	total time  =          4 seconds =       0.07 minutes
+  ==> One Electron Grid Properties (v2.0) <==
+
+  ==> CubicScalarGrid <==
+
+    Filepath     = .
+    Total Points =           368940
+    XYZ Blocking =               10
+    X Points     =               86
+    Y Points     =               66
+    Z Points     =               65
+    X Spacing    =        2.000E-01
+    Y Spacing    =        2.000E-01
+    Z Spacing    =        2.000E-01
+    X Minimum    =       -1.012E+01
+    Y Minimum    =       -7.113E+00
+    Z Minimum    =       -6.282E+00
+    X Maximum    =        6.879E+00
+    Y Maximum    =        5.887E+00
+    Z Maximum    =        6.518E+00
+
+  Basis Set: 6-311G**
+    Blend: 6-311G**
+    Number of shells: 72
+    Number of basis functions: 146
+    Number of Cartesian functions: 152
+    Spherical Harmonics?: true
+    Max angular momentum: 2
+
+*********************************************************************************************************************
+When computing potential integrals with different bra and ket basis, the atom definition is taken from the bra basis.
+*********************************************************************************************************************
+*********************************************************************************************************************
+When computing potential integrals with different bra and ket basis, the atom definition is taken from the bra basis.
+*********************************************************************************************************************
+*********************************************************************************************************************
+When computing potential integrals with different bra and ket basis, the atom definition is taken from the bra basis.
+*********************************************************************************************************************
+*********************************************************************************************************************
+When computing potential integrals with different bra and ket basis, the atom definition is taken from the bra basis.
+*********************************************************************************************************************
+*********************************************************************************************************************
+When computing potential integrals with different bra and ket basis, the atom definition is taken from the bra basis.
+*********************************************************************************************************************
+*********************************************************************************************************************
+When computing potential integrals with different bra and ket basis, the atom definition is taken from the bra basis.
+*********************************************************************************************************************
+   => Loading Basis Set <=
+
+    Name: 6-311G**
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-2  entry C          line   113 file /home/chase/psi4conda/share/psi4/basis/6-311gss.gbs 
+    atoms 3    entry S          line   393 file /home/chase/psi4conda/share/psi4/basis/6-311gss.gbs 
+    atoms 4-6  entry O          line   151 file /home/chase/psi4conda/share/psi4/basis/6-311gss.gbs 
+    atoms 7-11 entry H          line    32 file /home/chase/psi4conda/share/psi4/basis/6-311gss.gbs 
+
+FCHKWriter: !WARNING! method 'MP2'' renamed to label 'MP2'.
+FCHKWriter: Writing esna-dma.fchk with label ' MP2 Density'.
+
+    Psi4 stopped on: Thursday, 03 November 2022 12:48PM
+    Psi4 wall time for execution: 0:00:09.10
+
+*** Psi4 exiting successfully. Buy a developer a beer!

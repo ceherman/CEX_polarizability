@@ -1,0 +1,957 @@
+Thu Nov  3 12:38:23 2022 Running on host: DESKTOP-26BCFJT
+Thu Nov  3 12:38:23 2022 Atom Type Classification
+Thu Nov  3 12:38:23 2022 QM Geometry Optimization
+Thu Nov  3 12:38:23 2022 Submitting: psi4 guan-opt_1.psi4 guan-opt_1.log path = /home/chase/amoeba_parameterization/guan/Temp
+Optimizer: Optimization complete!
+At level 1: Red. Int., RFO, no backsteps, dynamic trust
+At level 1: Red. Int., RFO, no backsteps, dynamic trust
+Thu Nov  3 12:38:26 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/guan-opt_1.log path=/home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:38:26 2022 Searching Database
+Thu Nov  3 12:38:30 2022 # amoeba09 matching SMARTS from molecule  [['[#7]-[#6]', [2]]] to SMARTS from parameter file [['[#8]=[#6](-[#7](-[H])-[H])-[#6](-[H])(-[H])-[H]', [2]]] with tinker type descriptions [[('C', '"Acetamide C=O"')]]
+# Missing vdw parameters
+
+Thu Nov  3 12:38:30 2022 # amoeba09 matching SMARTS from molecule  [['[#7](-[#6])(-[H])-[H]', [1]]] to SMARTS from parameter file [['[#8]=[#6](-[#7](-[H])-[H])-[#6](-[H])(-[H])-[H]', [3]]] with tinker type descriptions [[('N', '"Acetamide N"')]]
+# Missing vdw parameters
+
+Thu Nov  3 12:38:30 2022 # amoeba09 matching SMARTS from molecule  [['[#7](-[H])-[H]', [3]]] to SMARTS from parameter file [['[#8]=[#6](-[#7](-[H])-[H])-[#6](-[H])(-[H])-[H]', [5]]] with tinker type descriptions [[('H', '"Acetamide H2N"')]]
+# Missing vdw parameters
+
+Thu Nov  3 12:38:30 2022 Gas Phase Single Point for GDMA
+Thu Nov  3 12:38:30 2022 Submitting: psi4 guan-dma.psi4 guan-dma.log path = /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:38:36 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/guan-dma.log path=/home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:38:36 2022 Gaussian Distributed Multipole Analysis (GDMA)
+Thu Nov  3 12:38:36 2022 Submitting: gdma < guan.gdmain > guan.gdmaout path = /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:38:36 2022 Local Frame Symmetry Detection
+Thu Nov  3 12:38:36 2022 Define Polarization Groups and Polarization Parameters
+Thu Nov  3 12:38:36 2022 Submitting: poledit.x 1 guan.gdmaout /home/chase/codes/poltype2/ParameterFiles/amoebabio18_header.prm < guan-peditin.txt path = /home/chase/amoeba_parameterization/guan/Temp
+
+     ######################################################################
+   ##########################################################################
+  ###                                                                      ###
+ ###            Tinker  ---  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                       Version 8.10.4  October 2022                       ##
+ ##                                                                          ##
+ ##               Copyright (c)  Jay William Ponder  1990-2022               ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ###
+   ##########################################################################
+     ######################################################################
+
+
+ Global Frame Cartesian Multipole Moments :
+
+ Site:       1         Name:   N         Atomic Number:       7
+
+ Coordinates:           -0.578201       1.190288      -0.171712
+
+ Charge:                 -0.29492
+ Dipole:                 -0.12078        0.24864       -0.03588
+ Quadrupole:              0.40002
+                          0.14979        0.23837
+                          0.24700        0.00407       -0.63839
+
+ Site:       2         Name:   C         Atomic Number:       6
+
+ Coordinates:            0.000002       0.000001       0.000002
+
+ Charge:                  0.98294
+ Dipole:                  0.00000        0.00000        0.00000
+ Quadrupole:             -0.07567
+                         -0.00190       -0.08882
+                         -0.05832        0.00825        0.16449
+
+ Site:       3         Name:   N         Atomic Number:       7
+
+ Coordinates:            1.297888      -0.074075       0.300930
+
+ Charge:                 -0.29491
+ Dipole:                  0.27111       -0.01548        0.06288
+ Quadrupole:              0.12321
+                          0.02841        0.52768
+                          0.18731       -0.03325       -0.65090
+
+ Site:       4         Name:   H         Atomic Number:       1
+
+ Coordinates:            1.867607       0.755237       0.405027
+
+ Charge:                  0.15030
+ Dipole:                  0.13388        0.17140        0.02523
+ Quadrupole:              0.00451
+                         -0.03173       -0.00915
+                          0.00111       -0.00687        0.00463
+
+ Site:       5         Name:   H         Atomic Number:       1
+
+ Coordinates:            1.762220      -0.962412       0.436664
+
+ Charge:                  0.15030
+ Dipole:                  0.11199       -0.18543        0.03180
+ Quadrupole:              0.01201
+                          0.02919       -0.01612
+                          0.00086        0.00738        0.00411
+
+ Site:       6         Name:   N         Atomic Number:       7
+
+ Coordinates:           -0.719692      -1.116214      -0.129216
+
+ Charge:                 -0.29492
+ Dipole:                 -0.15033       -0.23317       -0.02701
+ Quadrupole:              0.36237
+                         -0.15600        0.27340
+                          0.24830       -0.06736       -0.63577
+
+ Site:       7         Name:   H         Atomic Number:       1
+
+ Coordinates:           -1.559781       1.276410      -0.400308
+
+ Charge:                  0.15030
+ Dipole:                 -0.21083        0.03213       -0.04954
+ Quadrupole:             -0.03170
+                          0.01002        0.02956
+                         -0.00857        0.00148        0.00213
+
+ Site:       8         Name:   H         Atomic Number:       1
+
+ Coordinates:           -0.057259       2.052479      -0.079968
+
+ Charge:                  0.15030
+ Dipole:                  0.10131        0.19335        0.01700
+ Quadrupole:              0.01594
+                         -0.02672       -0.02109
+                          0.00358       -0.00532        0.00515
+
+ Site:       9         Name:   H         Atomic Number:       1
+
+ Coordinates:           -1.704947      -1.090060      -0.356723
+
+ Charge:                  0.15030
+ Dipole:                 -0.21329       -0.00792       -0.04881
+ Quadrupole:             -0.03325
+                         -0.00260        0.03101
+                         -0.00852       -0.00147        0.00224
+
+ Site:      10         Name:   H         Atomic Number:       1
+
+ Coordinates:           -0.307799      -2.031649      -0.004742
+
+ Charge:                  0.15030
+ Dipole:                  0.07696       -0.20353        0.02431
+ Quadrupole:              0.02189
+                          0.02158       -0.02663
+                          0.00338        0.00596        0.00474
+
+ Local Frame Definition for Multipole Sites :
+
+     Atom     Name      Axis Type     Z Axis  X Axis  Y Axis
+
+       1      N         Bisector         7       8       0
+       2      C         None             0       0       0
+       3      N         Bisector         4       5       0
+       4      H         Z-then-X         3       2       0
+       5      H         Z-then-X         3       2       0
+       6      N         Bisector         9      10       0
+       7      H         Z-then-X         1       2       0
+       8      H         Z-then-X         1       2       0
+       9      H         Z-then-X         6       2       0
+      10      H         Z-then-X         6       2       0
+
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Enter Altered Local Frame Definition [<Enter>=Exit] :  
+ Local Frame Definition for Multipole Sites :
+
+     Atom     Name      Axis Type     Z Axis  X Axis  Y Axis
+
+       1      N         Bisector         7       8       0
+       2      C         Z-Only           1       0       0
+       3      N         Bisector         4       5       0
+       4      H         Z-then-X         3       5       0
+       5      H         Z-then-X         3       4       0
+       6      N         Bisector         9      10       0
+       7      H         Z-then-X         1       8       0
+       8      H         Z-then-X         1       7       0
+       9      H         Z-then-X         6      10       0
+      10      H         Z-then-X         6       9       0
+
+ Choose Either the AMOEBA or HIPPO Polarization Model [A] :  
+ Polarizability Parameters for Multipole Sites :
+
+     Atom     Name       Polarize          Thole
+
+       1      N            1.0730         0.3900
+       2      C            1.7500         0.3900
+       3      N            1.0730         0.3900
+       4      H            0.4960         0.3900
+       5      H            0.4960         0.3900
+       6      N            1.0730         0.3900
+       7      H            0.4960         0.3900
+       8      H            0.4960         0.3900
+       9      H            0.4960         0.3900
+      10      H            0.4960         0.3900
+
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Enter Atom Number, Polarizability & Thole Values :  
+ Atomic Polarizabilities for Multipole Sites :
+
+     Atom     Name       Polarize          Thole
+
+       1      N            0.8670         0.3900
+       2      C            1.6196         0.3900
+       3      N            0.8670         0.3900
+       4      H            0.4573         0.3900
+       5      H            0.4573         0.3900
+       6      N            0.8670         0.3900
+       7      H            0.4573         0.3900
+       8      H            0.4573         0.3900
+       9      H            0.4573         0.3900
+      10      H            0.4573         0.3900
+
+ Choose Method for Division into Polarization Groups :
+
+    (1) Put All Atoms in One Polarization Group
+    (2) Separate into Groups at Rotatable Bonds
+    (3) Manual Entry of Bonds Separating Groups
+
+ Enter the Number of the Desired Choice [1] :  
+ Polarization Groups for Multipole Sites :
+
+     Atom     Name       Polarization Group Definition
+
+       1      N               2     7     8
+       2      C               1     3     6
+       3      N               2     4     5
+       4      H               3
+       5      H               3
+       6      N               2     9    10
+       7      H               1
+       8      H               1
+       9      H               6
+      10      H               6
+
+ Electrostatic and Polarization Scale Factors :
+
+                    1-2         1-3         1-4         1-5
+
+ M-Scale:         0.0000      0.0000      0.4000      0.8000
+ P-Inter:         0.0000      0.0000      1.0000      1.0000
+ P-Intra:         0.0000      0.0000      0.5000      1.0000
+ W-Scale:         1.0000      1.0000      1.0000      1.0000
+
+                    1-1         1-2         1-3         1-4
+
+ D-Scale:         0.0000      1.0000      1.0000      1.0000
+ U-Scale:         1.0000      1.0000      1.0000      1.0000
+
+ Use Thole Damping:           True
+ Charge Penetration:          False
+ Set D Equal to P:            False
+
+ Determination of Intergroup Induced Dipoles :
+
+    Iter        RMS Change (Debye)
+
+       1           0.0000000000
+
+ Local Frame Intergroup Induced Dipole Moments (Debye) :
+
+    Atom              X           Y           Z         Total
+
+       1           0.0000      0.0000      0.0000      0.0000
+       2           0.0000     -0.0000      0.0000      0.0000
+       3           0.0000      0.0000      0.0000      0.0000
+       4           0.0000      0.0000     -0.0000      0.0000
+       5           0.0000      0.0000      0.0000      0.0000
+       6           0.0000      0.0000     -0.0000      0.0000
+       7           0.0000      0.0000      0.0000      0.0000
+       8           0.0000      0.0000     -0.0000      0.0000
+       9           0.0000      0.0000      0.0000      0.0000
+      10          -0.0000      0.0000      0.0000      0.0000
+
+ Condense Symmetric Atoms to Equivalent Types [Y] :  
+ Remove Multipole Components Zeroed by Symmetry [Y] :  
+ Final Atomic Multipole Moments after Regularization :
+
+ Atom:       1         Name:   N         Atomic Number:       7
+
+ Local Frame:            Bisector             7       8       0
+
+ Charge:                 -0.29492
+ Dipole:                  0.00000        0.00000        0.27874
+ Quadrupole:              0.53005
+                          0.00000       -0.69507
+                          0.00000        0.00000        0.16502
+
+ Atom:       2         Name:   C         Atomic Number:       6
+
+ Local Frame:            Z-Only               1       0       0
+
+ Charge:                  0.98295
+ Dipole:                  0.00000        0.00000        0.00000
+ Quadrupole:              0.04455
+                          0.00000        0.04455
+                          0.00000        0.00000       -0.08909
+
+ Atom:       3         Name:   N         Atomic Number:       7
+
+ Local Frame:            Bisector             4       5       0
+
+ Charge:                 -0.29491
+ Dipole:                  0.00000        0.00000        0.27873
+ Quadrupole:              0.53004
+                          0.00000       -0.69507
+                          0.00000        0.00000        0.16503
+
+ Atom:       4         Name:   H         Atomic Number:       1
+
+ Local Frame:            Z-then-X             3       5       0
+
+ Charge:                  0.15030
+ Dipole:                  0.01358        0.00000       -0.21852
+ Quadrupole:              0.03084
+                          0.00000        0.00415
+                          0.00458        0.00000       -0.03499
+
+ Atom:       5         Name:   H         Atomic Number:       1
+
+ Local Frame:            Z-then-X             3       4       0
+
+ Charge:                  0.15030
+ Dipole:                  0.01358        0.00000       -0.21852
+ Quadrupole:              0.03084
+                          0.00000        0.00415
+                          0.00458        0.00000       -0.03499
+
+ Atom:       6         Name:   N         Atomic Number:       7
+
+ Local Frame:            Bisector             9      10       0
+
+ Charge:                 -0.29492
+ Dipole:                  0.00000        0.00000        0.27874
+ Quadrupole:              0.53006
+                          0.00000       -0.69508
+                          0.00000        0.00000        0.16502
+
+ Atom:       7         Name:   H         Atomic Number:       1
+
+ Local Frame:            Z-then-X             1       8       0
+
+ Charge:                  0.15030
+ Dipole:                  0.01358        0.00000       -0.21852
+ Quadrupole:              0.03084
+                          0.00000        0.00415
+                          0.00458        0.00000       -0.03499
+
+ Atom:       8         Name:   H         Atomic Number:       1
+
+ Local Frame:            Z-then-X             1       7       0
+
+ Charge:                  0.15030
+ Dipole:                  0.01358        0.00000       -0.21852
+ Quadrupole:              0.03084
+                          0.00000        0.00415
+                          0.00458        0.00000       -0.03499
+
+ Atom:       9         Name:   H         Atomic Number:       1
+
+ Local Frame:            Z-then-X             6      10       0
+
+ Charge:                  0.15030
+ Dipole:                  0.01358        0.00000       -0.21852
+ Quadrupole:              0.03085
+                          0.00000        0.00415
+                          0.00458        0.00000       -0.03500
+
+ Atom:      10         Name:   H         Atomic Number:       1
+
+ Local Frame:            Z-then-X             6       9       0
+
+ Charge:                  0.15030
+ Dipole:                  0.01358        0.00000       -0.21853
+ Quadrupole:              0.03084
+                          0.00000        0.00415
+                          0.00458        0.00000       -0.03499
+Thu Nov  3 12:38:36 2022 Submitting: potential.x 1 guan.xyz -k guan_prefitmultipole.key path = /home/chase/amoeba_parameterization/guan/Temp
+
+     ######################################################################
+   ##########################################################################
+  ###                                                                      ###
+ ###            Tinker  ---  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                       Version 8.10.4  October 2022                       ##
+ ##                                                                          ##
+ ##               Copyright (c)  Jay William Ponder  1990-2022               ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ###
+   ##########################################################################
+     ######################################################################
+
+
+ Additional Atom Definition Parameters :
+
+     Type  Class  Symbol  Description               Atomic    Mass   Valence
+
+        1     1     N     guan                         7     14.007     3
+        2     2     C     guan                         6     12.011     3
+        3     3     N     guan                         7     14.007     3
+        4     4     H     guan                         1      1.008     1
+        5     5     H     guan                         1      1.008     1
+        6     6     N     guan                         7     14.007     3
+        7     7     H     guan                         1      1.008     1
+        8     8     H     guan                         1      1.008     1
+        9     9     H     guan                         1      1.008     1
+       10    10     H     guan                         1      1.008     1
+
+ Electrostatic Potential Grid Points :                  7413
+
+ Gaussian CUBEGEN Input Written To :   guan.grid
+
+ Next, run the Gaussian CUBEGEN program; for example:
+
+ cubegen 0 potential=MP2 FILE.fchk FILE.cube -5 h < FILE.grid
+
+ Replace FILE with base file name and MP2 with density label;
+ After CUBEGEN, rerun Tinker POTENTIAL program using Option 2
+Thu Nov  3 12:38:36 2022 Gas Phase High Level Single Point for Multipole Refinement
+Thu Nov  3 12:38:36 2022 Submitting: psi4 guan-esp.psi4 guan-esp.log path = /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:39:19 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/guan-esp.log path=/home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:39:19 2022 Calling: Generating CUBE File from PSI4
+Thu Nov  3 12:39:19 2022 Submitting: potential.x 2 guan_fortinker.cube path = /home/chase/amoeba_parameterization/guan/Temp
+
+     ######################################################################
+   ##########################################################################
+  ###                                                                      ###
+ ###            Tinker  ---  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                       Version 8.10.4  October 2022                       ##
+ ##                                                                          ##
+ ##               Copyright (c)  Jay William Ponder  1990-2022               ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ###
+   ##########################################################################
+     ######################################################################
+
+
+ Electrostatic Potential Written To :  guan_fortinker.pot
+Thu Nov  3 12:39:19 2022 Average Multipoles Via Symmetry
+Thu Nov  3 12:39:19 2022 Submitting: /home/chase/codes/poltype2/PoltypeModules/avgmpoles.pl guan_prefitmultipole.key guan.xyz guan-groups.txt guan.key_2 guan.xyz_2 401 path = /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:39:21 2022 Electrostatic Potential Optimization
+Thu Nov  3 12:39:21 2022 Submitting: potential.x 6 combined.xyz -k guan.key_2 combined.pot N 0.1 path = /home/chase/amoeba_parameterization/guan/Temp
+
+     ######################################################################
+   ##########################################################################
+  ###                                                                      ###
+ ###            Tinker  ---  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                       Version 8.10.4  October 2022                       ##
+ ##                                                                          ##
+ ##               Copyright (c)  Jay William Ponder  1990-2022               ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ###
+   ##########################################################################
+     ######################################################################
+
+
+ Additional Atom Definition Parameters :
+
+     Type  Class  Symbol  Description               Atomic    Mass   Valence
+
+      401   401     N     guan                         7     14.007     3
+      402   402     C     guan                         6     12.011     3
+      403   403     H     guan                         1      1.008     1
+
+ Electrostatic Potential Grid Points :                  7413
+
+ Electrostatic Parameter Restraint Value :            1.0000
+
+ Additional Atom Definition Parameters :
+
+     Type  Class  Symbol  Description               Atomic    Mass   Valence
+
+      401   401     N     guan                         7     14.007     3
+      402   402     C     guan                         6     12.011     3
+      403   403     H     guan                         1      1.008     1
+
+ Additional Atomic Multipole Parameters :
+
+     Atom Type     Coordinate Frame Definition         Multipole Moments
+
+         401      403    403      0   Bisector    -0.29492
+                                                   0.00000  0.00000  0.27874
+                                                   0.53005
+                                                   0.00000 -0.69507
+                                                   0.00000  0.00000  0.16502
+
+         402      401      0      0   Z-Only       0.98295
+                                                   0.00000  0.00000  0.00000
+                                                   0.04455
+                                                   0.00000  0.04455
+                                                   0.00000  0.00000 -0.08909
+
+         403      401    403      0   Z-then-X     0.15030
+                                                   0.01358  0.00000 -0.21852
+                                                   0.03084
+                                                   0.00000  0.00415
+                                                   0.00458  0.00000 -0.03499
+
+ Additional Atomic Dipole Polarizability Parameters :
+
+     Atom Type           Alpha       Thole     Group Atom Types
+
+         401             0.867       0.390         402  403
+         402             1.620       0.390         401
+         403             0.457       0.390         401
+
+ Average Electrostatic Potential over Atoms :
+      (Kcal/mole per unit charge)
+
+   Structure   Atom      Points      Potential        Target        RMS Diff
+
+        1        1         755        78.2653        78.3652         0.2337
+        1        2         313        79.9858        79.9150         0.0743
+        1        3         745        78.4244        78.4762         0.1905
+        1        4         811        79.0414        78.9712         0.2229
+        1        5         808        78.8634        78.8783         0.1776
+        1        6         747        78.4072        78.4571         0.1888
+        1        7         811        78.9216        78.9196         0.2335
+        1        8         812        78.9244        78.9241         0.2330
+        1        9         804        78.9988        78.9231         0.2221
+        1       10         807        78.8337        78.8531         0.1790
+
+ Electrostatic Potential over all Grid Points :
+
+ Average Potential Value for Model :                 78.8038
+ Average Potential Magnitude for Model :             78.8038
+ Average Potential Value for Target :                78.8088
+ Average Potential Magnitude for Target :            78.8088
+
+ Average Signed Potential Difference :               -0.0050
+ Average Unsigned Potential Difference :              0.1512
+ Root Mean Square Potential Difference :              0.2065
+
+ Potential Fitting of Electrostatic Parameters :
+
+ Parameter     Atom Type/Class      Category          Value         Fixed
+
+    --            401 Type          Monopole        -0.29492          X
+    --            401 Type          X-Dipole         0.00000          X
+    --            401 Type          Y-Dipole         0.00000          X
+     1            401 Type          Z-Dipole         0.27874
+     2            401 Type          XX-Quad          0.53005
+    --            401 Type          XY-Quad          0.00000          X
+    --            401 Type          XZ-Quad          0.00000          X
+     3            401 Type          YY-Quad         -0.69507
+    --            401 Type          YZ-Quad          0.00000          X
+    --            401 Type          ZZ-Quad          0.16502
+    --            402 Type          Monopole         0.98295          X
+    --            402 Type          X-Dipole         0.00000          X
+    --            402 Type          Y-Dipole         0.00000          X
+    --            402 Type          Z-Dipole         0.00000          X
+    --            402 Type          XX-Quad          0.04455
+    --            402 Type          XY-Quad          0.00000          X
+    --            402 Type          XZ-Quad          0.00000          X
+    --            402 Type          YY-Quad          0.04455
+    --            402 Type          YZ-Quad          0.00000          X
+     4            402 Type          ZZ-Quad         -0.08910
+    --            403 Type          Monopole         0.15030          X
+     5            403 Type          X-Dipole         0.01358
+    --            403 Type          Y-Dipole         0.00000          X
+     6            403 Type          Z-Dipole        -0.21852
+     7            403 Type          XX-Quad          0.03084
+    --            403 Type          XY-Quad          0.00000          X
+     8            403 Type          XZ-Quad          0.00458
+     9            403 Type          YY-Quad          0.00415
+    --            403 Type          YZ-Quad          0.00000          X
+    --            403 Type          ZZ-Quad         -0.03499
+
+ Levenberg-Marquardt Nonlinear Least Squares :
+
+ LS Iter     F Value      Total G     Active G    N Active   F Calls
+
+     0      158.1230     710.4553     710.4553         9        10
+     1       27.5881     152.5626     152.5626         9        20
+     2       16.5032       0.0000       0.0000         9        30
+
+ SQUARE  --  Normal Termination of Least Squares
+
+ Potential Fitting of Electrostatic Parameters :
+
+ Parameter     Atom Type/Class      Category          Value         Fixed
+
+    --            401 Type          Monopole        -0.29492          X
+    --            401 Type          X-Dipole         0.00000          X
+    --            401 Type          Y-Dipole         0.00000          X
+     1            401 Type          Z-Dipole         0.28075
+     2            401 Type          XX-Quad          0.52838
+    --            401 Type          XY-Quad          0.00000          X
+    --            401 Type          XZ-Quad          0.00000          X
+     3            401 Type          YY-Quad         -0.69850
+    --            401 Type          YZ-Quad          0.00000          X
+    --            401 Type          ZZ-Quad          0.17012
+    --            402 Type          Monopole         0.98295          X
+    --            402 Type          X-Dipole         0.00000          X
+    --            402 Type          Y-Dipole         0.00000          X
+    --            402 Type          Z-Dipole         0.00000          X
+    --            402 Type          XX-Quad          0.04079
+    --            402 Type          XY-Quad          0.00000          X
+    --            402 Type          XZ-Quad          0.00000          X
+    --            402 Type          YY-Quad          0.04079
+    --            402 Type          YZ-Quad          0.00000          X
+     4            402 Type          ZZ-Quad         -0.08158
+    --            403 Type          Monopole         0.15030          X
+     5            403 Type          X-Dipole         0.02326
+    --            403 Type          Y-Dipole         0.00000          X
+     6            403 Type          Z-Dipole        -0.21226
+     7            403 Type          XX-Quad          0.04554
+    --            403 Type          XY-Quad          0.00000          X
+     8            403 Type          XZ-Quad          0.00636
+     9            403 Type          YY-Quad          0.00237
+    --            403 Type          YZ-Quad          0.00000          X
+    --            403 Type          ZZ-Quad         -0.04791
+
+ Average Electrostatic Potential over Atoms :
+      (Kcal/mole per unit charge)
+
+   Structure   Atom      Points      Potential        Target        RMS Diff
+
+        1        1         755        78.3193        78.3652         0.0748
+        1        2         313        79.8937        79.9150         0.0450
+        1        3         745        78.4755        78.4762         0.0556
+        1        4         811        79.0049        78.9712         0.0458
+        1        5         808        78.8307        78.8783         0.0662
+        1        6         747        78.4561        78.4571         0.0552
+        1        7         811        78.8873        78.9196         0.0516
+        1        8         812        78.8914        78.9241         0.0515
+        1        9         804        78.9573        78.9231         0.0455
+        1       10         807        78.8058        78.8531         0.0656
+
+ Electrostatic Potential over all Grid Points :
+
+ Average Potential Value for Model :                 78.7930
+ Average Potential Magnitude for Model :             78.7930
+ Average Potential Value for Target :                78.8088
+ Average Potential Magnitude for Target :            78.8088
+
+ Average Signed Potential Difference :               -0.0158
+ Average Unsigned Potential Difference :              0.0405
+ Root Mean Square Potential Difference :              0.0571
+Thu Nov  3 12:39:22 2022 Submitting: minimize.x testbondangleequilvalues.xyz -k testbondangleequilvalues.key 0.1 > testbondangleequilvalues.out path = /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:39:22 2022 Submitting: analyze.x testbondangleequilvalues.xyz_2 -k testbondangleequilvalues.key  d > testbondangleequilvaluesalz.out path = /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:39:22 2022 Relaxed Torsion Scan and Fitting
+Thu Nov  3 12:39:22 2022 Submitting: minimize.x guan-opt-1-2-360_preQMOPTprefit.xyz -k tmp-1-2-360_preQMOPTprefit.key 0.1 >guan-opt-1-2-360_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:23 2022 Normal termination: logfile=guan-opt-1-2-360_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:23 2022 All jobs have terminated ['guan-opt-1-2-360_preQMOPTprefit.out']
+Thu Nov  3 12:39:23 2022 Submitting: analyze.x guan-opt-1-2-360_preQMOPTprefit.xyz_2 -k tmp-1-2-360_preQMOPTprefit.key ed > guan-opt-1-2-360_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:24 2022 Normal termination: logfile=guan-opt-1-2-360_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:25 2022 All jobs have terminated ['guan-opt-1-2-360_preQMOPTprefit.alz']
+Thu Nov  3 12:39:25 2022 Submitting: minimize.x guan-opt-1-2-030_preQMOPTprefit.xyz -k tmp-1-2-030_preQMOPTprefit.key 0.1 >guan-opt-1-2-030_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:26 2022 Normal termination: logfile=guan-opt-1-2-030_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:26 2022 All jobs have terminated ['guan-opt-1-2-030_preQMOPTprefit.out']
+Thu Nov  3 12:39:26 2022 Submitting: analyze.x guan-opt-1-2-030_preQMOPTprefit.xyz_2 -k tmp-1-2-030_preQMOPTprefit.key ed > guan-opt-1-2-030_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:27 2022 Normal termination: logfile=guan-opt-1-2-030_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:27 2022 All jobs have terminated ['guan-opt-1-2-030_preQMOPTprefit.alz']
+Thu Nov  3 12:39:27 2022 Submitting: minimize.x guan-opt-1-2-060_preQMOPTprefit.xyz -k tmp-1-2-060_preQMOPTprefit.key 0.1 >guan-opt-1-2-060_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:28 2022 Normal termination: logfile=guan-opt-1-2-060_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:28 2022 All jobs have terminated ['guan-opt-1-2-060_preQMOPTprefit.out']
+Thu Nov  3 12:39:28 2022 Submitting: analyze.x guan-opt-1-2-060_preQMOPTprefit.xyz_2 -k tmp-1-2-060_preQMOPTprefit.key ed > guan-opt-1-2-060_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:29 2022 Normal termination: logfile=guan-opt-1-2-060_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:29 2022 All jobs have terminated ['guan-opt-1-2-060_preQMOPTprefit.alz']
+Thu Nov  3 12:39:29 2022 Submitting: minimize.x guan-opt-1-2-090_preQMOPTprefit.xyz -k tmp-1-2-090_preQMOPTprefit.key 0.1 >guan-opt-1-2-090_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:30 2022 Normal termination: logfile=guan-opt-1-2-090_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:30 2022 All jobs have terminated ['guan-opt-1-2-090_preQMOPTprefit.out']
+Thu Nov  3 12:39:31 2022 Submitting: analyze.x guan-opt-1-2-090_preQMOPTprefit.xyz_2 -k tmp-1-2-090_preQMOPTprefit.key ed > guan-opt-1-2-090_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:32 2022 Normal termination: logfile=guan-opt-1-2-090_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:32 2022 All jobs have terminated ['guan-opt-1-2-090_preQMOPTprefit.alz']
+Thu Nov  3 12:39:32 2022 Submitting: minimize.x guan-opt-1-2-120_preQMOPTprefit.xyz -k tmp-1-2-120_preQMOPTprefit.key 0.1 >guan-opt-1-2-120_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:33 2022 Normal termination: logfile=guan-opt-1-2-120_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:33 2022 All jobs have terminated ['guan-opt-1-2-120_preQMOPTprefit.out']
+Thu Nov  3 12:39:33 2022 Submitting: analyze.x guan-opt-1-2-120_preQMOPTprefit.xyz_2 -k tmp-1-2-120_preQMOPTprefit.key ed > guan-opt-1-2-120_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:34 2022 Normal termination: logfile=guan-opt-1-2-120_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:34 2022 All jobs have terminated ['guan-opt-1-2-120_preQMOPTprefit.alz']
+Thu Nov  3 12:39:34 2022 Submitting: minimize.x guan-opt-1-2-150_preQMOPTprefit.xyz -k tmp-1-2-150_preQMOPTprefit.key 0.1 >guan-opt-1-2-150_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:35 2022 Normal termination: logfile=guan-opt-1-2-150_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:35 2022 All jobs have terminated ['guan-opt-1-2-150_preQMOPTprefit.out']
+Thu Nov  3 12:39:35 2022 Submitting: analyze.x guan-opt-1-2-150_preQMOPTprefit.xyz_2 -k tmp-1-2-150_preQMOPTprefit.key ed > guan-opt-1-2-150_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:36 2022 Normal termination: logfile=guan-opt-1-2-150_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:36 2022 All jobs have terminated ['guan-opt-1-2-150_preQMOPTprefit.alz']
+Thu Nov  3 12:39:37 2022 Submitting: minimize.x guan-opt-1-2-180_preQMOPTprefit.xyz -k tmp-1-2-180_preQMOPTprefit.key 0.1 >guan-opt-1-2-180_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:38 2022 Normal termination: logfile=guan-opt-1-2-180_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:38 2022 All jobs have terminated ['guan-opt-1-2-180_preQMOPTprefit.out']
+Thu Nov  3 12:39:38 2022 Submitting: analyze.x guan-opt-1-2-180_preQMOPTprefit.xyz_2 -k tmp-1-2-180_preQMOPTprefit.key ed > guan-opt-1-2-180_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:39 2022 Normal termination: logfile=guan-opt-1-2-180_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:39 2022 All jobs have terminated ['guan-opt-1-2-180_preQMOPTprefit.alz']
+Thu Nov  3 12:39:39 2022 Submitting: minimize.x guan-opt-1-2-330_preQMOPTprefit.xyz -k tmp-1-2-330_preQMOPTprefit.key 0.1 >guan-opt-1-2-330_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:40 2022 Normal termination: logfile=guan-opt-1-2-330_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:40 2022 All jobs have terminated ['guan-opt-1-2-330_preQMOPTprefit.out']
+Thu Nov  3 12:39:40 2022 Submitting: analyze.x guan-opt-1-2-330_preQMOPTprefit.xyz_2 -k tmp-1-2-330_preQMOPTprefit.key ed > guan-opt-1-2-330_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:41 2022 Normal termination: logfile=guan-opt-1-2-330_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:41 2022 All jobs have terminated ['guan-opt-1-2-330_preQMOPTprefit.alz']
+Thu Nov  3 12:39:41 2022 Submitting: minimize.x guan-opt-1-2-300_preQMOPTprefit.xyz -k tmp-1-2-300_preQMOPTprefit.key 0.1 >guan-opt-1-2-300_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:42 2022 Normal termination: logfile=guan-opt-1-2-300_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:42 2022 All jobs have terminated ['guan-opt-1-2-300_preQMOPTprefit.out']
+Thu Nov  3 12:39:42 2022 Submitting: analyze.x guan-opt-1-2-300_preQMOPTprefit.xyz_2 -k tmp-1-2-300_preQMOPTprefit.key ed > guan-opt-1-2-300_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:43 2022 Normal termination: logfile=guan-opt-1-2-300_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:44 2022 All jobs have terminated ['guan-opt-1-2-300_preQMOPTprefit.alz']
+Thu Nov  3 12:39:44 2022 Submitting: minimize.x guan-opt-1-2-270_preQMOPTprefit.xyz -k tmp-1-2-270_preQMOPTprefit.key 0.1 >guan-opt-1-2-270_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:45 2022 Normal termination: logfile=guan-opt-1-2-270_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:45 2022 All jobs have terminated ['guan-opt-1-2-270_preQMOPTprefit.out']
+Thu Nov  3 12:39:45 2022 Submitting: analyze.x guan-opt-1-2-270_preQMOPTprefit.xyz_2 -k tmp-1-2-270_preQMOPTprefit.key ed > guan-opt-1-2-270_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:46 2022 Normal termination: logfile=guan-opt-1-2-270_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:46 2022 All jobs have terminated ['guan-opt-1-2-270_preQMOPTprefit.alz']
+Thu Nov  3 12:39:46 2022 Submitting: minimize.x guan-opt-1-2-240_preQMOPTprefit.xyz -k tmp-1-2-240_preQMOPTprefit.key 0.1 >guan-opt-1-2-240_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:47 2022 Normal termination: logfile=guan-opt-1-2-240_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:47 2022 All jobs have terminated ['guan-opt-1-2-240_preQMOPTprefit.out']
+Thu Nov  3 12:39:47 2022 Submitting: analyze.x guan-opt-1-2-240_preQMOPTprefit.xyz_2 -k tmp-1-2-240_preQMOPTprefit.key ed > guan-opt-1-2-240_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:48 2022 Normal termination: logfile=guan-opt-1-2-240_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:48 2022 All jobs have terminated ['guan-opt-1-2-240_preQMOPTprefit.alz']
+Thu Nov  3 12:39:48 2022 Submitting: minimize.x guan-opt-1-2-210_preQMOPTprefit.xyz -k tmp-1-2-210_preQMOPTprefit.key 0.1 >guan-opt-1-2-210_preQMOPTprefit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:49 2022 Normal termination: logfile=guan-opt-1-2-210_preQMOPTprefit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:50 2022 All jobs have terminated ['guan-opt-1-2-210_preQMOPTprefit.out']
+Thu Nov  3 12:39:50 2022 Submitting: analyze.x guan-opt-1-2-210_preQMOPTprefit.xyz_2 -k tmp-1-2-210_preQMOPTprefit.key ed > guan-opt-1-2-210_preQMOPTprefit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:51 2022 Normal termination: logfile=guan-opt-1-2-210_preQMOPTprefit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:51 2022 All jobs have terminated ['guan-opt-1-2-210_preQMOPTprefit.alz']
+Thu Nov  3 12:39:51 2022 Percent of jobs finished 0.0
+Thu Nov  3 12:39:51 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-360_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-360_constr.txt > xtb-opt-1-2-360.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:39:55 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-360.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:55 2022 Percent of jobs finished 8.33
+Thu Nov  3 12:39:55 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-030_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-030_constr.txt > xtb-opt-1-2-030.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:39:59 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-030.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:39:59 2022 Percent of jobs finished 16.67
+Thu Nov  3 12:39:59 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-060_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-060_constr.txt > xtb-opt-1-2-060.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:40:04 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-060.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:40:04 2022 Percent of jobs finished 25.0
+Thu Nov  3 12:40:04 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-090_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-090_constr.txt > xtb-opt-1-2-090.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:40:08 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-090.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:40:08 2022 Percent of jobs finished 33.33
+Thu Nov  3 12:40:08 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-120_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-120_constr.txt > xtb-opt-1-2-120.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:40:14 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-120.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:40:14 2022 Percent of jobs finished 41.67
+Thu Nov  3 12:40:14 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-150_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-150_constr.txt > xtb-opt-1-2-150.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:40:20 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-150.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:40:20 2022 Percent of jobs finished 50.0
+Thu Nov  3 12:40:20 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-180_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-180_constr.txt > xtb-opt-1-2-180.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:40:27 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-180.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:40:27 2022 Percent of jobs finished 58.33
+Thu Nov  3 12:40:27 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-330_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-330_constr.txt > xtb-opt-1-2-330.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:40:35 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-330.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:40:35 2022 Percent of jobs finished 66.67
+Thu Nov  3 12:40:35 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-300_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-300_constr.txt > xtb-opt-1-2-300.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:40:44 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-300.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:40:44 2022 Percent of jobs finished 75.0
+Thu Nov  3 12:40:44 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-270_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-270_constr.txt > xtb-opt-1-2-270.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:40:55 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-270.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:40:55 2022 Percent of jobs finished 83.33
+Thu Nov  3 12:40:55 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-240_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-240_constr.txt > xtb-opt-1-2-240.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:41:06 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-240.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:06 2022 Percent of jobs finished 91.67
+Thu Nov  3 12:41:06 2022 Submitting: /home/chase/psi4conda/envs/xtbenv/bin/xtb --gfn 2 --chrg 1 --uhf 0 guan-opt-1-2-210_preQMOPTprefit_xyzformat.xyz --opt --input xtb-opt-1-2-210_constr.txt > xtb-opt-1-2-210.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+normal termination of xtb
+Thu Nov  3 12:41:18 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-opt-1-2-210.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:31 2022 Percent of jobs finished 0.0
+Thu Nov  3 12:41:31 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-360.psi4 xtb-wB97X-D-sp-1-2-360.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:31 2022 Percent of jobs finished 0.0
+Thu Nov  3 12:41:31 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-030.psi4 xtb-wB97X-D-sp-1-2-030.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:31 2022 Percent of jobs finished 0.0
+Thu Nov  3 12:41:31 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-060.psi4 xtb-wB97X-D-sp-1-2-060.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:39 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-360.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:39 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-030.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:39 2022 Percent of jobs finished 16.67
+Thu Nov  3 12:41:39 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-090.psi4 xtb-wB97X-D-sp-1-2-090.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:39 2022 Percent of jobs finished 16.67
+Thu Nov  3 12:41:39 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-120.psi4 xtb-wB97X-D-sp-1-2-120.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:40 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-060.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:40 2022 Percent of jobs finished 25.0
+Thu Nov  3 12:41:40 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-150.psi4 xtb-wB97X-D-sp-1-2-150.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:48 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-120.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:48 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-150.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:48 2022 Percent of jobs finished 41.67
+Thu Nov  3 12:41:48 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-180.psi4 xtb-wB97X-D-sp-1-2-180.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:48 2022 Percent of jobs finished 41.67
+Thu Nov  3 12:41:48 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-330.psi4 xtb-wB97X-D-sp-1-2-330.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:48 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-090.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:48 2022 Percent of jobs finished 50.0
+Thu Nov  3 12:41:48 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-300.psi4 xtb-wB97X-D-sp-1-2-300.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:56 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-180.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:56 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-330.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:56 2022 Percent of jobs finished 66.67
+Thu Nov  3 12:41:56 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-270.psi4 xtb-wB97X-D-sp-1-2-270.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:56 2022 Percent of jobs finished 66.67
+Thu Nov  3 12:41:56 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-240.psi4 xtb-wB97X-D-sp-1-2-240.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:56 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-300.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:41:56 2022 Percent of jobs finished 75.0
+Thu Nov  3 12:41:56 2022 Submitting: psi4 xtb-wB97X-D-sp-1-2-210.psi4 xtb-wB97X-D-sp-1-2-210.log path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:04 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-270.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:04 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-240.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:05 2022 Normal termination: logfile=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion/xtb-wB97X-D-sp-1-2-210.log path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:05 2022 Torsions being fit 403 401 402 401 RMSD(QM-MM1)0.0018012562543644446
+Thu Nov  3 12:42:05 2022 Submitting: minimize.x guan-opt-1-2-360_postQMOPTpostfit.xyz -k tmp-1-2-360_postQMOPTpostfit.key 0.1 >guan-opt-1-2-360_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:06 2022 Normal termination: logfile=guan-opt-1-2-360_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:06 2022 All jobs have terminated ['guan-opt-1-2-360_postQMOPTpostfit.out']
+Thu Nov  3 12:42:06 2022 Submitting: analyze.x guan-opt-1-2-360_postQMOPTpostfit.xyz_2 -k tmp-1-2-360_postQMOPTpostfit.key ed > guan-opt-1-2-360_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:07 2022 Normal termination: logfile=guan-opt-1-2-360_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:07 2022 All jobs have terminated ['guan-opt-1-2-360_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:07 2022 Submitting: analyze.x guan-opt-1-2-360_preQMOPTpostfit.xyz -k tmp-1-2-360_preQMOPTpostfit.key ed > guan-opt-1-2-360_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:08 2022 Normal termination: logfile=guan-opt-1-2-360_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:09 2022 All jobs have terminated ['guan-opt-1-2-360_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:09 2022 Submitting: minimize.x guan-opt-1-2-030_postQMOPTpostfit.xyz -k tmp-1-2-030_postQMOPTpostfit.key 0.1 >guan-opt-1-2-030_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:10 2022 Normal termination: logfile=guan-opt-1-2-030_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:10 2022 All jobs have terminated ['guan-opt-1-2-030_postQMOPTpostfit.out']
+Thu Nov  3 12:42:10 2022 Submitting: analyze.x guan-opt-1-2-030_postQMOPTpostfit.xyz_2 -k tmp-1-2-030_postQMOPTpostfit.key ed > guan-opt-1-2-030_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:11 2022 Normal termination: logfile=guan-opt-1-2-030_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:11 2022 All jobs have terminated ['guan-opt-1-2-030_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:11 2022 Submitting: analyze.x guan-opt-1-2-030_preQMOPTpostfit.xyz -k tmp-1-2-030_preQMOPTpostfit.key ed > guan-opt-1-2-030_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:12 2022 Normal termination: logfile=guan-opt-1-2-030_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:12 2022 All jobs have terminated ['guan-opt-1-2-030_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:12 2022 Submitting: minimize.x guan-opt-1-2-060_postQMOPTpostfit.xyz -k tmp-1-2-060_postQMOPTpostfit.key 0.1 >guan-opt-1-2-060_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:13 2022 Normal termination: logfile=guan-opt-1-2-060_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:13 2022 All jobs have terminated ['guan-opt-1-2-060_postQMOPTpostfit.out']
+Thu Nov  3 12:42:13 2022 Submitting: analyze.x guan-opt-1-2-060_postQMOPTpostfit.xyz_2 -k tmp-1-2-060_postQMOPTpostfit.key ed > guan-opt-1-2-060_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:14 2022 Normal termination: logfile=guan-opt-1-2-060_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:14 2022 All jobs have terminated ['guan-opt-1-2-060_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:14 2022 Submitting: analyze.x guan-opt-1-2-060_preQMOPTpostfit.xyz -k tmp-1-2-060_preQMOPTpostfit.key ed > guan-opt-1-2-060_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:15 2022 Normal termination: logfile=guan-opt-1-2-060_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:15 2022 All jobs have terminated ['guan-opt-1-2-060_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:15 2022 Submitting: minimize.x guan-opt-1-2-090_postQMOPTpostfit.xyz -k tmp-1-2-090_postQMOPTpostfit.key 0.1 >guan-opt-1-2-090_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:16 2022 Normal termination: logfile=guan-opt-1-2-090_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:17 2022 All jobs have terminated ['guan-opt-1-2-090_postQMOPTpostfit.out']
+Thu Nov  3 12:42:17 2022 Submitting: analyze.x guan-opt-1-2-090_postQMOPTpostfit.xyz_2 -k tmp-1-2-090_postQMOPTpostfit.key ed > guan-opt-1-2-090_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:18 2022 Normal termination: logfile=guan-opt-1-2-090_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:18 2022 All jobs have terminated ['guan-opt-1-2-090_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:18 2022 Submitting: analyze.x guan-opt-1-2-090_preQMOPTpostfit.xyz -k tmp-1-2-090_preQMOPTpostfit.key ed > guan-opt-1-2-090_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:19 2022 Normal termination: logfile=guan-opt-1-2-090_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:19 2022 All jobs have terminated ['guan-opt-1-2-090_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:19 2022 Submitting: minimize.x guan-opt-1-2-120_postQMOPTpostfit.xyz -k tmp-1-2-120_postQMOPTpostfit.key 0.1 >guan-opt-1-2-120_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:20 2022 Normal termination: logfile=guan-opt-1-2-120_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:20 2022 All jobs have terminated ['guan-opt-1-2-120_postQMOPTpostfit.out']
+Thu Nov  3 12:42:20 2022 Submitting: analyze.x guan-opt-1-2-120_postQMOPTpostfit.xyz_2 -k tmp-1-2-120_postQMOPTpostfit.key ed > guan-opt-1-2-120_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:21 2022 Normal termination: logfile=guan-opt-1-2-120_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:21 2022 All jobs have terminated ['guan-opt-1-2-120_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:21 2022 Submitting: analyze.x guan-opt-1-2-120_preQMOPTpostfit.xyz -k tmp-1-2-120_preQMOPTpostfit.key ed > guan-opt-1-2-120_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:22 2022 Normal termination: logfile=guan-opt-1-2-120_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:22 2022 All jobs have terminated ['guan-opt-1-2-120_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:22 2022 Submitting: minimize.x guan-opt-1-2-150_postQMOPTpostfit.xyz -k tmp-1-2-150_postQMOPTpostfit.key 0.1 >guan-opt-1-2-150_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:23 2022 Normal termination: logfile=guan-opt-1-2-150_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:24 2022 All jobs have terminated ['guan-opt-1-2-150_postQMOPTpostfit.out']
+Thu Nov  3 12:42:24 2022 Submitting: analyze.x guan-opt-1-2-150_postQMOPTpostfit.xyz_2 -k tmp-1-2-150_postQMOPTpostfit.key ed > guan-opt-1-2-150_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:25 2022 Normal termination: logfile=guan-opt-1-2-150_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:25 2022 All jobs have terminated ['guan-opt-1-2-150_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:25 2022 Submitting: analyze.x guan-opt-1-2-150_preQMOPTpostfit.xyz -k tmp-1-2-150_preQMOPTpostfit.key ed > guan-opt-1-2-150_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:26 2022 Normal termination: logfile=guan-opt-1-2-150_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:26 2022 All jobs have terminated ['guan-opt-1-2-150_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:26 2022 Submitting: minimize.x guan-opt-1-2-180_postQMOPTpostfit.xyz -k tmp-1-2-180_postQMOPTpostfit.key 0.1 >guan-opt-1-2-180_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:27 2022 Normal termination: logfile=guan-opt-1-2-180_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:27 2022 All jobs have terminated ['guan-opt-1-2-180_postQMOPTpostfit.out']
+Thu Nov  3 12:42:27 2022 Submitting: analyze.x guan-opt-1-2-180_postQMOPTpostfit.xyz_2 -k tmp-1-2-180_postQMOPTpostfit.key ed > guan-opt-1-2-180_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:28 2022 Normal termination: logfile=guan-opt-1-2-180_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:28 2022 All jobs have terminated ['guan-opt-1-2-180_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:28 2022 Submitting: analyze.x guan-opt-1-2-180_preQMOPTpostfit.xyz -k tmp-1-2-180_preQMOPTpostfit.key ed > guan-opt-1-2-180_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:29 2022 Normal termination: logfile=guan-opt-1-2-180_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:29 2022 All jobs have terminated ['guan-opt-1-2-180_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:29 2022 Submitting: minimize.x guan-opt-1-2-330_postQMOPTpostfit.xyz -k tmp-1-2-330_postQMOPTpostfit.key 0.1 >guan-opt-1-2-330_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:30 2022 Normal termination: logfile=guan-opt-1-2-330_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:31 2022 All jobs have terminated ['guan-opt-1-2-330_postQMOPTpostfit.out']
+Thu Nov  3 12:42:31 2022 Submitting: analyze.x guan-opt-1-2-330_postQMOPTpostfit.xyz_2 -k tmp-1-2-330_postQMOPTpostfit.key ed > guan-opt-1-2-330_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:32 2022 Normal termination: logfile=guan-opt-1-2-330_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:32 2022 All jobs have terminated ['guan-opt-1-2-330_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:32 2022 Submitting: analyze.x guan-opt-1-2-330_preQMOPTpostfit.xyz -k tmp-1-2-330_preQMOPTpostfit.key ed > guan-opt-1-2-330_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:33 2022 Normal termination: logfile=guan-opt-1-2-330_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:33 2022 All jobs have terminated ['guan-opt-1-2-330_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:33 2022 Submitting: minimize.x guan-opt-1-2-300_postQMOPTpostfit.xyz -k tmp-1-2-300_postQMOPTpostfit.key 0.1 >guan-opt-1-2-300_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:34 2022 Normal termination: logfile=guan-opt-1-2-300_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:34 2022 All jobs have terminated ['guan-opt-1-2-300_postQMOPTpostfit.out']
+Thu Nov  3 12:42:34 2022 Submitting: analyze.x guan-opt-1-2-300_postQMOPTpostfit.xyz_2 -k tmp-1-2-300_postQMOPTpostfit.key ed > guan-opt-1-2-300_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:35 2022 Normal termination: logfile=guan-opt-1-2-300_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:35 2022 All jobs have terminated ['guan-opt-1-2-300_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:35 2022 Submitting: analyze.x guan-opt-1-2-300_preQMOPTpostfit.xyz -k tmp-1-2-300_preQMOPTpostfit.key ed > guan-opt-1-2-300_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:36 2022 Normal termination: logfile=guan-opt-1-2-300_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:36 2022 All jobs have terminated ['guan-opt-1-2-300_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:36 2022 Submitting: minimize.x guan-opt-1-2-270_postQMOPTpostfit.xyz -k tmp-1-2-270_postQMOPTpostfit.key 0.1 >guan-opt-1-2-270_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:37 2022 Normal termination: logfile=guan-opt-1-2-270_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:38 2022 All jobs have terminated ['guan-opt-1-2-270_postQMOPTpostfit.out']
+Thu Nov  3 12:42:38 2022 Submitting: analyze.x guan-opt-1-2-270_postQMOPTpostfit.xyz_2 -k tmp-1-2-270_postQMOPTpostfit.key ed > guan-opt-1-2-270_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:39 2022 Normal termination: logfile=guan-opt-1-2-270_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:39 2022 All jobs have terminated ['guan-opt-1-2-270_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:39 2022 Submitting: analyze.x guan-opt-1-2-270_preQMOPTpostfit.xyz -k tmp-1-2-270_preQMOPTpostfit.key ed > guan-opt-1-2-270_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:40 2022 Normal termination: logfile=guan-opt-1-2-270_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:40 2022 All jobs have terminated ['guan-opt-1-2-270_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:40 2022 Submitting: minimize.x guan-opt-1-2-240_postQMOPTpostfit.xyz -k tmp-1-2-240_postQMOPTpostfit.key 0.1 >guan-opt-1-2-240_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:41 2022 Normal termination: logfile=guan-opt-1-2-240_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:41 2022 All jobs have terminated ['guan-opt-1-2-240_postQMOPTpostfit.out']
+Thu Nov  3 12:42:41 2022 Submitting: analyze.x guan-opt-1-2-240_postQMOPTpostfit.xyz_2 -k tmp-1-2-240_postQMOPTpostfit.key ed > guan-opt-1-2-240_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:42 2022 Normal termination: logfile=guan-opt-1-2-240_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:42 2022 All jobs have terminated ['guan-opt-1-2-240_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:42 2022 Submitting: analyze.x guan-opt-1-2-240_preQMOPTpostfit.xyz -k tmp-1-2-240_preQMOPTpostfit.key ed > guan-opt-1-2-240_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:43 2022 Normal termination: logfile=guan-opt-1-2-240_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:43 2022 All jobs have terminated ['guan-opt-1-2-240_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:43 2022 Submitting: minimize.x guan-opt-1-2-210_postQMOPTpostfit.xyz -k tmp-1-2-210_postQMOPTpostfit.key 0.1 >guan-opt-1-2-210_postQMOPTpostfit.out path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:44 2022 Normal termination: logfile=guan-opt-1-2-210_postQMOPTpostfit.out path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:44 2022 All jobs have terminated ['guan-opt-1-2-210_postQMOPTpostfit.out']
+Thu Nov  3 12:42:45 2022 Submitting: analyze.x guan-opt-1-2-210_postQMOPTpostfit.xyz_2 -k tmp-1-2-210_postQMOPTpostfit.key ed > guan-opt-1-2-210_postQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:46 2022 Normal termination: logfile=guan-opt-1-2-210_postQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:46 2022 All jobs have terminated ['guan-opt-1-2-210_postQMOPTpostfit.alz']
+Thu Nov  3 12:42:46 2022 Submitting: analyze.x guan-opt-1-2-210_preQMOPTpostfit.xyz -k tmp-1-2-210_preQMOPTpostfit.key ed > guan-opt-1-2-210_preQMOPTpostfit.alz path = /home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:47 2022 Normal termination: logfile=guan-opt-1-2-210_preQMOPTpostfit.alz path=/home/chase/amoeba_parameterization/guan/Temp/qm-torsion
+Thu Nov  3 12:42:47 2022 All jobs have terminated ['guan-opt-1-2-210_preQMOPTpostfit.alz']
+Thu Nov  3 12:42:47 2022 Torsion 403 401 402 401 RMSD(MM2,QM) 0.23271443584677426 RelativeRMSD(MM2,QM) 0.024838493483837924 
+
+Thu Nov  3 12:42:47 2022 
+Thu Nov  3 12:42:47 2022 =========================================================
+Thu Nov  3 12:42:47 2022 Minimizing structure
+
+Thu Nov  3 12:42:47 2022 Submitting: minimize.x -k final.key final.xyz 0.1 > Minimized_final.out path = /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:42:47 2022 
+
+Thu Nov  3 12:42:47 2022 =========================================================
+
+Thu Nov  3 12:42:47 2022 Structure RMSD Comparison
+
+
+Thu Nov  3 12:42:47 2022 Submitting: superpose.x guan.xyz_2 final.xyz_2 1 N M N 0  > guan-superin.txt path = /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:42:47 2022 RMSD = 0.007975 Tolerance is 1
+Thu Nov  3 12:42:47 2022 Submitting: analyze.x guan.xyz_2 -k final.key em | grep -A11 Charge>MMDipole.txt path = /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:42:48 2022 Relative error of 0 for QMDipole 0.0 and 0.0 for MMDipole  tolerance = 0.5 /home/chase/amoeba_parameterization/guan/Temp
+Thu Nov  3 12:42:48 2022 Total torsion QM time for ((7, 1, 2, 6),) is 0.039 hours and 36 conformations
+Thu Nov  3 12:42:48 2022 OPT torsion QM time for ((7, 1, 2, 6),) is 0.015 hours and 36 conformations
+Thu Nov  3 12:42:48 2022 SP torsion QM time for ((7, 1, 2, 6),) is 0.024 hours and 36 conformations
+Thu Nov  3 12:42:48 2022 Poltype Job Finished
+

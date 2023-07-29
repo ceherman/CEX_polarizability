@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for structure in guan imim mamm esna mso4 # acet
+do
+	cd $structure 
+	python /home/chase/codes/poltype2/PoltypeModules/poltype.py
+	cd ../
+done

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# cp ./AMOEBA-BIO-2018_residues.xml /home/chase/anaconda3/lib/python3.9/site-packages/openmm/app/data/
+# cp ./AMOEBA-BIO-2018_residues.xml /home/chase/anaconda3/pkgs/openmm-7.6.0-py39h71eca04_0/lib/python3.9/site-packages/openmm/app/data/
+cp ./AMOEBA-BIO-2018_residues.xml /home/chase/psi4conda/lib/python3.8/site-packages/openmm/app/data/
+# cp ./AMOEBA-BIO-2018_residues.xml /home/chase/psi4conda/pkgs/openmm-7.6.0-py38h30ff9b7_0/lib/python3.8/site-packages/openmm/app/data/
+
+# cp ./residues_mod.xml /home/chase/anaconda3/lib/python3.9/site-packages/openmm/app/data/residues.xml
+#j cp ./residues_mod.xml /home/chase/anaconda3/pkgs/openmm-7.6.0-py39h71eca04_0/lib/python3.9/site-packages/openmm/app/data/residues.xml
+cp ./residues_mod.xml /home/chase/psi4conda/lib/python3.8/site-packages/openmm/app/data/residues.xml
+# cp ./residues_mod.xml /home/chase/psi4conda/pkgs/openmm-7.6.0-py38h30ff9b7_0/lib/python3.8/site-packages/openmm/app/data/residues.xml
