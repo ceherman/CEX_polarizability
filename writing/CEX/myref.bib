@@ -1,0 +1,998 @@
+% mQCT
+
+@article{Tomar2016,
+   author = {Dheeraj S. Tomar and Valéry Weber and B. Montgomery Pettitt and D. Asthagiri},
+   doi = {10.1021/acs.jpcb.5b09881},
+   issue = {1},
+   journal = {J. Phys. Chem. B},
+   pages = {69-76},
+   title = {Importance of Hydrophilic Hydration and Intramolecular Interactions in the Thermodynamics of Helix-Coil Transition and Helix-Helix Assembly in a Deca-Alanine Peptide},
+   volume = {120},
+   year = {2016},
+}
+
+@article{Adhikari2022,
+   author = {Rohan S. Adhikari and Arjun Valiya Parambathu and Walter G. Chapman and Dilipkumar N. Asthagiri},
+   doi = {10.1021/acs.jpcb.2c05725},
+   journal = {J. Phys. Chem. B},
+   pages = {9607-9616},
+   title = {Hydration Free Energies of Polypeptides from Popular Implicit Solvent Models versus All-Atom Simulation Results Based on Molecular Quasichemical Theory},
+   volume = {126},
+   issue = {46},
+   year = {2022},
+}
+
+@article{Weber2011,
+   author = {Valéry Weber and Safir Merchant and D. Asthagiri},
+   doi = {10.1063/1.3660205},
+   issue = {18},
+   note = {181101},
+   journal = {J. Chem. Phys.},
+   pages = {1-4},
+   title = {Communication: Regularizing Binding Energy Distributions and Thermodynamics of Hydration: Theory and Application to Water Modeled with Classical and \textit{ab Initio} Simulations},
+   volume = {135},
+   year = {2011},
+}
+
+@article{Weber2012,
+   author = {Valéry Weber and D. Asthagiri},
+   doi = {10.1021/ct300505b},
+   issue = {9},
+   journal = {J. Chem. Theory Comput.},
+   pages = {3409-3415},
+   title = {Regularizing Binding Energy Distributions and the Hydration Free Energy of Protein Cytochrome C from All-atom Simulations},
+   volume = {8},
+   year = {2012},
+}
+
+@article{Asthagiri2017,
+   author = {D. Asthagiri and Deepti Karandur and Dheeraj S. Tomar and B. Montgomery Pettitt},
+   doi = {10.1021/acs.jpcb.7b05469},
+   issue = {34},
+   journal = {J. Phys. Chem. B},
+   pages = {8078-8084},
+   title = {Intramolecular Interactions Overcome Hydration to Drive the Collapse Transition of Gly$_{15}$},
+   volume = {121},
+   year = {2017},
+}
+
+@article{Asthagiri2021b,
+   author = {Dilipkumar N. Asthagiri and Michael E. Paulaitis and Lawrence R. Pratt},
+   doi = {10.1021/acs.jpcb.1c04182},
+   issue = {30},
+   journal = {J. Phys. Chem. B},
+   pages = {8294-8304},
+   title = {Thermodynamics of Hydration from the Perspective of the Molecular Quasichemical Theory of Solutions},
+   volume = {125},
+   year = {2021},
+}
+
+
+
+% Background for this work (direct motivation)
+
+@article{Mason2019a,
+   doi = {10.1021/acs.jpclett.9b01309},
+   author = {Philip E. Mason and Pavel Jungwirth and Elise Duboué-Dijon},
+   issue = {12},
+   journal = {J. Phys. Chem. Lett.},
+   pages = {3254-3259},
+   pmid = {31125523},
+   title = {Quantifying the Strength of a Salt Bridge by Neutron Scattering and Molecular Dynamics},
+   volume = {10},
+   year = {2019},
+}
+
+@article{Asthagiri2000,
+   author = {D. Asthagiri and M. R. Schure and Abraham M. Lenhoff},
+   doi = {10.1021/jp001458q},
+   issue = {36},
+   journal = {J. Phys. Chem. B},
+   pages = {8753-8761},
+   title = {Calculation of Hydration Effects in the Binding of Anionic Ligands to Basic Proteins},
+   volume = {104},
+   year = {2000},
+}
+
+@article{Debiec2014,
+   author = {Karl T. Debiec and Angela M. Gronenborn and Lillian T. Chong},
+   doi = {10.1021/jp500958r},
+   issue = {24},
+   journal = {J. Phys. Chem. B},
+   pages = {6561-6569},
+   title = {Evaluating the Strength of Salt Bridges: A Comparison of Current Biomolecular Force Fields},
+   volume = {118},
+   year = {2014},
+}
+
+@article{Debiec2016,
+   author = {Karl T. Debiec and David S. Cerutti and Lewis R. Baker and Angela M. Gronenborn and David A. Case and Lillian T. Chong},
+   doi = {10.1021/acs.jctc.6b00567},
+   issue = {8},
+   journal = {J. Chem. Theory Comput.},
+   pages = {3926-3947},
+   title = {Further along the Road Less Traveled: AMBER ff15ipq, an Original Protein Force Field Built on a Self-Consistent Physical Model},
+   volume = {12},
+   year = {2016},
+}
+
+@article{Liang2006,
+   author = {T. Liang and T. R. Walsh},
+   doi = {10.1039/b608672a},
+   journal = {Phys. Chem. Chem. Phys.},
+   pages = {4410-4419},
+   title = {Molecular Dynamics Simulations of Peptide Carboxylate Hydration},
+   volume = {8},
+   year = {2006},
+}
+
+@article{Asthagiri2003,
+   author = {D. Asthagiri and Lawrence R. Pratt and H. S. Ashbaugh},
+   doi = {10.1063/1.1587122},
+   issue = {5},
+   journal = {J. Chem. Phys.},
+   pages = {2702-2708},
+   title = {Absolute Hydration Free Energies of Ions, Ion-Water Clusters, and Quasichemical Theory},
+   volume = {119},
+   year = {2003},
+}
+
+@article{Ashbaugh2000,
+   author = {Henry S. Ashbaugh},
+   doi = {10.1021/jp0015067},
+   issue = {31},
+   journal = {J. Phys. Chem. B},
+   pages = {7235-7238},
+   title = {Convergence of Molecular and Macroscopic Continuum Descriptions of Ion Hydration},
+   volume = {104},
+   year = {2000},
+}
+
+@article{Zhu2012,
+   author = {P. Zhu and L. R. Pratt and K. D. Papadopoulos},
+   doi = {10.1063/1.4764296},
+   note = {174501},
+   issue = {17},
+   journal = {J. Chem. Phys.},
+   pages = {1-4},
+   title = {Pairing of 1-Hexyl-3-methylimidazolium and Tetrafluoroborate Ions in \emph{n}-Pentanol},
+   volume = {137},
+   year = {2012},
+}
+
+@article{Haake1977,
+   author = {Bleecker Springs and Paul Haake},
+   doi = {10.1016/0045-2068(77)90019-0},
+   journal = {Bioorg. Chem.},
+   pages = {181-190},
+   title = {Equilibrium Constants for Association of Guanidinium and Ammonium Ions with Oxyanions: The Effect of Changing Basicity of the Oxyanion},
+   volume = {6},
+   year = {1977},
+}
+
+@article{Tanford1954,
+   author = {Charles Tanford},
+   doi = {10.1021/ja01632a110},
+   issue = {3},
+   journal = {J. Am. Chem. Soc.},
+   pages = {945-946},
+   title = {The Association of Acetate with Ammonium and Guanidinium Ions},
+   volume = {76},
+   year = {1954},
+}
+
+@article{DePhillips2001,
+   author = {Peter DePhillips and Abraham M. Lenhoff},
+   doi = {10.1016/S0021-9673(01)01275-4},
+   journal = {J. Chrom. A},
+   pages = {57-72},
+   title = {Determinants of Protein Retention Characteristics on Cation-Exchange Adsorbents},
+   volume = {933},
+   issue = {1},
+   year = {2001},
+}
+
+@article{Yao2005,
+   author = {Yan Yao and Abraham M. Lenhoff},
+   doi = {10.1021/ac048733f},
+   issue = {7},
+   journal = {Anal. Chem.},
+   pages = {2157-2165},
+   title = {Electrostatic Contributions to Protein Retention in Ion-Exchange Chromatography. 2. Proteins with Various Degrees of Structural Differences},
+   volume = {77},
+   year = {2005},
+}
+
+
+
+% Other relevant background
+
+@article{Grossfield2003,
+   author = {Alan Grossfield and Pengyu Ren and Jay W. Ponder},
+   doi = {10.1021/ja037005r},
+   issue = {50},
+   journal = {J. Am. Chem. Soc.},
+   pages = {15671-15682},
+   title = {Ion Solvation Thermodynamics from Simulation with a Polarizable Force Field},
+   volume = {125},
+   year = {2003},
+}
+
+@article{Shi2013,
+   author = {Yue Shi and Zhen Xia and Jiajing Zhang and Robert Best and Chuanjie Wu and Jay W. Ponder and Pengyu Ren},
+   doi = {10.1021/ct4003702},
+   issue = {9},
+   journal = {J. Chem. Theory Comput.},
+   pages = {4046-4063},
+   title = {Polarizable Atomic Multipole-Based AMOEBA Force Field for Proteins},
+   volume = {9},
+   year = {2013},
+}
+
+
+@article{Cerutti2013,
+   author = {David S. Cerutti and Julia E. Rice and William C. Swope and David A. Case},
+   doi = {10.1021/jp311851r},
+   issue = {8},
+   journal = {J. Phys. Chem. B},
+   pages = {2328-2338},
+   title = {Derivation of Fixed Partial Charges for Amino Acids Accommodating a Specific Water Model and Implicit Polarization},
+   volume = {117},
+   year = {2013},
+}
+
+@article{Kalcher2009,
+   author = {Immanuel Kalcher and Joachim Dzubiella},
+   doi = {10.1063/1.3097530},
+   issue = {13},
+   note = {134507},
+   journal = {J. Chem. Phys.},
+   pages = {1-12},
+   title = {Structure-Thermodynamics Relation of Electrolyte Solutions},
+   volume = {130},
+   year = {2009},
+}
+
+@article{Whitfield2007,
+   author = {Troy W. Whitfield and Sameer Varma and Edward Harder and Guillaume Lamoureux and Susan B. Rempe and Benoit Roux},
+   doi = {10.1021/ct700172b},
+   issue = {6},
+   journal = {J. Chem. Theory Comput.},
+   pages = {2068-2082},
+   title = {Theoretical Study of Aqueous Solvation of K^{+} Comparing \textit{ab Initio}, Polarizable, and Fixed-Charge Models},
+   volume = {3},
+   year = {2007},
+}
+
+@article{Jing2019,
+   author = {Zhifeng Jing and Chengwen Liu and Sara Y. Cheng and Rui Qi and Brandon D. Walker and Jean-Philip Piquemal and Pengyu Ren},
+   doi = {10.1146/annurev-biophys-070317-033349},
+   journal = {Ann. Rev. Biophys.},
+   pages = {371-394},
+   title = {Polarizable Force Fields for Biomolecular Simulations: Recent Advances and Applications},
+   volume = {48},
+   issue = {1},
+   year = {2019},
+}
+
+@article{Collins1997,
+   author = {Kim D. Collins},
+   doi = {10.1016/S0006-3495(97)78647-8},
+   issue = {1},
+   journal = {Biophys. J.},
+   pages = {65-76},
+   title = {Charge Density-Dependent Strength of Hydration and Biological Structure},
+   volume = {72},
+   year = {1997},
+}
+
+@article{Wang1989,
+   author = {N.-H. L. Wang and Q. Yu and S. U. Kim},
+   doi = {10.1016/0923-1137(89)90112-7},
+   journal = {React. Polym.},
+   pages = {261-277},
+   title = {Cation Exchange Equilibria of Amino Acids},
+   volume = {11},
+   year = {1989},
+}
+
+@article{Moore1958,
+   author = {Stanford Moore and Darrel H. Spackman and William H. Stein},
+   doi = {10.1021/ac60139a005},
+   issue = {7},
+   journal = {Anal. Chem.},
+   pages = {1185-1190},
+   title = {Chromatography of Amino Acids on Sulfonated Polystyrene Resins. An Improved System},
+   volume = {30},
+   year = {1958},
+}
+
+@article{Gunsteren2006,
+    author = {Wilfred F. van Gunsteren and Dirk Bakowies and Riccardo Baron and Indira Chandrasekhar and Markus Christen and Xavier Daura and Peter Gee and Daan P. Geerke and Alice Glättli and Philippe H. Hünenberger and Mika A. Kastenholz and Chris Oostenbrink and Merijn Schenk and Daniel Trzesniak and Nico F. A. van der Vegt and Haibo B. Yu},
+   doi = {10.1002/anie.200502655},
+   issue = {25},
+   journal = {Angew. Chem. Int. Ed.},
+   pages = {4064-4092},
+   title = {Biomolecular Modeling: Goals, Problems, Perspectives},
+   volume = {45},
+   year = {2006},
+}
+
+
+
+
+
+
+% Computational methods
+
+@article{Hummer1996,
+   author = {Gerhard Hummer and Lawrence R. Pratt and Angel E. Garcia},
+   doi = {10.1021/jp951011v},
+   issue = {4},
+   journal = {J. Phys. Chem.},
+   pages = {1206-1215},
+   title = {Free Energy of Ionic Hydration},
+   volume = {100},
+   year = {1996},
+}
+
+@article{Hummer1996a,
+   author = {Gerhard Hummer and Attila Szabo},
+   doi = {10.1063/1.472068},
+   issue = {5},
+   journal = {J. Chem. Phys.},
+   pages = {2004-2010},
+   title = {Calculation of Free-Energy Differences from Computer Simulations of Initial and Final States},
+   volume = {105},
+   year = {1996},
+}
+
+@article{Walker2022,
+   author = {Brandon Walker and Chengwen Liu and Elizabeth Wait and Pengyu Ren},
+   doi = {10.1002/jcc.26954},
+   issue = {23},
+   journal = {J. Comput. Chem.},
+   pages = {1530-1542},
+   title = {Automation of AMOEBA Polarizable Force Field for Small Molecules: Poltype 2},
+   volume = {43},
+   year = {2022},
+}
+
+@book{Beck2006,
+   author = {Thomas L. Beck and Michael E. Paulaitis and Lawrence R. Pratt},
+   city = {Cambridge},
+   publisher = {Cambridge University Press},
+   title = {The Potential Distribution Theorem and Models of Molecular Solutions},
+   year = {2006},
+}
+
+@article{Phillips2020,
+   author = {James C. Phillips and David J. Hardy and Julio D. C. Maia and John E. Stone and João V. Ribeiro and Rafael C. Bernardi and Ronak Buch and Giacomo Fiorin and Jérôme Hénin and Wei Jiang and Ryan McGreevy and Marcelo C. R. Melo and Brian K. Radak and Robert D. Skeel and Abhishek Singharoy and Yi Wang and Benoît Roux and Aleksei Aksimentiev and Zaida Luthey-Schulten and Laxmikant V. Kalé and Klaus Schulten and Christophe Chipot and Emad Tajkhorshid},
+   doi = {10.1063/5.0014475},
+   note = {044130},
+   issue = {4},
+   journal = {J. Chem. Phys.},
+   pages = {1-33},
+   title = {Scalable Molecular Dynamics on CPU and GPU Architectures with NAMD},
+   volume = {153},
+   year = {2020},
+}
+
+@article{Huang2013,
+   author = {Jing Huang and Mackerell, Jr., Alexander D.},
+   doi = {10.1002/jcc.23354},
+   issue = {25},
+   journal = {J. Comput. Chem.},
+   pages = {2135-2145},
+   title = {CHARMM36 All-Atom Additive Protein Force Field: Validation Based on Comparison to NMR Data},
+   volume = {34},
+   year = {2013},
+}
+
+@article{Vanommeslaeghe2012,
+   author = {K. Vanommeslaeghe and E. Hatcher and C. Acharya and S. Kundu and S. Zhong and J. Shim and E. Darian and O. Guvench and P. Lopes and I. Vorobyov and Mackerell, Jr., A. D.},
+   doi = {10.1002/jcc.21367},
+   journal = {J. Comput. Chem.},
+   issue = {4},
+   pages = {671-690},
+   title = {CHARMM General Force Field: A Force Field for Drug-Like Molecules Compatible with the CHARMM All-Atom Additive Biological Force Fields},
+   volume = {31},
+   year = {2009},
+}
+
+@article{Humphrey1996,
+   author = {William Humphrey and Andrew Dalke and Klaus Schulten},
+   doi = {10.1016/0263-7855(96)00018-5},
+   journal = {J. Mol. Graph.},
+   volume = {14},
+   issue = {1},
+   pages = {33-38},
+   title = {VMD: Visual Molecular Dynamics},
+   year = {1996},
+}
+
+@article{OBoyle2011,
+   author = {Noel M. O'Boyle and Michael Banck and Craig A. James and Chris Morley and Tim Vandermeersch and Geoffrey R. Hutchison},
+   doi = {10.1186/1758-2946-3-33},
+   issue = {1},
+   note = {33},
+   pages = {1-14},
+   journal = {J. Cheminform.},
+   title = {Open Babel: An Open Chemical Toolbox},
+   volume = {3},
+   year = {2011},
+}
+
+@article{Martinez2009,
+   author = {L. Martínez and R. Andrade and E. G. Birgin and J. M. Martínez},
+   doi = {10.1002/jcc.21224},
+   issue = {13},
+   journal = {J. Comput. Chem.},
+   pages = {2157-2164},
+   title = {PACKMOL: A Package for Building Initial Configurations for Molecular Dynamics Simulations},
+   volume = {30},
+   year = {2009},
+}
+
+@article{Jorgensen1983,
+   author = {William L. Jorgensen and Jayaraman Chandrasekhar and Jeffry D. Madura and Roger W. Impey and Michael L. Klein},
+   doi = {10.1063/1.445869},
+   issue = {2},
+   journal = {J. Chem. Phys.},
+   pages = {926-935},
+   title = {Comparison of Simple Potential Functions for Simulating Liquid Water},
+   volume = {79},
+   year = {1983},
+}
+
+@article{Dijon2020,
+   author = {E. Duboué-Dijon and M. Javanainen and P. Delcroix and P. Jungwirth and H. Martinez-Seara},
+   doi = {10.1063/5.0017775},
+   issue = {5},
+   note = {050901},
+   journal = {J. Chem. Phys.},
+   pages = {1-15},
+   title = {A Practical Guide to Biologically Relevant Molecular Simulations with Charge Scaling for Electronic Polarization},
+   volume = {153},
+   year = {2020},
+}
+
+@article{Leontyev2011,
+   author = {Igor Leontyev and Alexei Stuchebrukhov},
+   doi = {10.1039/c0cp01971b},
+   issue = {7},
+   journal = {Phys. Chem. Chem. Phys.},
+   pages = {2613-2626},
+   title = {Accounting for Electronic Polarization in Non-Polarizable Force Fields},
+   volume = {13},
+   year = {2011},
+}
+
+@article{Leontyev2009,
+   author = {I. V. Leontyev and A. A. Stuchebrukhov},
+   doi = {10.1063/1.3060164},
+   issue = {8},
+   note = {085102},
+   pages = {1-8},
+   journal = {J. Chem. Phys.},
+   title = {Electronic Continuum Model for Molecular Dynamics Simulations},
+   volume = {130},
+   year = {2009},
+}
+
+@article{Eastman2017,
+    author = {Peter Eastman and Jason Swails and John D. Chodera and Robert T. McGibbon and Yutong Zhao and Kyle A. Beauchamp and Lee-Ping Wang and Andrew C. Simmonett and Matthew P. Harrigan and Chaya D. Stern and Rafal P. Wiewiora and Bernard R. Brooks and Vijay S. Pande},
+   doi = {10.1371/journal.pcbi.1005659},
+   issue = {7},
+   note = {e1005659}, 
+   pages = {1-17},
+   journal = {PLoS Comput. Bio.},
+   title = {OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics},
+   volume = {13},
+   year = {2017},
+}
+
+@article{Rackers2018,
+   author = {Joshua A. Rackers and Zhi Wang and Chao Lu and Marie L. Laury and Louis Lagardère and Michael J. Schnieders and Jean Philip Piquemal and Pengyu Ren and Jay W. Ponder},
+   doi = {10.1021/acs.jctc.8b00529},
+   issue = {10},
+   journal = {J. Chem. Theory Comput.},
+   pages = {5273-5289},
+   title = {Tinker 8: Software Tools for Molecular Design},
+   volume = {14},
+   year = {2018},
+}
+
+@article{Friedberg1970,
+   author = {R. Friedberg and J. E. Cameron},
+   doi = {10.1063/1.1672907},
+   issue = {12},
+   journal = {J. Chem. Phys.},
+   pages = {6049-6058},
+   title = {Test of the Monte Carlo Method: Fast Simulation of a Small Ising Lattice},
+   volume = {52},
+   year = {1970},
+}
+
+@book{Allen1986,
+   author = {Michael P. Allen and Dominic J. Tildesley},
+   edition = {Second},
+   city = {Oxford},
+   publisher = {Oxford University Press},
+   title = {Computer Simulation of Liquids},
+   year = {2017},
+}
+
+@article{Darden1993,
+   author = {Tom Darden and Darrin York and Lee Pedersen},
+   doi = {10.1063/1.464397},
+   issue = {12},
+   journal = {J. Chem. Phys.},  
+   pages = {10089-10092},
+   title = {Particle Mesh Ewald: An N·log(N) Method for Ewald Sums in Large Systems},
+   volume = {98},
+   year = {1993},
+}
+
+@article{Essmann1995,
+   author = {Ulrich Essmann and Lalith Perera and Max L. Berkowitz and Tom Darden and Hsing Lee and Lee G. Pedersen},
+   doi = {10.1063/1.470117},
+   issue = {19},
+   journal = {J. Chem. Phys.},
+   pages = {8577-8593},
+   title = {A Smooth Particle Mesh Ewald Method},
+   volume = {103},
+   year = {1995},
+}
+
+@article{Ryckaert1977,
+   author = {Jean-Paul Ryckaert and Giovanni Ciccotti and Herman J. C. Berendsen},
+   doi = {10.1016/0021-9991(77)90098-5},
+   journal = {J. Comput. Phys.},
+   pages = {327-341},
+   title = {Numerical Integration of the Cartesian Equations of Motion of a System with Constraints: Molecular Dynamics of \emph{n}-Alkanes},
+   volume = {23},
+   issue = {3},
+   year = {1977},
+}
+
+@article{Berendsen1987,
+   author = {H. J. C. Berendsen and J. R. Grigera and T. P. Straatsma},
+   doi = {10.1021/j100308a038},
+   journal = {J. Phys. Chem.},
+   pages = {6269-6271},
+   title = {The Missing Term in Effective Pair Potentials},
+   volume = {91},
+   issue = {24},
+   year = {1987},
+}
+
+@article{Chatterjee2008,
+   author = {Swaroop Chatterjee and Pablo G. Debenedetti and Frank H. Stillinger and Ruth M. Lynden-Bell},
+   doi = {10.1063/1.2841127},
+   journal = {J. Chem. Phys.},
+   title = {A Computational Investigation of Thermodynamics, Structure, Dynamics and Solvation Behavior in Modified Water Models},
+   volume = {128},
+   issue = {12},
+   note = {124511},
+   pages = {1-9},
+   year = {2008},
+}
+
+
+
+% Thermochemistry for hydration free energy experimental comparison
+
+@article{Fossat2021,
+   author = {Martin J. Fossat and Xiangze Zeng and Rohit V. Pappu},
+   doi = {10.1021/acs.jpcb.1c01073},
+   issue = {16},
+   journal = {J. Phys. Chem. B},
+   pages = {4148-4161},
+   title = {Uncovering Differences in Hydration Free Energies and Structures for Model Compound Mimics of Charged Side Chains of Amino Acids},
+   volume = {125},
+   year = {2021},
+}
+
+@article{Cramer1991,
+   author = {Christopher J. Cramer and Donald G. Truhlar},
+   doi = {10.1021/ja00022a017},
+   journal = {J. Am. Chem. Soc.},
+   pages = {8305-8311},
+   title = {General Parameterized SCF Model for Free Energies of Solvation in Aqueous Solution},
+   issue = {22},
+   volume = {113},
+   year = {1991},
+}
+
+@article{Rizzo2006,
+   author = {Robert C. Rizzo and Tiba Aynechi and David A. Case and Irwin D. Kuntz},
+   doi = {10.1021/ct050097l},
+   issue = {1},
+   journal = {J. Chem. Theory Comput.},
+   pages = {128-139},
+   title = {Estimation of Absolute Free Energies of Hydration Using Continuum Methods: Accuracy of Partial Charge Models and Optimization of Nonpolar Contributions},
+   volume = {2},
+   year = {2006},
+}
+
+@article{In2005,
+   author = {Youngyong In and Han Ha Chai and Kyoung Tai No},
+   doi = {10.1021/ci0498564},
+   issue = {2},
+   journal = {J. Chem. Inf. Model.},
+   pages = {254-263},
+   title = {A Partition Coefficient Calculation Method with the SFED Model},
+   volume = {45},
+   year = {2005},
+}
+
+@article{Cabani1981,
+   author = {Sergio Cabani and Paolo Gianni and Vincenzo Mollica and Luciano Lepori},
+    doi = {10.1007/BF00646936}, 
+   issue = {8},
+   journal = {J. Solution Chem.},
+   title = {Group Contributions to the Thermodynamic Properties of Non-Ionic Organic Solutes in Dilute Aqueous Solution},
+   volume = {10},
+   pages = {563-595},
+   year = {1981},
+}
+
+@incollection{Taft1987,
+   author = {Robert W. Taft and R. D. Topsom},
+   editor = {Robert W. Taft},
+   pages = {1-84},
+   edition = {1},
+   booktitle = {Prog. Phys. Org. Chem.},
+   city = {New York},
+   publisher = {John Wiley \& Sons},
+   title = {The Nature and Analysis of Substituent Electronic Effects},
+   volume = {16},
+   year = {1987},
+}
+
+@article{Cumming1977,
+   author = {J. B. Cumming and P. Kebarle},
+   doi = {10.1139/v78-001},
+   issue = {1},
+   journal = {Can. J. Chem.},
+   pages = {1-9},
+   title = {Summary of Gas Phase Acidity Measurements Involving Acids AH. Entropy Changes in Proton Transfer Reactions Involving Negative Ions. Bond Dissociation Energies \emph{D}(A-H) and Electron Affinities EA(A)},
+   volume = {56},
+   year = {1978},
+}
+
+@article{Fujio1981,
+   author = {M. Fujio and McIver, Jr., R. T. and R. W. Taft},
+   doi = {10.1021/ja00404a008},
+   journal = {J. Am. Chem. Soc},
+   pages = {4017-4029},
+   title = {Effects on the Acidities of Phenols from Specific Substituent-Solvent Interactions. Inherent Substituent Parameters from Gas-Phase Acidities},
+   volume = {103},
+   issue = {14},
+   year = {1981},
+}
+
+@article{Hunter1998,
+   author = {Edward P. L. Hunter and Sharon G. Lias},
+   doi = {10.1063/1.556018},
+   issue = {3},
+   journal = {J. Phys. Chem. Ref. Data},
+   pages = {413-656},
+   title = {Evaluated Gas Phase Basicities and Proton Affinities of Molecules: An Update},
+   volume = {27},
+   year = {1998},
+}
+
+@article{Settimo2014,
+    author = {Luca Settimo and Krista Bellman and Ronald M. A. Knegtel},
+   doi = {10.1007/s11095-013-1232-z},
+   issue = {4},
+   journal = {Pharm. Res.},
+   pages = {1082-1095},
+   title = {Comparison of the Accuracy of Experimental and Predicted pKa Values of Basic and Acidic Compounds},
+   volume = {31},
+   year = {2014},
+}
+
+@article{Walba1961,
+   author = {Harold Walba and Robert W. Isensee},
+   doi = {10.1021/jo01066a039},
+   issue = {8},
+   journal = {J. Org. Chem.},
+   pages = {2789-2791},
+   title = {Acidity Constants of Some Arylimidazoles and Their Cations},
+   volume = {26},
+   year = {1961},
+}
+
+@article{Lim1991,
+   author = {Carmay Lim and Don Bashford and Martin Karplus},
+   doi = {10.1021/j100167a045},
+   issue = {14},
+   journal = {J. Phys. Chem.},
+   pages = {5610-5620},
+   title = {Absolute p$\rm{K_a}$ Calculations with Continuum Dielectric Methods},
+   volume = {95},
+   year = {1991},
+}
+
+@article{Pearson1986,
+   author = {Ralph G. Pearson},
+   doi = {10.1021/ja00280a002},
+   issue = {20},
+   journal = {J. Am. Chem. Soc.},
+   pages = {6109-6114},
+   title = {Ionization Potentials and Electron Affinities in Aqueous Solution},
+   volume = {108},
+   year = {1986},
+}
+
+@article{Gilson1988,
+   author = {Michael K. Gilson and Barry Honig},
+   doi = {10.1002/prot.340040104},
+   issue = {1},
+   journal = {Proteins: Struct. Funct. Bioinform.},
+   pages = {7-18},
+   title = {Calculation of the Total Electrostatic Energy of a Macromolecular System: Solvation Energies, Binding Energies, and Conformational Analysis},
+   volume = {4},
+   year = {1988},
+}
+
+@article{Marcus2013,
+   author = {Yizhak Marcus},
+   doi = {10.1021/la3041659},
+   issue = {9},
+   journal = {Langmuir},
+   pages = {2881-2888},
+   title = {Individual Ionic Surface Tension Increments in Aqueous Solutions},
+   volume = {29},
+   year = {2013},
+}
+
+@article{Marcus2012,
+   author = {Yizhak Marcus},
+   doi = {10.1016/j.jct.2011.11.031},
+   journal = {J. Chem. Thermodyn.},
+   pages = {70-74},
+   title = {The Guanidinium Ion},
+   volume = {48},
+   year = {2012},
+}
+
+@article{Houriez2017,
+   author = {Céline Houriez and Michael Meot-Ner (Mautner) and Michel Masella},
+   doi = {10.1021/acs.jpcb.7b07874},
+   issue = {50},
+   journal = {J. Phys. Chem. B},
+   pages = {11219-11228},
+   title = {Solvation of the Guanidinium Ion in Pure Aqueous Environments: A Theoretical Study from an "Ab Initio"-Based Polarizable Force Field},
+   volume = {121},
+   year = {2017},
+}
+
+@article{Gokcen2014,
+   author = {Gökçen A. Çiftcioǧlu and Carl Trindle},
+   doi = {10.1002/qua.24576},
+   issue = {6},
+   journal = {Int. J. Quantum Chem.},
+   pages = {392-399},
+   title = {Computational Estimates of Thermochemistry and p$\rm{K_a}$ Values of Cyclopropenyl Imine Superbases},
+   volume = {114},
+   year = {2014},
+}
+
+@article{Reif2012,
+   author = {Maria M. Reif and Philippe H. Hünenberger and Chris Oostenbrink},
+   doi = {10.1021/ct300156h},
+   issue = {10},
+   journal = {J. Chem. Theory Comput.},
+   pages = {3705-3723},
+   title = {New Interaction Parameters for Charged Amino Acid Side Chains in the GROMOS Force Field},
+   volume = {8},
+   year = {2012},
+}
+
+@article{Lin2018,
+   author = {Fang-Yu Lin and Pedro E. M. Lopes and Edward Harder and Benoît Roux and Mackerell, Jr., Alexander D.},
+   doi = {10.1021/acs.jcim.8b00132},
+   issue = {5},
+   journal = {J. Chem. Inf. Model.},
+   pages = {993-1004},
+   title = {Polarizable Force Field for Molecular Ions Based on the Classical Drude Oscillator},
+   volume = {58},
+   year = {2018},
+}
+
+@article{Zhang2017,
+   author = {Haiyang Zhang and Yang Jiang and Hai Yan and Chunhua Yin and Tianwei Tan and David van der Spoel},
+   doi = {10.1021/acs.jpclett.7b01125},
+   issue = {12},
+   journal = {J. Phys. Chem. Lett.},
+   pages = {2705-2712},
+   title = {Free-Energy Calculations of Ionic Hydration Consistent with the Experimental Hydration Free Energy of the Proton},
+   volume = {8},
+   year = {2017},
+}
+
+@article{Wolfenden1981,
+   author = {R. Wolfenden and L. Andersson and P. M. Cullis and C. C. B. Southgate},
+   doi = {10.1021/bi00507a030},
+   journal = {Biochem.},
+   pages = {849-855},
+   title = {Affinities of Amino Acid Side Chains for Solvent Water},
+   volume = {20},
+   issue = {4},
+   year = {1981},
+}
+
+@article{Fromm1995,
+   author = {J. R. Fromm and R. E. Hileman and E. E. O. Caldwell and J. M. Weiler and R. J. Linhardt},
+   doi = {10.1006/abbi.1995.9963},
+   issue = {2},
+   journal = {Arch. Biochem. Biophys.},
+   pages = {279-287},
+   title = {Differences in the Interaction of Heparin with Arginine and Lysine and the Importance of These Basic Amino Acids in the Binding of Heparin to Acidic Fibroblast Growth Factor},
+   volume = {323},
+   year = {1995},
+}
+
+
+
+% Misc.
+
+@article{Warshel2006,
+   author = {Arieh Warshel and Pankaz K. Sharma and Mitsunori Kato and William W. Parson},
+   doi = {10.1016/j.bbapap.2006.08.007},
+   issue = {11},
+   journal = {Biochim. Biophys. Acta - Proteins Proteom.},
+   title = {Modeling Electrostatic Effects in Proteins},
+   volume = {1764},
+   year = {2006},
+   pages = {1647-1676},
+}
+
+@article{Ren2012,
+   author = {Pengyu Ren and Jaehun Chun and Dennis G. Thomas and Michael J. Schnieders and Marcelo Marucho and Jiajing Zhang and Nathan A. Baker},
+   doi = {10.1017/S003358351200011X},
+   issue = {4},
+   journal = {Q. Rev. Biophys},
+   pages = {427-491},
+   title = {Biomolecular Electrostatics and Solvation: A Computational Perspective},
+   volume = {45},
+   year = {2012},
+}
+
+@article{Koehl2006,
+   author = {Patrice Koehl},
+   doi = {10.1016/j.sbi.2006.03.001},
+   issue = {2},
+   journal = {Curr. Opin. Struct. Bio.},
+   pages = {142-151},
+   title = {Electrostatics Calculations: Latest Methodological Advances},
+   volume = {16},
+   year = {2006},
+}
+
+@article{Haggerty1991,
+   author = {L. Haggerty and A. M. Lenhoff},
+   doi = {10.1021/j100156a081},
+   issue = {3},
+   journal = {J. Phys. Chem.},
+   pages = {1472-1477},
+   title = {Relation of Protein Electrostatics Computations to Ion-Exchange and Electrophoretic Behavior},
+   volume = {95},
+   year = {1991},
+}
+
+@article{Roberts2014,
+   author = {Christopher J. Roberts and Marco A. Blanco},
+   doi = {10.1021/jp507886r},
+   issue = {44},
+   journal = {J. Phys Chem. B},
+   pages = {12599-12611},
+   title = {Role of Anisotropic Interactions for Proteins and Patchy Nanoparticles},
+   volume = {118},
+   year = {2014},
+}
+
+@article{Sun2016,
+   author = {Qiang Sun and Evert Klaseboer and Derek Y. C. Chan},
+   doi = {10.1063/1.4960033},
+   issue = {5},
+   journal = {J. Chem. Phys.},
+   title = {A Robust and Accurate Formulation of Molecular and Colloidal Electrostatics},
+   volume = {145},
+   year = {2016},
+   note = {054106},
+   pages = {1-12},   
+}
+
+@article{Gray2018,
+   author = {C. G. Gray and P. J. Stiles},
+   doi = {10.1088/1361-6404/aaca5a},
+   issue = {5},
+   journal = {Eur. J. Phys.},
+   title = {Nonlinear Electrostatics: The Poisson-Boltzmann Equation},
+   volume = {39},
+   year = {2018},
+   note = {053002},
+   pages = {1-27},
+}
+
+@article{Luo1999,
+   author = {Ray Luo and Laurent David and Howard Hung and Judith Devaney and Michael K. Gilson},
+   doi = {10.1021/jp982715i},
+   journal = {J. Phys. Chem. B},
+   title = {Strength of Solvent-Exposed Salt-Bridges},
+   volume = {103},
+   issue = {4},
+   pages = {727-736},
+   year = {1999},
+}
+
+@article{Collins2019,
+   author = {Kim D. Collins},
+   doi = {10.1017/S0033583519000106},
+   journal = {Q. Rev. Biophys.},
+   pages = {1-19},
+   title = {The Behavior of Ions in Water Is Controlled by Their Water Affinity},
+   volume = {52},
+   year = {2019},
+   note = {e11},
+}
+
+@article{Guardia2009,
+   author = {Elvira Guàrdia and Ioannis Skarmoutsos and Marco Masia},
+   doi = {10.1021/ct900096n},
+   issue = {6},
+   journal = {J. Chem. Theory Comput.},
+   pages = {1449-1453},
+   title = {On Ion and Molecular Polarization of Halides in Water},
+   volume = {5},
+   year = {2009},
+}
+
+@article{Shi2017,
+   author = {Yu Shi and Thomas Beck},
+   doi = {10.1021/acs.jpcb.7b00104},
+   issue = {9},
+   journal = {J. Phys. Chem. B},
+   pages = {2189-2201},
+   title = {Deconstructing Free Energies in the Law of Matching Water Affinities},
+   volume = {121},
+   year = {2017},
+}
+
+
+% Refs added by DNA
+
+@article{doylebeck:2019,
+	title = {The {Importance} of the {Water} {Molecular} {Quadrupole} for {Estimating} {Interfacial} {Potential} {Shifts} {Acting} on {Ions} {Near} the {Liquid}–{Vapor} {Interface}},
+	volume = {123},
+	journal = {J. Phys. Chem. B},
+	author = {Doyle, Carrie C. and Shi, Yu and Beck, Thomas L.},
+	year = {2019},
+	pages = {3348--3358}
+}
+
+
+@article{wilsonpratt:1988,
+	title = {Surface potential of the water liquid–vapor interface},
+	volume = {88},
+	journal = {J. Chem. Phys.},
+	author = {Wilson, Michael A. and Pohorille, Andrew and Pratt, Lawrence R.},
+	year = {1988},
+	pages = {3281--3285}
+}
+
+@article{McDaniel2018,
+author = {McDaniel, Jesse G. and Yethiraj, Arun},
+title = {Influence of Electronic Polarization on the Structure of Ionic Liquids},
+journal = {J. Phs. Chem. Lett.},
+volume = {9},
+number = {16},
+pages = {4765-4770},
+year = {2018},
+doi = {10.1021/acs.jpclett.8b02120},
+}

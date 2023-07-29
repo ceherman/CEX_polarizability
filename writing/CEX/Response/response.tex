@@ -1,0 +1,183 @@
+\documentclass[answers,12pt]{exam}
+\usepackage{xcolor}
+\usepackage[numbers]{natbib}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = {black},             %links
+    anchorcolor =  {black},
+    citecolor =  {blue},      % citations
+    filecolor =  {black},         
+    menucolor =  {black},
+    runcolor =  {black},
+    urlcolor =  {blue},
+    citebordercolor = {white},
+    filebordercolor = {white},
+    linkbordercolor = {white},
+    menubordercolor = {white},
+    urlbordercolor = {white},
+    runbordercolor = {white}
+}
+
+\newcommand{\comment}[1]{\textcolor{red}{#1}}
+%\definecolor{SolutionColor}{rgb}{0.1,0.3,1}
+%\usepackage{lipsum}
+%
+%\renewcommand{\thequestion}{\alph{question} }
+%\renewcommand\questionlabel{\llap{\thequestion)}}
+%
+%%\pointsinrightmargin
+%%\boxedpoints
+%\unframedsolutions
+\shadedsolutions
+\definecolor{SolutionColor}{rgb}{0.9,0.9,1}
+\renewcommand{\solutiontitle}{}
+
+
+\begin{document}
+\centerline{\textbf{Response to reviewer comments on manuscript ID jz-2023-01566w}}\vspace{1em}
+
+\noindent We thank the reviewers for their careful and thorough reading of the manuscript and for their constructive comments. Their insights have identified points that we did not make sufficiently clear in our original presentation; we have sought to address these in the revision. The reviews are reproduced verbatim below and a response to each point is provided in the shaded blocks. \vspace{2em}
+
+% \centerline{\textbf{Response to reviewer \# 1}}\vspace{1em}
+% We thank the reviewer for carefully reading the manuscript and providing probing comments. We have addressed the concerns below.
+
+\textbf{Reviewer \# 1}
+
+\begin{questions}
+
+	\question This work investigates the binding between molecular anions and cations chosen as analogs of groups involved in protein adsorption to resins used in cation-exchange chromatography, with the goal to decipher the physical rules governing the strength of such ion-ion interactions. To this end, the authors performed MD simulations of concentrated solution of different ions pairs varying both the nature of the anion (acetate, sulfonate, sulfate) and cation (guanidinium, methylammonium and imidazolium). The formation of ion pairs during the simulation is compared between different force fields: CHARMM36, CHARMM36-ECC (with scaled charges) and the AMOEBA polarizable force field. The geometry of the ion pair (interaction mode) is also compared. To complement these analyses, the authors try to decompose the overall interaction into different terms to pinpoint the origin of the observed behavior. They conclude that polarizability is key in determining the strength and geometry of the studied interactions.
+ 
+    The topic is of importance for the community and the comparison of different families of force fields to describe such interactions is interesting. However, I don’t think that the presented data fully supports the main conclusion that ``the physics of polarizability is critical in determining why basic amino acid side chains bind more strongly". While it is clear that the polarizable AMOEBA force field provides a very different binding behavior from the standard CHARMM force field, and that the scaled charge CHARMM-ECC force field does not always yield the same picture as AMOEBA (in terms of binding strength and geometry), the lack of comparison with experimental data (see additional comments below) makes it hard to determine the ``correct" behavior, and thus to conclude on the most adequate treatment. 
+    \begin{solution}
+    As described in the first few paragraphs of the manuscript, the intent of this work was to assess the ability of different force field models to reproduce \textit{qualitative} rank-order trends in chromatographic retentivity data; these trends, which are observed experimentally, were indeed compared with simulation results. The rank-order agreement between experiment and AMOEBA simulations serves as the foundation upon which our conclusions were drawn. We did not intend to assess whether the various force field models could predict association constants \textit{quantitatively}, which as described in the text is a much more rigorous test. To clarify this intent explicitly, we have added the statement that 
+
+    ``The rank-order comparisons of association constants that were presented above fulfill the objective of identifying what physics are required to treat biomolecular CEX interactions with at least qualitative fidelity."
+
+    As also described in the text, there is a paucity of experimental data for making quantitative comparisons with the predicted association constants. Two of the simulated anion-cation pairs have been studied experimentally but our simulation conditions were not based on the conditions of the experimental association constant measurements, because our purpose was to make a consistent comparison across ion species to explain experimental puzzles in chromatographic retentivity data. Nonetheless, we did discuss the experimental association constant data that exist. We compared our results with those data to verify that our results were of a reasonable order of magnitude. In general, however, we view such comparisons as suspect because questionable assumptions are required to interpret the limited experimental data that exist. To make this explicit we have added the following statement pertaining to the interpretation of the experimental potentiometric studies
+
+    ``Association constants were inferred in those studies from an induced shift in the ionization constant of acetic acid when guanidinium was substituted for a third-party cation. However, the interpretation of the resulting data was predicated on the questionable assumption that the third-party cation does not complex with acetate.''
+    
+    Effective local concentrations are also generally unknown for negatively charged groups that are functionalized onto cation-exchange resin surfaces, which obfuscates retentivity comparisons quantitatively. To make this explicit we have added the statement that 
+    
+    ``Several ambiguities obfuscate more rigorous quantitative comparisons between these results and experiment, a salient one of which is that the effective local concentration of negatively charged groups on CEX resin surfaces are generally unknown.'' 
+    
+    To clarify our rationale for discussing quantitative comparisons with experimental association constants that were measured in potentiometric studes, we have also added the statement
+
+    ``All of these quantitative comparisons are intended simply to verify that the predicted $K_A$ values are of a reasonable magnitude; the rank-order comparisons are of greater importance to the chromatographic retentivity trends under investigation.''
+
+    It should also be noted that, later in the manuscript, we did make rigorous quantitative comparisons between simulated and experimental hydration free energies. These hydration free energy comparisons corroborated the conclusions that were drawn from the rank-order comparisons between simulated association constants and chromatographic retentivity.
+    
+    \end{solution}
+    
+    \question In addition, the authors did not try to optimise the CHARMM-ECC in terms of vand der waals parameters (the charge was simply scaled by 0.75) and magnitude of the scaling (different scaling factors are used in the literature, 0.85 in the Madrid2019 ionic force fields, or 0.9 in the DES-AMBER force field for nucleic acids for instance), so one cannot really conclude that the ECC approach is enable to capture the important features of the binding (energy and structure).
+    \begin{solution}
+    This is an excellent point, and we have added a statement to this effect in the text. 
+
+    ``The ECC results could possibly be improved (i.e., made more like AMOEBA) by optimizing the charge scaling factor or re-developing van der Waals parameters for the ion atoms that have scaled charges.''
+    
+    However, the necessity of optimizing the charge scaling factor and/or the van der Waals parameters, which is akin to force field re-development, does at least demonstrate that the effective implementation of the ECC strategy may be nontrivial. We have also stated this as
+
+    ``Thus while general conclusions about the potential utility of charge scaling cannot be drawn from these data, it can be observed that implementing the ECC strategy effectively may be nontrivial.''
+    
+    \end{solution}
+ 
+    \question In addition, the paper is presently a bit difficult to read, since a lot of the data commented in the text is only shown in the SI. I would thus suggest that a more extended format, such as JPCA/B/C would be more appropriate for this work. Additional comments can be found below
+    \begin{solution}
+    While this work would certainly be of interest also to the readership of \textit{J. Phys. Chem. B}, we feel that its novelty, import, and timeliness merit publication in a more expedited format. It is true that substantial content is included in the SI, but this is primarily used to communicate our more detailed observations. We feel that the central message of this manuscript can be conveyed in only a few figures and therefore view \emph{JPCL} as the more appropriate forum in which to share our results. 
+    \end{solution}
+ 
+    \question the term ``semiclassical" for AMOEBA is misleading: the authors could use the usual ``polarizable force field" term, less prone to misunderstanding.
+    \begin{solution}
+    We agree with this and have updated the manuscript accordingly. 
+    \end{solution}
+
+    \question naming negatively charged groups (carboxylates, sulfate, sulfonates) ``acidic side chains", and positively charged groups ``basic" is very confusing. The authors should rather use the terms ``positively charged" and ``negatively charged".
+    \begin{solution}
+    We have also implemented this suggestion to avoid confusion. We have replaced most of the instances of ``basic" or ``acidic" groups with ``positively" or ``negatively" charged groups, respectively. However, we feel that to convey the motivation and scope of our study to the biophysics and biological communities it is important to retain a few introductory instances of the ``basic" and ``acidic" amino acid descriptions. 
+    \end{solution}
+ 
+    \question The association constant Ka is computed from simulations of concentrated solutions through the a PMF and subsequent integration. Since the simulations were performed in concentrated solutions, why not use direct counting, which should be exactly equivalent and more straightforward? 
+    \begin{solution}
+    Direct counting is certainly a viable alternative to PMF integration but we do not view it as a more straightforward alternative due to ambiguities that arise in counting multiply associated ion pairs. PMF profiles were already obtained (e.g., to determine $R_{Shell}$) and it was straightforward to use them with the integration method, which has previously been used elsewhere (c.f.~references 22 and 23 in the revised version of the text, for example). To address this we have added the statement that 
+    
+    ``The association constant may be alternatively obtained by counting associated and dissociated ion pairs in simulation trajectories, but straightforward PMF integration is used here to avoid bookkeeping ambiguities related to multiply-associated ion pairs.'' 
+    \end{solution}
+    
+    \question The obtained association constant is not standardized versus a reference state, so is very dependent on the concentration used, which makes rigorous comparison with experiments quite challenging. The effect of finite concentrations is two fold: first, there is a non zero ionic strength, which screens the interaction (but could be due, in experiments, to other ions that the one pairing), and there are non ideality effects due to finite concentrations. These effects are independent, and should be carefully corrected if needed, to compare with experiments (or make sure that the comparisons are indeed fair, which is not clear from the present manuscript) 
+    \begin{solution}
+    As described above, we compared the simulated association constants with qualitative rank-orders of chromatographic retentivity; our conclusions were not based on any quantitative comparisons with association constants. All of our simulations were performed at the same ionic strength to enable a fair assessment of rank-orders from simulation results.
+    
+    Clearly, quantitative measures of association constants represent a ratio of chemical activities. Non-ideality effects influence this ratio but such effects are present in experimental systems as well (aside from any artifacts that may arise from finite simulation length and time scales). However, even the limited set of experimental studies that report $K_A$ values for guanidinium acetate do not account for non-idealities (c.f.~the assumption of a constant ratio of activity coefficients in reference 27 in the revised version of the text). Only one of the two studies that report experimental $K_A$ values accounts for the effect of electrostatic screening (c.f.~reference 28), which we already discussed in the manuscript. The implicit standard state of the experimental guanidinium acetate $K_A$ measurements was not reported in the experimental studies and is therefore assumed to be 1 M. However, this affects $K_A$ only as a multiplicative factor and would therefore not influence qualitative rank-order trends, which again were the focus of our study. 
+    
+    \end{solution}
+ 
+    \question How converged are the simulations in terms of formation/dissociation of the ion pairs?
+    \begin{solution}
+    Simulation convergence was depicted in Fig.~2 using error bars, which represent 2× the standard error of the mean (as already described in the Fig.~2 caption). We have added a statement to the Fig.~2 caption to make it explicit that the error bars ``show that simulations are sufficiently converged to permit $K_A$ comparisons.''
+
+    \end{solution}
+ 
+    \question The claim that ``differences in the free energy profiles is primarily attributed to the sampling differences" is not fully supported by the presented data. A convincing way to show that would be to use Umbrella sampling (or other method) to derive a PMF for the interaction of a single ion pair, and then, using the exact same interactions, to recompute the binding free energy profile with different force fields. Otherwise, the reasoning is incomplete, since the different sampling observed is due to differences in the interaction energy... so I am not sure what to conclude.
+    \begin{solution}
+    The ``cross-FF" analysis that we presented is very similar to this suggestion and was used to accomplish the suggested purpose; i.e., the same trajectory of configurations was retrospectively analyzed using different force fields for purposes of comparing the force field parameterization. This is how we showed that permanent electrostatic and van der Waals contributions to the interaction free energies in CHARMM36 and AMOEBA are nearly identical \textit{when analyzing the same configurations}. This was also used to show that contributions from polarizability represent the largest quantitative difference in the interaction energies between the two models. This is related to another critique below and was the necessary logical prior to the statement that is referenced above.
+    
+    The statement that ``differences in the free energy profiles is primarily attributed to the sampling differences" occurs in the section that we previously called the ``PMF decomposition" analysis. In retrospect, we realize that this terminology may have been confusing and we have re-labeled this section “generating-FF” analysis to emphasize its logical connection to the “cross-FF” analysis. (For reference, we have also modified the captions of Fig.~S7-S13 to make this distinction clearer.) In the ``generating-FF" analysis, separate configuration trajectories were analyzed using the trajectory-generating force field, and interaction free energy differences were observed. We could conclude that these differences were the manifestation of differences in configurational sampling due to the substantial similarities between force fields that were observed in the ``cross-FF" analysis. We have modified the discussion at the end of page 4 and on page 5 in an attempt to emphasize this further.
+
+    \end{solution}
+ 
+    \question in several instances, the data discussed in the main text is only shown in SI (3D plots, decompositions in contributions, PMFs discussed p4, etc), which makes it very hard to follow. The authors should select key figures/graphs to provide in the main text to support their claims.
+    \begin{solution}
+    This is related to the reviewer’s previous recommendation to publish in a more extended format. As described in the response to that comment, we recognize that appreciable material is included in the SI, but the figures that were included in the main text were selected for the precise purpose of supporting our central claims concisely.  
+    \end{solution}
+ 
+    \question p4 ``polarization contributions represent the largest difference" is an obvious statement, since there are no such contributions in the non polarizable force fields, and the polarization contributions are implicitly included in the other terms (vdw, charge, etc)... Only the sum of the different contributions should be interpretable.
+    \begin{solution}
+    This is related to the confusion between the ``cross-FF" and ``generating-FF" analysis that was discussed in our response to one of the above critiques, which we hope will help clarify the point that we intended to communicate here. This statement was made in the ``cross-FF" analysis, in which the same trajectory of configurations was analyzed retrospectively using both the AMOEBA and CHARMM36 force fields. Clearly, it is trivial that the largest conceptual difference between the two force field models is polarizability. Our statement that ``polarization contributions represent the largest difference" is a statement about quantitative contributions to the interaction free energy. It is true that any polarizability contributions in CHARMM36 must be implicitly included in the van der Waals and partial charge parameters. However, as described above we observed a close similarity between AMOEBA and CHARMM36 in these permanent contributions to the interaction free energy when analyzing the same trajectory of configurations. We have modified the text on pages 4 and 5 to clarify this and also added a reference to Fig.~S8, which depicts the energy contribution differences quantitatively.
+    \end{solution}
+ 
+    \question The choice of the method to compute the hydration free energy (and a pedagogical description of its principle) should be justified here. Why not use more standard alchemical transformations with (de)coupling of the solute? Why not do the calculations with CHARMM-ECC as the rest of the analyses?
+    \begin{solution}
+    We have added a reference for the interested reader and the following statement to justify our use of molecular quasichemical theory for computing hydration free energies:
+    
+    ``The estimation of $\mu^{\rm{ex}}$ from molecular quasichemical theory (QCT) offers useful advantages over alchemical approaches because it can better regularize the application of the potential distribution theorem, and it has the substantial added benefit of making hydration free energy contributions physically interpretable." 
+    
+    Following this statement on page 7, we also explain that QCT calculations were not performed in CHARMM36-ECC due to ambiguities in how the long-range contributions should be corrected for charge scaling. We have now also referred the reader to Section 4 of the SI for pedagogical and methodological details on the QCT method. 
+    \end{solution}
+ 
+ 
+    \question to allow for reproducibility, authors should share typical inputs and parameter files in a publicly accessible repository.
+    \begin{solution}
+    Thank you for this suggestion; we have made the simulation parameter files that we generated available on a GitHub repository, for which the URL is provided in the “Supporting Information” section of the main text. All other parameter and input files should be routinely accessible to the simulation community. 
+    \end{solution}
+
+
+\end{questions}
+ 
+\newpage
+\textbf{Reviewer \# 2}
+% We thank the reviewer for carefully reading the manuscript and for noting the importance of the work. We have addressed their (minor) comments below.
+
+\begin{questions}
+
+	\question The manuscript titled ``Polarizability's Significance in Modulating Association Between Molecular Cations and Anions'' is a well-crafted piece of work that presents an intriguing and timely investigation into the effects of polarizability on charged species.
+    
+    I have only minor comments to offer:
+
+On page 2, it would be beneficial for the authors to include a citation to McDaniel and Yethiraj's publication, titled ``The Influence of Electronic Polarization on the Structure of Ionic Liquids,'' found in the Journal of Physical Chemistry Letters in 2018 (volume 9, pages 4765-4770), to highlight the limitations of charge-scaling at longer distances.
+
+    \begin{solution}
+    Thank you for this suggestion; we have added a reference to this work on page 2.
+    \end{solution}
+ 
+    \question Additionally, it would be valuable for the authors to provide some guidance on computing the individual components in Equation (2) on page 6.
+    \begin{solution}
+    We provide extensive details on the QCT computation methodology in the SI. However, we realize in retrospect that we did not make this explicit in the main text. Thank you for helping us notice this; we have now added a statement following Eq. 2 that directs the reader to Section 4 of the SI for these details. 
+    \end{solution}
+ 
+    \question Given these minor suggestions, I believe no further review is necessary, and I strongly recommend expediting the publication process.
+    \begin{solution}
+    We thank the reviewer for the supportive feedback.
+    \end{solution}
+ \end{questions}
+\end{document}
