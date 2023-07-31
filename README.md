@@ -2,7 +2,7 @@
 
 This repository contains information pertaining to the manuscript
 
-C. E. Herman, A. V. Parambathu, D. N. Asthagiri, A. M. Lenhoff. Polarizability Plays a Decisive Role in Modulating Association Between Molecular Cations and Anions. *J. Phys. Chem. Lett.* 2023.
+C. E. Herman, A. V. Parambathu, D. N. Asthagiri, A. M. Lenhoff. Polarizability Plays a Decisive Role in Modulating Association Between Molecular Cations and Anions. *J. Phys. Chem. Lett.* 2023. [DOI: 10.1021/acs.jpclett.3c01566](https://doi.org/10.1021/acs.jpclett.3c01566)
 
 
 ## Generated parameter files
